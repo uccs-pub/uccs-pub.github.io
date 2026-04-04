@@ -1,0 +1,41 @@
+{{- /*
+  Shortcode: articles
+  The single article shortcode for use in markdown files.
+
+  Params:
+    layout   "grid" | "list"   Display mode. Default: "grid"
+    limit    int               Max articles to show. Default: 12
+    skip     int               Skip the first N articles. Default: 0
+                               Use skip="1" to exclude the featured hero.
+    section  string            Filter to a single section slug, e.g. "polis"
+                               Omit to show all sections.
+    heading  string            Optional label rendered above the collection.
+
+  Examples:
+    {{< articles layout="grid" skip="1" limit="11" heading="Ultimele articole" >}}
+    {{< articles layout="list" section="polis" >}}
+    {{< articles layout="list" section="debate" limit="5" >}}
+*/ -}}
+
+{{- $layout  := .Get "layout"  | default "grid" -}}
+{{- $limit   := .Get "limit"   | default 12 | int -}}
+{{- $skip    := .Get "skip"    | default 0  | int -}}
+{{- $section := .Get "section" | default "" -}}
+{{- $heading := .Get "heading" | default "" -}}
+
+{{/* Build and filter the pages collection */}}
+{{- $pages := where site.RegularPages "Params.standalone" "ne" true -}}
+
+{{- if $section -}}
+  {{- $pages = where $pages "Section" $section -}}
+{{- end -}}
+
+{{- $pages = $pages.ByDate.Reverse -}}
+{{- $pages = after $skip $pages -}}
+{{- $pages = first $limit $pages -}}
+
+{{ partial "article-render.html" (dict
+  "pages"   $pages
+  "layout"  $layout
+  "heading" $heading
+) }}

@@ -12,12 +12,12 @@ toc = true
 description = ""
 +++
 
-Introducere scurtă.
+Miza textului în 2–3 propoziții.
 
-## Idee
+## Textul sau fenomenul
 
 ## Context
 
-## Analiză
+## Lectură
 
-## Concluzii operative
+## Ce merită păstrat

@@ -1,0 +1,11 @@
+{{ define "head_extra" }}
+  <link rel="stylesheet" href="{{ "css/taxonomy.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "section-header.html" . }}
+  {{ partial "article-render.html" (dict
+    "pages"  .Pages.ByDate.Reverse
+    "layout" "grid"
+  ) }}
+{{ end }}

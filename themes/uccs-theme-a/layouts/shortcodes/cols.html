@@ -1,0 +1,3 @@
+<div class="sc-cols" style="--col-left: {{ .Get "left" | default "50" }}%; --col-right: {{ .Get "right" | default "50" }}%;">
+  {{ .Inner | markdownify }}
+</div>

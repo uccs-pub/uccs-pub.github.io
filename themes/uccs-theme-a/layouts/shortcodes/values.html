@@ -1,0 +1,18 @@
+{{/*
+  Shortcode: values
+  Usage: {{< values >}}
+
+  Renders the editorial values from data/about.yaml → .values[]
+  as a clean horizontal rule list — good for the Despre page.
+  Each entry has a `title` and a `body` field.
+*/}}
+{{ with site.Data.about.values }}
+<div class="sc-values">
+  {{ range . }}
+  <div class="sc-values-item">
+    <h3 class="sc-values-title">{{ .title }}</h3>
+    <p class="sc-values-body">{{ .body }}</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

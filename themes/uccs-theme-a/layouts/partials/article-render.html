@@ -1,0 +1,44 @@
+{{- /*
+  Partial: article-render.html
+  The single article rendering engine. Replaces article-grid.html
+  and article-list.html entirely.
+
+  Context (dict):
+    pages    Pages   Required. Pre-filtered, pre-sorted pages collection.
+    layout   string  "grid" (default) or "list"
+    heading  string  Optional. Renders a section label above the collection.
+
+  Usage from layout templates:
+    {{ partial "article-render.html" (dict "pages" .Pages.ByDate.Reverse "layout" "list") }}
+
+  Usage via shortcode (see shortcodes/articles.html):
+    {{< articles layout="grid" limit="11" skip="1" heading="Ultimele articole" >}}
+*/ -}}
+
+{{- $pages   := .pages -}}
+{{- $layout  := .layout  | default "grid" -}}
+{{- $heading := .heading | default "" -}}
+
+{{/* Exclude standalone pages in case the caller forgot */}}
+{{- $pages = where $pages "Params.standalone" "ne" true -}}
+
+{{ if and $heading (gt (len $pages) 0) }}
+  <div class="grid-section-header">
+    <h2 class="grid-section-title">{{ $heading }}</h2>
+  </div>
+{{ end }}
+
+{{ if gt (len $pages) 0 }}
+  {{- $isGrid      := eq $layout "grid" -}}
+  {{- $wrapClass   := cond $isGrid "article-grid"      "article-list" -}}
+  {{- $itemClass   := cond $isGrid "article-grid-item" "" -}}
+  {{- $variant     := cond $isGrid "grid"              "list" -}}
+
+  <ul class="{{ $wrapClass }}">
+    {{ range $pages }}
+      <li{{ with $itemClass }} class="{{ . }}"{{ end }}>
+        {{ partial "article-card.html" (dict "page" . "variant" $variant) }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

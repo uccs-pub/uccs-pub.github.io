@@ -1,0 +1,22 @@
+{{- /*
+  Shortcode: section-heading
+  Usage:
+    {{< section-heading >}}Ce facem?{{< /section-heading >}}
+    {{< section-heading eyebrow="Metodologie" >}}Cum scriem?{{< /section-heading >}}
+
+  Params:
+    eyebrow  string   Optional overline label (uppercase, faint).
+                      When absent, no eyebrow is rendered.
+
+  Renders a large display-font section opener with generous
+  top space. Use this instead of ## headings in standalone pages.
+*/ -}}
+
+{{- $eyebrow := .Get "eyebrow" -}}
+
+<div class="sc-section-heading">
+  {{ if $eyebrow }}
+    <p class="sc-section-heading__eyebrow">{{ $eyebrow }}</p>
+  {{ end }}
+  <h2 class="sc-section-heading__title">{{ .Inner | markdownify }}</h2>
+</div>

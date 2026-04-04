@@ -1,0 +1,15 @@
+[brand]
+    # name = "UCCS"
+    longName = "Unde Cuvintele Capătă Sens"
+    description = "Claritate publică pentru fenomene politice, sociale și culturale."
+    authorVisible = true
+
+[editorial]
+    mainSections = ["analyticus", "cultural"]
+    showReadingTime = true
+    showLastmod = true
+    showChangelog = true
+
+[home]
+    introTitle = "Unde cuvintele capătă sens"
+    introText = "Analiză publică lucidă, fără isterie, fără cultul personalității, fără dezumanizare."

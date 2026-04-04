@@ -1,0 +1,12 @@
+{{- /*
+  Shortcode: featured-hero
+  Usage: {{< featured-hero >}}
+  No parameters. Finds the most recent non-standalone regular page
+  and passes it to the featured-hero partial.
+  The partial handles all rendering and CSS.
+*/ -}}
+
+{{- $pages := where site.RegularPages "Params.standalone" "ne" true -}}
+{{- with index ($pages.ByDate.Reverse) 0 -}}
+  {{ partial "featured-hero.html" . }}
+{{- end -}}

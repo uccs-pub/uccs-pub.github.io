@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+  {{ partial "section-header.html" . }}
+
+  {{ partial "article-render.html" (dict
+    "pages"  .Pages.ByDate.Reverse
+    "layout" "list"
+  ) }}
+
+{{ end }}

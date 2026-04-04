@@ -1,0 +1,23 @@
+{{- /*
+  Partial: format-num.html
+  Context: integer
+
+  Formats a number for compact display:
+    0 – 999       → exact            (e.g. 734)
+    1 000 – 9 999 → one decimal + K  (e.g. 1.2K)
+    10 000 – 999 999 → integer K     (e.g. 15K, 100K)
+    1 000 000 +   → integer M        (e.g. 1M, 10M)
+
+  Usage:
+    {{ partial "format-num.html" $wordCount }}
+*/ -}}
+{{- $n := . -}}
+{{- if lt $n 1000 -}}
+  {{- $n -}}
+{{- else if lt $n 10000 -}}
+  {{- div $n 1000 -}}.{{- div (mod $n 1000) 100 -}}K
+{{- else if lt $n 1000000 -}}
+  {{- div $n 1000 -}}K
+{{- else -}}
+  {{- div $n 1000000 -}}M
+{{- end -}}

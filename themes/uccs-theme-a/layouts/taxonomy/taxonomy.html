@@ -1,0 +1,48 @@
+{{ define "head_extra" }}
+  <link rel="stylesheet" href="{{ "css/taxonomy.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+
+  {{ partial "section-header.html" . }}
+
+  {{/* ── Alphabet quick-jump (only if >4 distinct first letters) ── */}}
+  {{ $terms   := .Data.Terms.Alphabetical }}
+  {{ $letters := slice }}
+  {{ range $terms }}
+    {{ $first := substr .Page.Title 0 1 | upper }}
+    {{ if not (in $letters $first) }}
+      {{ $letters = $letters | append $first }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $letters) 4 }}
+    <nav class="taxonomy-alphabet" aria-label="Filtrare după literă">
+      {{ range $letters }}
+        <a href="#letter-{{ . | lower }}" class="alpha-btn">{{ . }}</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+  {{/* ── Tag grid grouped by first letter ── */}}
+  {{ $prev := "" }}
+  <div class="taxonomy-grid">
+    {{ range $terms }}
+      {{ $first := substr .Page.Title 0 1 | upper }}
+      {{ if ne $first $prev }}
+        {{ if ne $prev "" }}</ul></div>{{ end }}
+        <div class="alpha-group" id="letter-{{ $first | lower }}">
+          <span class="alpha-label" aria-hidden="true">{{ $first }}</span>
+          <ul class="tag-list" role="list">
+        {{ $prev = $first }}
+      {{ end }}
+      <li>
+        <a href="{{ .Page.RelPermalink }}" class="tag-card">
+          <span class="tag-name">#{{ .Page.Title }}</span>
+          <span class="tag-count">{{ .Count }}</span>
+        </a>
+      </li>
+    {{ end }}
+    {{ if ne $prev "" }}</ul></div>{{ end }}
+  </div>
+
+{{ end }}

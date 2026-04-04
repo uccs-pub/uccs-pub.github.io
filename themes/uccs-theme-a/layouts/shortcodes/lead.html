@@ -1,0 +1,15 @@
+{{/*
+  Shortcode: lead
+  Usage: {{< lead >}}Text here. Can include **markdown**.{{< /lead >}}
+
+  Renders a large, display-font opening paragraph.
+  Ideal as the first element in Despre, Contact, or Donează pages.
+  Visually separates the intro from the rest of the body copy.
+
+  Example:
+    {{< lead >}}
+    UCCS este un proiect editorial independent pornit din convingerea că
+    România are nevoie de mai mulți oameni care gândesc în public.
+    {{< /lead >}}
+*/}}
+<p class="sc-lead">{{ .Inner | markdownify }}</p>

@@ -1,0 +1,24 @@
+[[main]]
+  name = "Analyticus"
+  pageRef = "/analize"
+  weight = 10
+
+[[main]]
+  name = "Cultural"
+  pageRef = "/cultural"
+  weight = 20
+
+[[main]]
+  name = "Despre"
+  pageRef = "/despre"
+  weight = 30
+
+[[footer]]
+  name = "Arhivă"
+  pageRef = "/archive"
+  weight = 10
+
+[[footer]]
+  name = "Politica editorială"
+  pageRef = "/politica-editoriala"
+  weight = 20

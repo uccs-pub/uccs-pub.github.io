@@ -1,0 +1,24 @@
+{{/*
+  Shortcode: toc
+  Usage: {{< toc >}}
+  Renders a collapsible table of contents using the page's heading structure.
+  Requires headings (H2–H4) in the article body.
+  Config lives in config/_default/markup.toml → [tableOfContents].
+*/}}
+{{- $label := .Get "label" | default "Cuprins" -}}
+
+{{- $toc := .Page.TableOfContents -}}
+{{- if and $toc (ne $toc "") -}}
+<details class="sc-toc" open>
+  <summary class="sc-toc__summary">
+    <span class="sc-toc__label">{{ $label }}</span>
+    <svg class="sc-toc__chevron" viewBox="0 0 16 16" fill="none"
+         stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <polyline points="4 6 8 10 12 6"/>
+    </svg>
+  </summary>
+  <nav class="sc-toc__body" aria-label="{{ $label }}">
+    {{ $toc }}
+  </nav>
+</details>
+{{- end -}}

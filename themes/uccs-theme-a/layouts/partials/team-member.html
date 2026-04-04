@@ -1,0 +1,53 @@
+{{- /*
+  Partial: team-member.html
+  Context: a Hugo Page (an authors taxonomy term page)
+
+  Reads:
+    .Params.display_name  string
+    .Params.role          string
+    .Params.bio           []string
+    .Resources.GetMatch   "avatar.*"  — photo file in same directory as _index.md
+*/ -}}
+
+<article class="team-member">
+
+  <div class="team-member__top">
+
+    <div class="team-member__avatar">
+      {{ $avatar := .Resources.GetMatch "avatar.*" }}
+      {{ if $avatar }}
+        <img
+          src="{{ $avatar.RelPermalink }}"
+          alt="{{ .Params.display_name | default .Title }}"
+          width="64"
+          height="64"
+          loading="lazy"
+          decoding="async"
+          class="team-member__photo"
+        >
+      {{ else }}
+        {{/* Fallback: first letter of display name */}}
+        <span aria-hidden="true">
+          {{ substr (.Params.display_name | default .Title) 0 1 }}
+        </span>
+      {{ end }}
+    </div>
+
+    <div class="team-member__identity">
+      <h3 class="team-member__name">
+        {{ .Params.display_name | default .Title }}
+      </h3>
+      <span class="team-member__role">{{ .Params.role }}</span>
+    </div>
+
+  </div>
+
+  {{ with .Params.bio }}
+    <div class="team-member__bio">
+      {{ range . }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </div>
+  {{ end }}
+
+</article>

@@ -1,0 +1,40 @@
+{{/*
+  Shortcode: section-card
+  Usage (static info card):
+    {{< section-card label="Polis" title="Politică & Cetate" >}}
+    Analize despre democrație, cetățenie și viața politică.
+    {{< /section-card >}}
+
+  Usage (linkable card — navigates to a section):
+    {{< section-card label="Polis" title="Politică & Cetate" href="/polis/" >}}
+    Analize despre democrație, cetățenie și viața politică.
+    {{< /section-card >}}
+
+  Params:
+    label  — short section identifier (shown uppercase, primary color)
+    title  — card heading
+    href   — optional URL; when present, the entire card becomes a link
+             and a "Explorează →" CTA appears at the bottom
+*/}}
+
+{{ $href  := .Get "href" }}
+{{ $label := .Get "label" }}
+
+{{ if $href }}
+<a href="{{ $href }}" class="section-card section-card--link" data-section="{{ $label | lower }}">
+  <span class="section-label">{{ $label }}</span>
+  <h3 class="section-title">{{ .Get "title" }}</h3>
+  {{ with .Inner }}
+    <p class="section-desc">{{ . | markdownify }}</p>
+  {{ end }}
+  <span class="section-card-cta" aria-hidden="true">Explorează →</span>
+</a>
+{{ else }}
+<article class="section-card" data-section="{{ $label | lower }}">
+  <span class="section-label">{{ $label }}</span>
+  <h3 class="section-title">{{ .Get "title" }}</h3>
+  {{ with .Inner }}
+    <p class="section-desc">{{ . | markdownify }}</p>
+  {{ end }}
+</article>
+{{ end }}

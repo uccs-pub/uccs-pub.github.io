@@ -1,0 +1,34 @@
+{{- /*
+  Shortcode: team
+  Usage: {{< team >}}
+
+  Renders the founders_intro header from data/about.yaml, then
+  lists all author pages that have founder: true in their front matter.
+  Photo is read as a page resource (content/authors/[name]/avatar.*).
+  Sorted by joined year ascending (earliest founder first).
+*/ -}}
+
+{{ with site.Data.about.founders_intro }}
+<div class="team-section-header">
+  <p class="team-section-eyebrow">{{ .eyebrow }}</p>
+  <h2 class="team-section-title">
+    {{ .title }}
+    <em class="team-section-subtitle">{{ .subtitle }}</em>
+  </h2>
+</div>
+{{ end }}
+
+{{ $founders := slice }}
+{{ range site.Taxonomies.authors }}
+  {{ $page := .Page }}
+  {{ if and ($page.Params.founder) (ne $page.Params.active false) }}
+    {{ $founders = $founders | append $page }}
+  {{ end }}
+{{ end }}
+{{ $founders = sort $founders "Params.joined" "asc" }}
+
+<div class="team-list">
+  {{ range $founders }}
+    {{ partial "team-member.html" . }}
+  {{ end }}
+</div>

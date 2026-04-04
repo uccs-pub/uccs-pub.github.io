@@ -1,0 +1,33 @@
+{{ define "body_class" }}page-standalone{{ end }}
+
+{{ define "head_extra" }}
+  <link rel="stylesheet" href="{{ "css/prose.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+<div class="standalone-page">
+
+  <header class="standalone-hero">
+    {{/* Eyebrow only when explicitly set — never falls back to site title */}}
+    {{ with .Params.overline }}
+      <p class="standalone-hero-eyebrow">{{ . }}</p>
+    {{ end }}
+
+    <h1 class="standalone-hero-title">
+      {{ .Title }}
+      {{- with .Params.subtitle -}}
+        <em class="standalone-hero-subtitle">{{ . }}</em>
+      {{- end -}}
+    </h1>
+
+    {{ with .Params.lead }}
+      <p class="standalone-hero-lead">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <div class="article-body standalone-body">
+    {{ .Content }}
+  </div>
+
+</div>
+{{ end }}

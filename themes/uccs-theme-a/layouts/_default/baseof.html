@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .Title }}{{ .Title }} – UCCS{{ else }}UCCS – Unde Cuvintele Capătă Sens{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/layout.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/components.css" | relURL }}">
+  {{ block "head_extra" . }}{{ end }}
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+
+    <!-- Row 1: logo + utility links (Despre / Contact / Donează) -->
+    <!-- Never wraps — utility items shrink text on narrow screens via CSS -->
+    <div class="header-row header-row-top">
+
+      <a href="{{ "" | relURL }}" class="logo">
+        <span class="logo-main">UCCS</span>
+        <span class="logo-sub">Unde Cuvintele Capătă Sens</span>
+      </a>
+
+      <nav class="nav-utility" aria-label="Pagini utilitare">
+        {{ range site.Menus.utility }}
+          {{ if .Params.donate }}
+            {{/* Donate entry — pill button, optionally opens external URL */}}
+            <a href="{{ .URL }}"
+               class="btn-donate"
+               {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+              {{ .Name }}
+            </a>
+          {{ else }}
+            {{/* Regular utility link */}}
+            <a href="{{ .URL }}" class="header-link">{{ .Name }}</a>
+          {{ end }}
+        {{ end }}
+      </nav>
+
+    </div>
+
+    <!-- Row 2: section navigation (allowed to wrap) -->
+    <div class="header-row header-row-nav">
+      <nav class="nav-primary" aria-label="Secțiuni">
+        {{ range site.Menus.main }}
+          {{/* IsMenuCurrent / HasMenuCurrent mark the active section */}}
+          {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+          <a href="{{ .URL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- ======= MAIN ======= -->
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- Brand + social icons -->
+      <div class="footer-brand">
+        <a href="{{ "" | relURL }}" class="footer-logo">UCCS</a>
+        <p class="footer-tagline">Proiect editorial independent.<br>Substanță, nu doar formă.</p>
+
+        {{/* Social icons — loops site.Params.social map automatically.
+             Add or remove platforms in config/_default/params.toml [social]. */}}
+        {{ with site.Params.social }}
+          <div class="footer-social">
+            {{ partial "social-icons.html" (dict "social" . "class" "social-link") }}
+          </div>
+        {{ end }}
+      </div>
+
+      <!-- Section links — driven by [[main]] in menus.toml -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Secțiuni</h3>
+        <ul class="footer-links">
+          {{ range site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Utility links — driven by [[utility]] in menus.toml -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Publicație</h3>
+        <ul class="footer-links">
+          {{ range site.Menus.utility }}
+            <li>
+              <a href="{{ .URL }}"
+                 {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {{ now.Format "2006" }} UCCS – Unde Cuvintele Capătă Sens. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+baseURL = "https://uccs.codeberg.page/"
+
+[services]
+    [services.rss]
+        limit = 20

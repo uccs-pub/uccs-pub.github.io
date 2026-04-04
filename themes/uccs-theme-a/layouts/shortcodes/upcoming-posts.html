@@ -1,0 +1,8 @@
+{{- /*
+  Shortcode: upcoming-posts
+  Usage: {{< upcoming-posts >}}
+  Renders the editorial calendar from data/upcoming.yaml.
+  Delegates entirely to the upcoming-posts partial.
+  Hidden when data/upcoming.yaml sets enabled: false.
+*/ -}}
+{{ partial "upcoming-posts.html" . }}

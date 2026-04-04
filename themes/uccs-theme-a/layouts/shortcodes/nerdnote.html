@@ -1,0 +1,17 @@
+{{/*
+  Shortcode: nerdnote
+  Usage: {{< nerdnote title="..." color="info" >}} ... {{< /nerdnote >}}
+
+  Renders an infobox.
+
+  Example:
+    {{< nerdnote title="Strategie - Cazul distructiv" color="info" >}}
+Conținut cu markdown normal aici. {{< /nerdnote >}}
+*/}}
+
+{{- $title := .Get "title" | default "Notă" -}}
+{{- $color := .Get "color" | default "info" -}}
+<div class="nerdnote nerdnote--{{ $color }}">
+  <p class="nerdnote__label">{{ $title }}</p>
+  <div class="nerdnote__body">{{ .Inner | markdownify }}</div>
+</div>

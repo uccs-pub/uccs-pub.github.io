@@ -1,0 +1,32 @@
+baseURL = "https://uccs.codeberg.page/"
+languageCode = "ro-RO"
+defaultContentLanguage = "ro"
+title = "Unde Cuvintele Capătă Sens"
+enableRobotsTXT = true
+enableGitInfo = true
+summaryLength = 30
+pagination.pagerSize = 10
+theme = "uccs-theme-a"
+
+[permalinks]
+    analyticus = "/analyticus/:slug/"
+    cultural = "/cultural/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    author = "authors"
+    theme = "themes"
+
+[outputs]
+    home = ["HTML", "RSS"]
+    section = ["HTML", "RSS"]
+    page = ["HTML"]
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = false
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 3
+        ordered = false

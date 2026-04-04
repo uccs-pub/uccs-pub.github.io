@@ -1,0 +1,13 @@
+{{- /*
+  layouts/index.html
+  Homepage shell. All content composition is driven by content/_index.md
+  using shortcodes. This layout only injects the homepage-specific CSS.
+*/ -}}
+
+{{ define "head_extra" }}
+  <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+  {{ .Content }}
+{{ end }}

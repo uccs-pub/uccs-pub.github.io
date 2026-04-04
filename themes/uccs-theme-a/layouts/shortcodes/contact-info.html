@@ -1,0 +1,32 @@
+{{/*
+  Shortcode: contact-info
+  Usage: {{< contact-info label="Email" href="mailto:redactia@uccs.ro" >}}redactia@uccs.ro{{< /contact-info >}}
+
+  Params:
+    label  — the field name shown on the left (e.g. "Email", "Instagram", "Telefon")
+    href   — the link target (mailto:, https://, tel:, etc.)
+
+  Renders a single labeled contact row.
+  Stack multiple contact-info shortcodes to build a contact block.
+  External links (starting with "http") automatically open in a new tab.
+
+  Example block in contact.md:
+    {{< contact-info label="Email" href="mailto:redactia@uccs.ro" >}}redactia@uccs.ro{{< /contact-info >}}
+    {{< contact-info label="Instagram" href="https://instagram.com/uccs" >}}@uccs{{< /contact-info >}}
+    {{< contact-info label="Locație" href="https://maps.google.com/..." >}}București, România{{< /contact-info >}}
+*/}}
+
+{{ $href    := .Get "href" }}
+{{ $label   := .Get "label" }}
+{{ $external := hasPrefix $href "http" }}
+
+<div class="sc-contact-row">
+  {{ with $label }}
+    <span class="sc-contact-label">{{ . }}</span>
+  {{ end }}
+  <a href="{{ $href }}"
+     class="sc-contact-value"
+     {{ if $external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+    {{ .Inner | markdownify }}
+  </a>
+</div>

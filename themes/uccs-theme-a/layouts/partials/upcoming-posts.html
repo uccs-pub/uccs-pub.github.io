@@ -1,0 +1,107 @@
+{{/*
+  Partial: upcoming-posts.html
+  Data source: data/upcoming.yaml
+  Renders the editorial calendar block showing scheduled articles with a
+  live countdown timer (JS-powered, updates every 30 s client-side).
+  Hidden entirely when data/upcoming.yaml sets enabled: false.
+  Styled by homepage.css (.upcoming-posts).
+*/}}
+{{ if and site.Data.upcoming site.Data.upcoming.enabled }}
+{{ $data := site.Data.upcoming }}
+
+<section class="upcoming-posts" aria-labelledby="upcoming-posts-title">
+
+  <div class="upcoming-header">
+    <div class="upcoming-header-left">
+      <span class="upcoming-badge">{{ $data.badge }}</span>
+      <h2 class="upcoming-posts-title" id="upcoming-posts-title">
+        Urmează în revistă
+      </h2>
+    </div>
+  </div>
+
+  <ul class="upcoming-grid" role="list">
+    {{ range $data.posts }}
+    {{ $pub := .publish_date | time }}
+    <li class="upcoming-card
+               {{ if eq .status "tentative" }} upcoming-card--tentative{{ end }}
+               {{ if eq .status "draft" }} upcoming-card--draft{{ end }}"
+        data-publish="{{ .publish_date }}">
+
+      {{/* ── Section label + formatted date ── */}}
+      <div class="upcoming-card-top">
+        <span class="upcoming-section-label">{{ .section }}</span>
+        <time class="upcoming-date" datetime="{{ .publish_date }}">
+          {{ dateFormat "2 Jan 2006, 15:04" $pub }}
+        </time>
+      </div>
+
+      {{/* ── Title & description ── */}}
+      <h3 class="upcoming-card-title">{{ .title }}</h3>
+      {{ with .description }}
+        <p class="upcoming-card-desc">{{ . }}</p>
+      {{ end }}
+
+      {{/* ── Author ── */}}
+      {{ with .author }}
+        <p class="upcoming-card-author">{{ . }}</p>
+      {{ end }}
+
+      {{/* ── Tentative / draft label ── */}}
+      {{ if eq .status "tentative" }}
+        <p class="upcoming-card-status">Dată aproximativă</p>
+      {{ else if eq .status "draft" }}
+        <p class="upcoming-card-status">În pregătire</p>
+      {{ end }}
+
+      {{/* ── Countdown (populated by JS below) ── */}}
+      {{ if ne .status "draft" }}
+      <div class="upcoming-countdown" aria-live="polite">
+        <span class="upcoming-countdown-value" aria-label="Timp rămas">—</span>
+        <span class="upcoming-countdown-label">până la publicare</span>
+      </div>
+      {{ end }}
+
+    </li>
+    {{ end }}
+  </ul>
+
+</section>
+
+<script>
+(function () {
+  'use strict';
+  var cards = document.querySelectorAll('.upcoming-card[data-publish]');
+  cards.forEach(function (card) {
+    var pub   = new Date(card.getAttribute('data-publish'));
+    var valEl = card.querySelector('.upcoming-countdown-value');
+    var lblEl = card.querySelector('.upcoming-countdown-label');
+    if (!valEl) return;
+
+    function render() {
+      var diff = pub - Date.now();
+      if (diff <= 0) {
+        valEl.textContent = 'Publicat';
+        if (lblEl) lblEl.textContent = '';
+        return;
+      }
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000)  / 60000);
+      if (d > 0) {
+        valEl.textContent = d + (d === 1 ? ' zi' : ' zile');
+      } else if (h > 0) {
+        valEl.textContent = h + 'h\u202f' + (m < 10 ? '0' : '') + m + 'min';
+      } else {
+        valEl.textContent = m + 'min';
+      }
+      if (lblEl) lblEl.textContent = 'până la publicare';
+    }
+
+    render();
+    setInterval(render, 30000);
+  });
+})();
+</script>
+
+{{ end }}

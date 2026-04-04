@@ -1,0 +1,57 @@
+{{/* 
+  Partial: article-card.html
+  Context: dict "page" . "variant" "grid"|"list"
+*/}}
+
+{{ $page    := .page }}
+{{ $variant := .variant | default "list" }}
+
+{{ $thumbLinkClass := cond (eq $variant "grid") "article-grid-thumb-link" "article-thumb-link" }}
+{{ $thumbClass     := cond (eq $variant "grid") "article-grid-thumb"      "article-thumb" }}
+{{ $thumbPlaceholderClass := cond (eq $variant "grid") "article-grid-thumb-placeholder" "article-thumb-placeholder" }}
+{{ $infoClass      := cond (eq $variant "grid") "article-grid-info"       "article-info" }}
+{{ $titleClass     := cond (eq $variant "grid") "article-grid-title"      "article-title" }}
+
+{{ $date := $page.Date.Format "2 January 2006" }}
+
+{{/* ── Thumbnail ── */}}
+{{ with $page.Params.cover }}
+  {{ with $page.Resources.GetMatch . }}
+    <a href="{{ $page.Permalink }}" class="{{ $thumbLinkClass }}" tabindex="-1" aria-hidden="true">
+      <img
+        src="{{ .RelPermalink }}"
+        alt="{{ $page.Params.coveralt | default $page.Title }}"
+        class="{{ $thumbClass }}"
+        loading="lazy"
+      >
+    </a>
+  {{ else }}
+    <a href="{{ $page.Permalink }}" class="{{ $thumbLinkClass }} {{ $thumbPlaceholderClass }}" tabindex="-1" aria-hidden="true"></a>
+  {{ end }}
+{{ else }}
+  <a href="{{ $page.Permalink }}" class="{{ $thumbLinkClass }} {{ $thumbPlaceholderClass }}" tabindex="-1" aria-hidden="true"></a>
+{{ end }}
+
+{{/* ── Card info ── */}}
+<div class="{{ $infoClass }}">
+  <a href="{{ $page.Permalink }}" class="{{ $titleClass }}">{{ $page.Title }}</a>
+
+  <p class="article-meta">
+    <span class="meta-section">{{ $page.Section }}</span>
+    <span class="meta-sep">·</span>
+    <span>{{ $date }}</span>
+  </p>
+
+  {{ with $page.Params.authors }}
+    <p class="article-author">
+      {{ range $i, $a := . }}
+        {{ if $i }}, {{ end }}
+        <a href="{{ printf "authors/%s/" ($a | urlize) | relURL }}">{{ $a }}</a>
+      {{ end }}
+    </p>
+  {{ end }}
+
+  {{ with $page.Params.description }}
+    <p class="article-excerpt">{{ . }}</p>
+  {{ end }}
+</div>
