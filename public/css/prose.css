@@ -1,0 +1,440 @@
+/*
+ * UCCS — prose.css
+ * Typography styles for article body content (Markdown output).
+ * Loaded only on single article pages via the "head_extra" block in single.html.
+ *
+ * Sections:
+ *   11. Article body — headings, paragraphs, lists
+ *   12. Code blocks
+ *   13. Tables
+ *   14. Footnotes / endnotes
+ *   15. TOC shortcode (sc-toc)
+ */
+
+/* ============================================================
+ 1 1. ARTICLE BODY — prose typography                  *
+ ============================================================ */
+
+.article-body {
+    /* width flows from parent <article> which is capped at --content-article */
+}
+
+.article-body h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-3);
+    color: var(--color-text);
+}
+
+.article-body h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-2);
+}
+
+.article-body h4 {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-2);
+}
+
+.article-body p {
+    margin-bottom: var(--space-5);
+}
+
+.article-body ul,
+.article-body ol {
+    margin-bottom: var(--space-5);
+    padding-left: var(--space-6);
+}
+
+.article-body li {
+    margin-bottom: var(--space-2);
+}
+
+.article-body strong { font-weight: 600; }
+.article-body em { font-style: italic; }
+
+.article-body blockquote {
+    margin-block: var(--space-8);
+    padding: var(--space-6) var(--space-8);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    position: relative;
+}
+
+.article-body blockquote::before {
+    content: '\201C';
+    font-family: var(--font-display);
+    font-size: 4.5rem;
+    line-height: 1;
+    color: var(--color-primary-highlight);
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-4);
+    pointer-events: none;
+    user-select: none;
+}
+
+[data-theme="dark"] .article-body blockquote::before {
+    color: var(--color-surface-dynamic);
+}
+
+.article-body blockquote p {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.article-body blockquote cite,
+.article-body blockquote footer {
+    display: block;
+    margin-top: var(--space-3);
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: normal;
+    color: var(--color-text-muted);
+    letter-spacing: 0.04em;
+}
+
+.article-body hr {
+    border: none;
+    border-top: 1px solid var(--color-divider);
+    margin-block: var(--space-10);
+}
+
+.article-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin-block: var(--space-6);
+}
+
+.article-body figure { margin-block: var(--space-8); }
+
+.article-body figure img {
+    margin-block: 0;
+    width: 100%;
+}
+
+.article-body figcaption {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    margin-top: var(--space-2);
+    line-height: 1.5;
+}
+
+/* ============================================================
+ 1 2. CODE BLOCKS                                      *
+ ============================================================ */
+
+code {
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+    font-size: 0.875em;
+    background: var(--color-surface-offset);
+    color: var(--color-text);
+    padding: 0.15em 0.45em;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(28, 26, 20, 0.08);
+}
+
+pre {
+    background: var(--color-surface-offset);
+    border: 1px solid rgba(28, 26, 20, 0.08);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5) var(--space-6);
+    overflow-x: auto;
+    margin-block: var(--space-6);
+    color: var(--color-text);
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    color: inherit;
+}
+
+[data-theme="dark"] pre,
+[data-theme="dark"] pre code,
+[data-theme="dark"] code {
+    color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) pre,
+    :root:not([data-theme]) pre code,
+    :root:not([data-theme]) code {
+        color: var(--color-text);
+    }
+}
+
+/* ============================================================
+ 1 3. TABLES                                           *
+ ============================================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: var(--space-6);
+    font-size: var(--text-sm);
+    font-family: var(--font-ui);
+}
+
+th {
+    text-align: left;
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 2px solid rgba(28, 26, 20, 0.18);
+    font-weight: 600;
+    font-size: var(--text-xs);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+td {
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 1px solid var(--color-divider);
+    vertical-align: top;
+    line-height: 1.55;
+}
+
+tr:last-child td { border-bottom: none; }
+
+tbody tr:hover td { background: var(--color-surface); }
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-block: var(--space-6);
+}
+
+.table-scroll table {
+  width: 100%;
+  min-width: 36rem;
+  margin-block: 0;
+}
+
+/* ============================================================
+ 1 4. FOOTNOTES                                        *
+ ============================================================ */
+
+.footnotes {
+    margin-top: var(--space-16);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-divider);
+}
+
+.footnotes::before {
+    content: 'Note';
+    display: block;
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-faint);
+    margin-bottom: var(--space-4);
+}
+
+.footnotes ol { padding-left: var(--space-5); }
+
+.footnotes li {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+    line-height: 1.6;
+    max-width: 64ch;
+}
+
+sup a {
+    font-family: var(--font-ui);
+    font-size: 0.7em;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    padding-inline: 1px;
+    vertical-align: super;
+}
+
+sup a:hover { text-decoration: underline; }
+
+.footnote-backref {
+    margin-left: var(--space-1);
+    text-decoration: none;
+    color: var(--color-text-faint);
+}
+
+.footnote-backref:hover { color: var(--color-primary); }
+
+/* ============================================================
+ * 11a. ARTICLE BODY — extended headings
+ * ============================================================ */
+
+.article-body h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
+  margin-top: var(--space-16);
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+}
+
+.article-body h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.22;
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.article-body h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.article-body h4 {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+}
+
+.article-body h5,
+.article-body h6 {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-2);
+}
+
+/* ============================================================
+ * 15. TOC SHORTCODE — sc-toc
+ * ============================================================ */
+
+.sc-toc {
+  margin-bottom: var(--space-10);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.sc-toc__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background var(--transition-fast);
+}
+
+.sc-toc__summary::-webkit-details-marker { display: none; }
+.sc-toc__summary::marker               { display: none; }
+
+.sc-toc__summary:hover { background: var(--color-surface-offset); }
+
+.sc-toc__label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+.sc-toc__chevron {
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-faint);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.sc-toc[open] .sc-toc__chevron { transform: rotate(180deg); }
+
+.sc-toc__body {
+  padding: var(--space-3) var(--space-5) var(--space-5);
+  border-top: 1px solid var(--color-divider);
+}
+
+/* Hugo-generated TOC — nested <ul> with <li><a> */
+.sc-toc__body #TableOfContents { margin: 0; }
+
+.sc-toc__body ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.sc-toc__body ul ul {
+  padding-left: var(--space-4);
+  margin-top: 2px;
+  border-left: 1px solid var(--color-divider);
+}
+
+.sc-toc__body li { margin: 0; }
+
+.sc-toc__body a {
+  display: block;
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  line-height: 1.5;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.sc-toc__body a:hover {
+  color: var(--color-primary);
+  background: var(--color-primary-highlight);
+}
+
+/* Nested headings slightly smaller */
+.sc-toc__body ul ul a { font-size: var(--text-xs); }

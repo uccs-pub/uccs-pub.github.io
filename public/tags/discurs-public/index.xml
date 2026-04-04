@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discurs Public on Unde Cuvintele Capătă Sens</title>
+    <link>https://uccs.codeberg.page/tags/discurs-public/</link>
+    <description>Recent content in Discurs Public on Unde Cuvintele Capătă Sens</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Apr 2026 19:37:59 +0300</lastBuildDate>
+    <atom:link href="https://uccs.codeberg.page/tags/discurs-public/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Titlul articolului</title>
+      <link>https://uccs.codeberg.page/cultural/test-article-1/</link>
+      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
+      <guid>https://uccs.codeberg.page/cultural/test-article-1/</guid>
+      <description>Un rezumat scurt, clar, bun și pentru list pages.</description>
+    </item>
+  </channel>
+</rss>
