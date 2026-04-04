@@ -18,17 +18,16 @@ echo "==> Pushing master to GitHub and Codeberg"
 git push github master
 git push codeberg master
 
-echo "==> Committing pages branch in public/"
-cd public
-git add -A
-if ! git diff --cached --quiet; then
-  git commit -m "$MSG"
+echo "==> Committing generated site in public/"
+git -C public add -A
+if ! git -C public diff --cached --quiet; then
+  git -C public commit -m "$MSG"
 else
-  echo "No changes to commit on pages"
+  echo "No changes to commit in public repo"
 fi
 
-echo "==> Pushing pages to GitHub and Codeberg"
-git push github pages
-git push codeberg pages
+echo "==> Pushing public HEAD to pages on both remotes"
+git -C public push github HEAD:pages
+git -C public push codeberg HEAD:pages
 
 echo "==> Done"
