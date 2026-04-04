@@ -1,1 +1,5 @@
-Hello
+---
+title: "Home"
+---
+
+Welcome to UCCS.
