@@ -26,8 +26,10 @@ else
   echo "No changes to commit in public repo"
 fi
 
-echo "==> Pushing public HEAD to pages on both remotes"
-git -C public push github HEAD:pages
-git -C public push codeberg HEAD:pages
+echo "==> Fetching remote pages branches"
+git -C public fetch github pages
+git -C public fetch codeberg pages
 
-echo "==> Done"
+echo "==> Pushing public HEAD to pages on both remotes"
+git -C public push --force-with-lease github HEAD:pages
+git -C public push --force-with-lease codeberg HEAD:pages
