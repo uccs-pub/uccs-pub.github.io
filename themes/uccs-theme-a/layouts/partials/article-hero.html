@@ -1,0 +1,60 @@
+{{- /* ─────────────────────────────────────────────────────────────
+  Partial: article-hero.html (image BG + text overlay)
+*/ -}}
+
+{{- $page        := .page -}}
+{{- $layout      := .layout | default "featured-hero" -}}
+{{- $showSection := .showSection | default false -}}
+
+{{- $img := false -}}
+{{- with $page.Params.cover -}}
+  {{- with $page.Resources.GetMatch . -}}
+    {{- $img = . -}}
+  {{- end -}}
+{{- end -}}
+
+<a href="{{ $page.Permalink }}"
+   class="{{ $layout }}{{ if not $img }} {{ $layout }}--text{{ end }}"
+   aria-label="Citește: {{ $page.Title }}">
+
+  {{- if $img -}}
+  <!-- Image background + dark overlay -->
+  <div class="{{ $layout }}-media">
+    <img src="{{ $img.RelPermalink }}"
+         alt="{{ $page.Params.coveralt | default $page.Title }}"
+         class="{{ $layout }}-img"
+         loading="eager"
+         decoding="async">
+    <div class="{{ $layout }}-overlay"></div>
+  </div>
+  {{- end -}}
+
+  <div class="{{ $layout }}-body">
+    <div class="{{ $layout }}-eyebrow">
+      <span class="{{ $layout }}-label">{{ $page.Section }}</span>
+      <span class="{{ $layout }}-badge">Articol recomandat</span>
+    </div>
+
+    <h2 class="{{ $layout }}-title">{{ $page.Title }}</h2>
+
+    {{ with $page.Params.description -}}
+      <p class="{{ $layout }}-desc">{{ . }}</p>
+    {{ end }}
+
+    <div class="{{ $layout }}-footer">
+      <div class="{{ $layout }}-meta">
+        <span>{{ $page.Date.Format "2 January 2006" }}</span>
+        {{- if or $page.Params.authors $page.Params.author -}}
+          <span class="meta-sep" aria-hidden="true">·</span>
+          {{- if $page.Params.authors -}}
+            <span>{{ range $i, $a := $page.Params.authors }}{{ if $i }}, {{ end }}{{ $a }}{{ end }}</span>
+          {{- else -}}
+            <span>{{ $page.Params.author }}</span>
+          {{- end -}}
+        {{- end -}}
+      </div>
+      <span class="{{ $layout }}-cta" aria-hidden="true">Citește →</span>
+    </div>
+  </div>
+
+</a>

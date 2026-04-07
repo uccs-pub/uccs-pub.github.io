@@ -1,0 +1,27 @@
+# Upcoming article schedule
+# Set enabled: false to hide the entire timetable block.
+# publish_date: ISO 8601 with timezone offset (Romania = +03:00 EEST / +02:00 EET)
+# status: confirmed | draft | tentative
+
+enabled: true
+badge: "Revistă lunară"
+
+posts:
+  - title: "Titlul articolului următor"
+    section: "Polis"
+    description: "O scurtă descriere a temei care urmează — editează în data/upcoming.yaml."
+    publish_date: "2026-04-07T11:00:00+03:00"
+    author: "Velcea-Petru"
+    status: "confirmed"
+  - title: "Titlul articolului următor"
+    section: "Polis"
+    description: "O scurtă descriere a temei care urmează — editează în data/upcoming.yaml."
+    publish_date: "2026-04-07T11:00:00+03:00"
+    author: "Velcea-Petru"
+    status: "confirmed"
+  - title: "Titlul articolului următor"
+    section: "Polis"
+    description: "O scurtă descriere a temei care urmează — editează în data/upcoming.yaml."
+    publish_date: "2026-04-07T11:00:00+03:00"
+    author: "Velcea-Petru"
+    status: "confirmed"

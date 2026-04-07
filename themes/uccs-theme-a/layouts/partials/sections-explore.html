@@ -1,0 +1,94 @@
+{{- /*
+  Partial: sections-explore
+  Renders the "Explorează" section grid by scraping section _index.md metadata.
+  No data/sections.yaml dependency.
+
+  Expected section index front matter (content/<slug>/_index.md):
+    ---
+    title: "UCCS Analyticus"
+    tagline: "Analiză rece, fără isterie"
+    description: "Despre instituții, idei și mecanisme sociale."
+    # optional: pin a specific article
+    # featured: "/analyticus/un-articol-cheie/"
+    editor: "Velcea-Petru"
+    content_type: "Analize"
+    ---
+
+  Styled by homepage.css (.section-explore-*).
+*/ -}}
+
+{{ $sections := where site.Sections "Kind" "section" }}
+{{ if not $sections }}
+  {{ return }}
+{{ end }}
+
+<section>
+  
+
+  <div class="team-section-header">
+    <p class="team-section-eyebrow" aria-hidden="true">Explorează</p>
+    <h2 class="team-section-title">
+      Traseele tematice
+      <em class="team-section-subtitle">nu clickbait</em>
+    </h2>
+  </div>
+
+  <ul class="section-explore-grid" role="list">
+    {{ range $sections }}
+      {{ $section := . }}
+      {{ $slug   := $section.File.TranslationBaseName }}
+      {{ $count  := len $section.RegularPages }}
+
+      {{/* Determine featured URL: manual override or latest article */}}
+      {{ $featuredURL := "" }}
+      {{ if $section.Params.featured }}
+        {{ $featuredURL = $section.Params.featured }}
+      {{ else if gt $count 0 }}
+        {{ $latest := first 1 (where $section.RegularPages "Date" "<=" now) }}
+        {{ with index $latest 0 }}
+          {{ $featuredURL = .RelPermalink }}
+        {{ end }}
+      {{ end }}
+
+      <li class="section-explore-card" data-section="{{ $slug }}">
+
+        <div class="section-explore-card-top">
+          <span class="section-explore-label">{{ $section.Title }}</span>
+          {{ if gt $count 0 }}
+            <span class="section-explore-count" aria-label="{{ $count }} articole">
+              {{ $count }}
+            </span>
+          {{ end }}
+        </div>
+
+        <p class="section-explore-tagline">
+          {{ with $section.Params.tagline }}{{ . }}{{ else }}{{ $section.Title }}{{ end }}
+        </p>
+
+        <p class="section-explore-desc">
+          {{ with $section.Params.description }}{{ . }}{{ else }}{{ $section.Summary | plainify | truncate 120 }}{{ end }}
+        </p>
+
+        <div class="section-explore-actions">
+          {{ if $featuredURL }}
+            <a href="{{ $featuredURL }}"
+               class="section-explore-link section-explore-link--primary">
+              Începe de aici →
+            </a>
+            <a href="{{ $section.RelPermalink }}"
+               class="section-explore-link">
+              Toate articolele
+            </a>
+          {{ else }}
+            <a href="{{ $section.RelPermalink }}"
+               class="section-explore-link section-explore-link--primary">
+              Explorează →
+            </a>
+          {{ end }}
+        </div>
+
+      </li>
+    {{ end }}
+  </ul>
+
+</section>

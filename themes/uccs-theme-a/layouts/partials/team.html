@@ -1,0 +1,31 @@
+<div class="team-list-wrapper">
+  {{ with site.Data.team.intro }}
+  <div class="team-section-header">
+    <p class="team-section-eyebrow">{{ .eyebrow }}</p>
+    <h2 class="team-section-title">
+      {{ .title }}
+      {{ with .subtitle }}<em class="team-section-subtitle">{{ . }}</em>{{ end }}
+    </h2>
+  </div>
+  {{ end }}
+
+  <div class="team-list">
+    {{ range where site.Data.team.members "active" true }}
+    <article class="team-member">
+      <div class="team-member__top">
+        <div class="team-member__avatar">
+          <img src="/team/{{ .photo }}" alt="{{ .display_name }}" class="team-member__photo" width="64" height="64" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <span aria-hidden="true" style="display:none">{{ .initial }}</span>
+        </div>
+        <div class="team-member__identity">
+          <h3 class="team-member__name">{{ .display_name }}</h3>
+          <span class="team-member__role">{{ .role }}</span>
+        </div>
+      </div>
+      <div class="team-member__bio">
+        {{ range .bio }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>

@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/discurs-public/</loc>
-    <lastmod>2026-04-07T12:24:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/institu%C8%9Bii/</loc>
-    <lastmod>2026-04-07T12:24:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-04-07T16:54:45+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/analyticus/titlul-articolului/</loc>
-    <lastmod>2026-04-07T12:24:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cultural/titlul-articolului/</loc>
-    <lastmod>2026-04-04T18:00:00+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/argument/</loc>
     <lastmod>2026-04-07T16:54:45+03:00</lastmod>
   </url><url>
@@ -26,7 +11,13 @@
     <loc>http://localhost:1313/tags/ghid/</loc>
     <lastmod>2026-04-07T16:54:45+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/analyticus/how-debate-teaches-intellectual-honesty/</loc>
+    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/cultural/how-debate-teaches-intellectual-honesty/</loc>
+    <lastmod>2026-04-07T16:54:45+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-07T16:54:45+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/analyticus/</loc>
@@ -35,19 +26,23 @@
     <loc>http://localhost:1313/authors/</loc>
     <lastmod>2026-04-07T12:24:15+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/cultural/</loc>
-    <lastmod>2026-04-04T19:37:59+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/dezbateri/</loc>
+    <lastmod>2026-04-07T12:24:15+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/despre/</loc>
     <lastmod>2026-04-07T12:24:15+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-04T15:56:03+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/despre/</loc>
-    <lastmod>2026-04-07T12:24:15+03:00</lastmod>
+    <loc>http://localhost:1313/contact/</loc>
+  </url><url>
+    <loc>http://localhost:1313/doneaza/</loc>
   </url><url>
     <loc>http://localhost:1313/themes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cultural/</loc>
+    <lastmod>2026-04-04T19:37:59+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/velcea-petru/</loc>
     <lastmod>2026-04-07T12:24:15+03:00</lastmod>

@@ -1,0 +1,67 @@
+{{- /* ─────────────────────────────────────────────────────────────
+  Partial: article-card.html
+  Context (dict):
+    page         Page    Required.
+    layout       string  "grid" (default) or "list"
+    showSection  bool    Optional. Default false.
+───────────────────────────────────────────────────────────────── */ -}}
+
+{{- $page        := .page -}}
+{{- $layout      := .layout      | default "grid" -}}
+{{- $showSection := .showSection | default false -}}
+{{- $authorSlug  := $page.Params.author | urlize -}}
+{{- $authorPage  := site.GetPage (printf "/autori/%s" $authorSlug) -}}
+{{- $coverRes    := $page.Resources.GetMatch $page.Params.cover -}}
+
+{{- $thumbLink  := "article-thumb-link" -}}
+{{- $thumb      := "article-thumb" -}}
+{{- $thumbPH    := "article-thumb-placeholder" -}}
+{{- $info       := "article-info" -}}
+{{- $titleClass := "article-title" -}}
+{{- if eq $layout "grid" -}}
+  {{- $thumbLink  = "article-grid-thumb-link" -}}
+  {{- $thumb      = "article-grid-thumb" -}}
+  {{- $thumbPH    = "article-grid-thumb-placeholder" -}}
+  {{- $info       = "article-grid-info" -}}
+  {{- $titleClass = "article-grid-title" -}}
+{{- end -}}
+
+<article>
+  {{- with $coverRes -}}
+  <a href="{{ $page.RelPermalink }}" class="{{ $thumbLink }}" tabindex="-1">
+    <img src="{{ .RelPermalink }}" alt="" class="{{ $thumb }}">
+  </a>
+  {{- else -}}
+  <div class="{{ $thumbPH }}"></div>
+  {{- end -}}
+
+  <div class="{{ $info }}">
+    {{- if $showSection -}}
+    {{- with $page.CurrentSection -}}
+    <span class="article-meta meta-section">{{ .Title }}</span>
+    {{- end -}}
+    {{- end -}}
+
+    <h2 class="{{ $titleClass }}">
+      <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+    </h2>
+
+    {{- with $page.Params.subtitle -}}
+    <p class="article-subtitle">{{ . }}</p>
+    {{- end -}}
+
+    <div class="article-meta">
+      {{- with $page.Date -}}
+      <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>
+      {{- end -}}
+      {{- if $page.Params.author -}}
+      <span class="meta-sep">·</span>
+      {{- with $authorPage -}}
+      <a href="{{ .RelPermalink }}" class="article-author">{{ $page.Params.author }}</a>
+      {{- else -}}
+      <span class="article-author">{{ $page.Params.author }}</span>
+      {{- end -}}
+      {{- end -}}
+    </div>
+  </div>
+</article>

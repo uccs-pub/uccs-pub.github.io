@@ -1,0 +1,51 @@
+# Homepage section cards — short editorial taglines for the "Explorează" grid.
+# featured: relative URL to a specific article to show as "Începe de aici →"
+#           leave empty ("") to fall back to the section index link.
+
+sections:
+  - slug: polis
+    name: Polis
+    tagline: Politică și democrație
+    description: >
+      Analize despre democrație, cetățenie și viața politică — ce înseamnă
+      să gândești politic fără să cazi în tabere oarbe.
+    featured: ""
+
+  - slug: agora
+    name: Agora
+    tagline: Discurs public și media
+    description: >
+      Eseuri despre cum vorbim în spațiul public — manipulare, retorică
+      și cultura dezbaterii în România de azi.
+    featured: ""
+
+  - slug: educatie
+    name: Educație
+    tagline: Școală și învățare
+    description: >
+      Reflecții despre ce înseamnă o educație bună și cum se formează
+      gândirea critică în și în afara sălii de clasă.
+    featured: ""
+
+  - slug: tech
+    name: Tech
+    tagline: Infrastructuri digitale
+    description: >
+      Cum remodelează algoritmii societatea, ce facem cu asta și de ce
+      contează să înțelegi tehnologia înainte să o folosești.
+    featured: ""
+
+  - slug: litere
+    name: Litere
+    tagline: Literatură contemporană
+    description: >
+      Recenzii, eseuri și cronici literare — de ce mai contează cărțile
+      și ce spun ele despre lumea în care trăim.
+    featured: ""
+
+  - slug: debate
+    name: Dezbatere
+    tagline: Dezbatere & Retorică
+    description: >
+      Dialectică, logică clasică, instrumente pentru argumentare onestă și gândire clară.
+    featured: ""

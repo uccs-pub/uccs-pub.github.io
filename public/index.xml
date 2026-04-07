@@ -8,31 +8,45 @@
     <language>ro-RO</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Titlul articolului</title>
-      <link>http://localhost:1313/analyticus/titlul-articolului/</link>
-      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/analyticus/titlul-articolului/</guid>
-      <description>Un rezumat scurt, clar, bun și pentru list pages.</description>
-    </item>
-    <item>
-      <title>Titlul articolului</title>
-      <link>http://localhost:1313/cultural/titlul-articolului/</link>
-      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/cultural/titlul-articolului/</guid>
-      <description>Un rezumat scurt, clar, bun și pentru list pages.</description>
+      <title>How debate teaches intellectual honesty</title>
+      <link>http://localhost:1313/analyticus/how-debate-teaches-intellectual-honesty/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analyticus/how-debate-teaches-intellectual-honesty/</guid>
+      <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How debate teaches intellectual honesty</title>
       <link>http://localhost:1313/cultural/how-debate-teaches-intellectual-honesty/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cultural/how-debate-teaches-intellectual-honesty/</guid>
-      <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e&#xA;mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed&#xA;do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua.&#xA;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Home</title>
+      <title>How debate teaches intellectual honesty</title>
+      <link>http://localhost:1313/dezbateri/how-debate-teaches-intellectual-honesty/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dezbateri/how-debate-teaches-intellectual-honesty/</guid>
+      <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Despre noi</title>
       <link>http://localhost:1313/despre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/despre/</guid>
+      <description>&lt;h1 id=&#34;cum-scriem&#34;&gt;Cum scriem?&lt;/h1&gt;&#xA;&lt;p&gt;Fiecare text publicat pe UCCS trebuie să îndeplinească trei condiții: să clarifice&#xA;o problemă reală, să reziste la verificări și să nu degradeze spațiul public prin&#xA;care circulă. Critica noastră se îndreaptă spre idei și instituții, nu spre persoane.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Welcome to UCCS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>http://localhost:1313/doneaza/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doneaza/</guid>
       <description>&lt;p&gt;Welcome to UCCS.&lt;/p&gt;</description>
     </item>
   </channel>

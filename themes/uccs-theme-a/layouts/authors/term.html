@@ -11,7 +11,7 @@
     {{ end }}
     <div class="author-bio">
       <h1>{{ .Title }}</h1>
-      {{ with .Params.shortbio }}<p>{{ . }}</p>{{ end }}
+      {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
       {{ partial "author-social.html" . }}
     </div>
   </div>
@@ -54,10 +54,11 @@
 
 
 
-  {{/* Article list */}}
   {{ partial "article-render.html" (dict
-    "pages"  ($articles.ByDate.Reverse)
-    "layout" "list"
+    "pages"     site.RegularPages
+    "author"    (.Title | urlize)
+    "layout"    "list"
+    "hero"      true
+    "heading"   (printf "Articole de %s" .Title)
   ) }}
-
 {{ end }}

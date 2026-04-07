@@ -1,7 +1,6 @@
 {{- /*
   layouts/index.html
-  Homepage shell. All content composition is driven by content/_index.md
-  using shortcodes. This layout only injects the homepage-specific CSS.
+  Homepage shell.
 */ -}}
 
 {{ define "head_extra" }}
@@ -9,5 +8,25 @@
 {{ end }}
 
 {{ define "main" }}
+    {{ partial "article-render.html" (dict
+    "pages"     site.RegularPages
+    "layout"    "grid"
+    "hero"      true
+    "heading"   (printf "Ultimele articole")
+    "limit"     4
+  ) }}
+  {{ partial "uccs-intro.html"}}
+  <section class="team">
+    {{ partial "team.html" . }}
+  </section>
+  <section class="upcoming">
+    {{ $upcoming := site.Data.posts.upcoming }}
+    {{ if $upcoming }}
+    {{ range ($upcoming | first 5) }}
+    {{ partial "upcoming-posts.html" . }}
+    {{ end }}
+    {{ end }}
+  </section>
+  {{ partial "sections-explore.html" . }}
   {{ .Content }}
 {{ end }}

@@ -5,7 +5,7 @@
     authorVisible = true
 
 [editorial]
-    mainSections = ["analyticus", "cultural"]
+    mainSections = ["analyticus", "cultural", "dezbateri"]
     showReadingTime = true
     showLastmod = true
     showChangelog = true
@@ -13,3 +13,7 @@
 [home]
     introTitle = "Unde cuvintele capătă sens"
     introText = "Analiză publică lucidă, fără isterie, fără cultul personalității, fără dezumanizare."
+
+[toc]
+  toc = true
+  tocMinWordCount = 300

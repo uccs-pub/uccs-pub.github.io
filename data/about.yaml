@@ -1,0 +1,29 @@
+# data/about.yaml
+# Editorial content — edit here, reflects on homepage + Despre page automatically.
+
+intro:
+  eyebrow: "Ce este UCCS?"
+  manifesto: "Revistă editorială independentă cu substanță, nu doar formă."
+  paragraphs:
+    - "UCCS explică fenomene politice, sociale și culturale într-un limbaj inteligibil.
+       Nu urmărim viralitate și nu scriem pentru algoritmi, ci pentru cititorul care
+       vrea să înțeleagă un fenomen înainte să îl judece."
+    - "O dată pe lună, UCCS publică analize și eseuri care pun în ordine politica,
+       societatea și cultura — fără clickbait, fără cultul personalității,
+       cu rigoare intelectuală."
+
+values:
+  - title: "Substanță"
+    body: "Fiecare articol pornește de la o întrebare reală și se termină cu un răspuns
+           onest — nu cu un titlu sclipitor care acoperă un gol de idei."
+  - title: "Claritate"
+    body: "Complexitatea nu e un motiv de obscurantism. Dacă nu poți explica simplu,
+           nu ai înțeles suficient de bine."
+  - title: "Independență"
+    body: "UCCS nu are finanțatori instituționali, nu are agende editoriale ascunse
+           și nu are parteneriate comerciale care să influențeze conținutul."
+
+founders_intro:
+  eyebrow: "Echipă"
+  title: "Cine stă în"
+  subtitle: "spatele paginii."

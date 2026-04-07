@@ -1,6 +1,7 @@
 ---
 title: "Velcea Petru"
-bio: "Jurnalist, cercetător, pasionat de politică comparată."
+description: "Jurnalist, cercetător, pasionat de politică comparată."
+avatar: "avatar.png"
 cv: "https://example.com/cv.pdf"
 social:
   instagram: "https://instagram.com/username"
@@ -8,5 +9,3 @@ social:
   github: "https://github.com/username"
   mysite: "https://example.com"   # unknown key → generic icon
 ---
-
-Redactor șef. Arbitru de dezbateri. Eu scriu, tu ignori, toții credem că ajutăm.

@@ -9,6 +9,8 @@ tags:
     - argument
     - ghid
     - dezbateri
+params:
+  toc: true
 ---
 
 # Dezbateri
@@ -119,7 +121,23 @@ Când elevii învață să dezbată corect, învață democrația în practică.
 
 ### Notă de subsol[^1]
 
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
 Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+Această statistică provine dintr-un studiu longitudinal efectuat pe 1.247 elevi din 14 școli americane între 2018-2022.
+
 
 ### Referințe suplimentare
 
