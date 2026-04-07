@@ -284,3 +284,29 @@ main {
   margin-inline: auto;
   padding-inline: var(--side-pad);
 }
+
+/* ============================================================
+ *  4b. SELECTIONN
+ * ============================================================ */
+
+/* Text selection — dynamic by theme */
+::selection {
+  background: var(--color-primary-highlight);
+  color: var(--color-text);
+}
+
+[data-theme="dark"] ::selection {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+/* Optional: Firefox */
+::-moz-selection {
+  background: var(--color-primary-highlight);
+  color: var(--color-text);
+}
+
+[data-theme="dark"] ::-moz-selection {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}

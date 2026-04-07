@@ -2,7 +2,6 @@
 title: "How debate teaches intellectual honesty"
 publishDate: 2026-04-01
 subtitle: "A reflection on argument, listening, and civic education."
-eyebrow: "Protinus orbes"
 lead: "Debatarea nu e doar competiție verbală, ci antrenament pentru gândire clară. Învăța să pierzi un argument fără să pierzi respectul e arta supremă a inteligenței."
 author: "velcea-petru"
 cover: "cover.png"
@@ -30,6 +29,7 @@ Aici veți găsi un paragraf obișnuit cu **text bold** și _text italic_. Liste
 3. Ultimul punct
 
 Lista neordonată:
+
 - Element 1
 - Element 2 cu **bold interior**
 - Element 3

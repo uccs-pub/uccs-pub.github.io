@@ -24,10 +24,18 @@ theme = "uccs-theme-a"
     page = ["HTML"]
 
 [markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            unsafe = false
-    [markup.tableOfContents]
-        startLevel = 2
-        endLevel = 3
-        ordered = false
+defaultMarkdownHandler = "pandoc"
+
+[security]
+  enableInlineShortcodes = false
+
+  [security.exec]
+    allow = ['^git$', '^pandoc$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE|PROGRAMDATA)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']

@@ -8,18 +8,11 @@
     <language>ro-RO</language>
     <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>UCCS</title>
-      <link>http://localhost:1313/authors/uccs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/uccs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Velcea Petru</title>
       <link>http://localhost:1313/authors/velcea-petru/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/authors/velcea-petru/</guid>
-      <description>&lt;p&gt;Redactor șef. Arbitru de dezbateri. Eu scriu, tu ignori, toții credem că ajutăm.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Redactor șef. Arbitru de dezbateri. Eu scriu, tu ignori, toții credem&#xA;că ajutăm.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

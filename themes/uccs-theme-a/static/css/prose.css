@@ -87,7 +87,7 @@
 }
 
 .pg-standalone__body p {
-  margin-bottom: var(--space-5);
+  margin-top: var(--space-5);
   max-width: 70ch;
   line-height: 1.78;
 }
@@ -187,18 +187,14 @@ h4 {
     margin-bottom: var(--space-2);
 }
 
-p {
-    margin-bottom: var(--space-5);
-}
-
-ul,
-ol {
-    margin-bottom: var(--space-5);
+ul, ol {
     padding-left: var(--space-6);
+    margin-top: calc(-1 * var(--space-2) + var(--space-1));
 }
 
 li {
     margin-bottom: var(--space-2);
+    margin-top: calc(-1 * var(--space-2) + var(--space-1));
 }
 
 strong { font-weight: 600; }
@@ -206,8 +202,8 @@ em { font-style: italic; }
 
 blockquote {
     margin-block: var(--space-8);
-    padding: var(--space-6) var(--space-8);
-    background: var(--color-surface);
+    padding: var(--space-6) var(--space-8) var(--space-2) var(--space-8);
+    background: #f2ede4;
     border-radius: var(--radius-lg);
     position: relative;
 }
@@ -398,8 +394,6 @@ tbody tr:hover td { background: var(--color-surface); }
 .footnotes ol { padding-left: var(--space-5); }
 
 .footnotes li {
-    font-family: var(--font-ui);
-    font-size: var(--text-xs);
     color: var(--color-text-muted);
     margin-bottom: var(--space-3);
     line-height: 1.6;
@@ -407,8 +401,6 @@ tbody tr:hover td { background: var(--color-surface); }
 }
 
 sup a {
-    font-family: var(--font-ui);
-    font-size: 0.7em;
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
@@ -425,6 +417,57 @@ sup a:hover { text-decoration: underline; }
 }
 
 .footnote-backref:hover { color: var(--color-primary); }
+
+.footnotes hr { display: none; }
+
+/* ARTICLE TAGS */
+.tag-list {
+  margin-left: var(--space-1);
+  text-decoration: none;
+  color: var(--color-text-faint);
+  padding-top: var(--space-3);
+}
+
+.tag-list:has(ol > li)::before {
+  content: 'Etichete';
+  display: block;
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-4);
+}
+
+.tag-list ol {
+  padding-left: var(--space-5);
+  list-style: none; /* scoate numerele */
+  margin: 0;
+  padding: 0;
+  display: flex; /* INLINE layout */
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag-list li {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+  line-height: 1.6;
+  max-width: 64ch;
+}
+
+.tag-list a {
+  color: var(--color-text-muted);
+  text-decoration: underline; /* UNDERLINED */
+  text-underline-offset: 0.1em; /* spațiu sub linie */
+  border-radius: 2px;
+}
+
+.tag-list a:hover {
+  text-decoration: underline wavy; /* efect hover fain */
+  color: var(--color-primary-dark);
+}
 
 /* ============================================================
  * 11a. ARTICLE BODY — extended headings
@@ -577,3 +620,44 @@ h6 {
 
 /* Nested headings slightly smaller */
 .sc-toc__body ul ul a { font-size: var(--text-xs); }
+
+/* YAML Details */
+
+.pg-standalone__meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: hsl(0 0% 50%); /* Muted text */
+  margin-top: var(--space-1)
+}
+
+.pg-standalone__author {
+  font-weight: 600;
+  color: hsl(0 0% 30%);
+}
+
+.pg-standalone__author a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pg-standalone__author a:hover {
+  text-decoration: underline;
+}
+
+.pg-standalone__date,
+.pg-standalone__category {
+  color: inherit; /* Muted */
+}
+
+/* Dark mode support (dacă ai) */
+@media (prefers-color-scheme: dark) {
+  .pg-standalone__meta {
+    border-bottom-color: hsl(0 0% 20%);
+    color: hsl(0 0% 60%);
+  }
+
+  .pg-standalone__author {
+    color: hsl(0 0% 80%);
+  }
+}
