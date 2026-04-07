@@ -202,7 +202,7 @@ em { font-style: italic; }
 
 blockquote {
     margin-block: var(--space-8);
-    padding: var(--space-6) var(--space-8) var(--space-2) var(--space-8);
+    padding: var(--space-6) var(--space-8);
     background: #f2ede4;
     border-radius: var(--radius-lg);
     position: relative;
@@ -530,6 +530,47 @@ h6 {
 /* ============================================================
  * 15. TOC SHORTCODE — sc-toc
  * ============================================================ */
+
+.toc {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-left: 4px solid #007bff;
+  margin: 2rem 0;
+}
+
+.toc ol, .toc ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.toc ol {
+  list-style: none;
+  padding-left: 0;
+}
+.toc li {
+  margin: 0.5rem 0;
+}
+.toc a {
+  color: #495057;
+  text-decoration: none;
+  font-weight: 500;
+}
+.toc a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/*old*/
+
 
 .sc-toc {
   margin-bottom: var(--space-10);

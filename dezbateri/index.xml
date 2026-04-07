@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UCCS Dezbateri Academice on Unde Cuvintele Capătă Sens</title>
+    <title>Dezbateri Academice on Unde Cuvintele Capătă Sens</title>
     <link>https://uccs.codeberg.page/dezbateri/</link>
-    <description>Recent content in UCCS Dezbateri Academice on Unde Cuvintele Capătă Sens</description>
+    <description>Recent content in Dezbateri Academice on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
     <language>ro-RO</language>
     <atom:link href="https://uccs.codeberg.page/dezbateri/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How debate teaches intellectual honesty</title>
+      <link>https://uccs.codeberg.page/dezbateri/how-debate-teaches-intellectual-honesty/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://uccs.codeberg.page/dezbateri/how-debate-teaches-intellectual-honesty/</guid>
+      <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
