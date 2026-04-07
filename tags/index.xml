@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
     <language>ro-RO</language>
-    <lastBuildDate>Tue, 07 Apr 2026 12:24:15 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 15:00:00 +0300</lastBuildDate>
     <atom:link href="https://uccs.codeberg.page/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Discurs Public</title>
@@ -20,6 +20,27 @@
       <link>https://uccs.codeberg.page/tags/institu%C8%9Bii/</link>
       <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
       <guid>https://uccs.codeberg.page/tags/institu%C8%9Bii/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Argument</title>
+      <link>https://uccs.codeberg.page/tags/argument/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://uccs.codeberg.page/tags/argument/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dezbateri</title>
+      <link>https://uccs.codeberg.page/tags/dezbateri/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://uccs.codeberg.page/tags/dezbateri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ghid</title>
+      <link>https://uccs.codeberg.page/tags/ghid/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://uccs.codeberg.page/tags/ghid/</guid>
       <description></description>
     </item>
   </channel>
