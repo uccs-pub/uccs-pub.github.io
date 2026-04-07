@@ -8,6 +8,13 @@
     <language>ro-RO</language>
     <atom:link href="https://uccs.codeberg.page/cultural/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Titlul articolului</title>
+      <link>https://uccs.codeberg.page/cultural/titlul-articolului/</link>
+      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
+      <guid>https://uccs.codeberg.page/cultural/titlul-articolului/</guid>
+      <description>Un rezumat scurt, clar, bun și pentru list pages.</description>
+    </item>
+    <item>
       <title>How debate teaches intellectual honesty</title>
       <link>https://uccs.codeberg.page/cultural/how-debate-teaches-intellectual-honesty/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
