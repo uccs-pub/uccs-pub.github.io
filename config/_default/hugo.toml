@@ -11,6 +11,7 @@ theme = "uccs-theme-a"
 [permalinks]
     analyticus = "/analyticus/:slug/"
     cultural = "/cultural/:slug/"
+    dezbateri = "/dezbateri/:slug/"
 
 [taxonomies]
     tag = "tags"

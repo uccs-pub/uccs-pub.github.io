@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Unde Cuvintele Capătă Sens</title>
-    <link>https://uccs.codeberg.page/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 19:37:59 +0300</lastBuildDate>
-    <atom:link href="https://uccs.codeberg.page/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ro-RO</language>
+    <lastBuildDate>Sat, 04 Apr 2026 18:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Discurs Public</title>
-      <link>https://uccs.codeberg.page/tags/discurs-public/</link>
+      <link>http://localhost:1313/tags/discurs-public/</link>
       <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
-      <guid>https://uccs.codeberg.page/tags/discurs-public/</guid>
+      <guid>http://localhost:1313/tags/discurs-public/</guid>
       <description></description>
     </item>
     <item>
       <title>Instituții</title>
-      <link>https://uccs.codeberg.page/tags/institu%C8%9Bii/</link>
+      <link>http://localhost:1313/tags/institu%C8%9Bii/</link>
       <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
-      <guid>https://uccs.codeberg.page/tags/institu%C8%9Bii/</guid>
+      <guid>http://localhost:1313/tags/institu%C8%9Bii/</guid>
       <description></description>
     </item>
   </channel>
