@@ -143,7 +143,7 @@ a.article-author:hover {
 /* Thumbnail */
 .article-thumb-link {
   display: block;
-  width: 38%;
+  width: 35%;
   flex-shrink: 0;
   overflow: hidden;
   aspect-ratio: 16 / 9;

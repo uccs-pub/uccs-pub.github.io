@@ -8,6 +8,13 @@
     <language>ro-RO</language>
     <atom:link href="http://localhost:1313/cultural/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Titlul articolului</title>
+      <link>http://localhost:1313/cultural/titlul-articolului/</link>
+      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/cultural/titlul-articolului/</guid>
+      <description>Un rezumat scurt, clar, bun și pentru list pages.</description>
+    </item>
+    <item>
       <title>How debate teaches intellectual honesty</title>
       <link>http://localhost:1313/cultural/how-debate-teaches-intellectual-honesty/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
