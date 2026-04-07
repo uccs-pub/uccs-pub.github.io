@@ -6,19 +6,39 @@
     <description>Recent content in Tags on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
     <language>ro-RO</language>
-    <lastBuildDate>Sat, 04 Apr 2026 18:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Argument</title>
+      <link>http://localhost:1313/tags/argument/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/argument/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dezbateri</title>
+      <link>http://localhost:1313/tags/dezbateri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dezbateri/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Discurs Public</title>
       <link>http://localhost:1313/tags/discurs-public/</link>
-      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/discurs-public/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ghid</title>
+      <link>http://localhost:1313/tags/ghid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ghid/</guid>
       <description></description>
     </item>
     <item>
       <title>Instituții</title>
       <link>http://localhost:1313/tags/institu%C8%9Bii/</link>
-      <pubDate>Sat, 04 Apr 2026 18:00:00 +0300</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/institu%C8%9Bii/</guid>
       <description></description>
     </item>

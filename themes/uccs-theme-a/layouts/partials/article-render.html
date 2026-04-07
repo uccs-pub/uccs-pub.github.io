@@ -1,44 +1,135 @@
-{{- /*
+{{- /* ─────────────────────────────────────────────────────────────
   Partial: article-render.html
-  The single article rendering engine. Replaces article-grid.html
-  and article-list.html entirely.
-
   Context (dict):
-    pages    Pages   Required. Pre-filtered, pre-sorted pages collection.
-    layout   string  "grid" (default) or "list"
-    heading  string  Optional. Renders a section label above the collection.
+    pages        Pages   Required.
+    layout       string  "grid" (default) or "list"
+    heading      string  Optional.
+    limit        int     Optional.
+    skip         int     Optional.
+    showSection  bool    Optional. Default false.
+───────────────────────────────────────────────────────────────── */ -}}
 
-  Usage from layout templates:
-    {{ partial "article-render.html" (dict "pages" .Pages.ByDate.Reverse "layout" "list") }}
+{{- $pages       := .pages -}}
+{{- $layout      := .layout      | default "grid" -}}
+{{- $heading     := .heading     | default "" -}}
+{{- $limit       := .limit       | default 0 -}}
+{{- $skip        := .skip        | default 0 -}}
+{{- $showSection := .showSection | default false -}}
 
-  Usage via shortcode (see shortcodes/articles.html):
-    {{< articles layout="grid" limit="11" skip="1" heading="Ultimele articole" >}}
-*/ -}}
-
-{{- $pages   := .pages -}}
-{{- $layout  := .layout  | default "grid" -}}
-{{- $heading := .heading | default "" -}}
-
-{{/* Exclude standalone pages in case the caller forgot */}}
 {{- $pages = where $pages "Params.standalone" "ne" true -}}
+{{- if gt $skip 0  -}}{{- $pages = after $skip  $pages -}}{{- end -}}
+{{- if gt $limit 0 -}}{{- $pages = first $limit $pages -}}{{- end -}}
 
-{{ if and $heading (gt (len $pages) 0) }}
-  <div class="grid-section-header">
-    <h2 class="grid-section-title">{{ $heading }}</h2>
-  </div>
-{{ end }}
+{{- if and $heading (gt (len $pages) 0) -}}
+<h2 class="articles-heading">{{ $heading }}</h2>
+{{- end -}}
 
-{{ if gt (len $pages) 0 }}
-  {{- $isGrid      := eq $layout "grid" -}}
-  {{- $wrapClass   := cond $isGrid "article-grid"      "article-list" -}}
-  {{- $itemClass   := cond $isGrid "article-grid-item" "" -}}
-  {{- $variant     := cond $isGrid "grid"              "list" -}}
+{{- if eq $layout "list" -}}
 
-  <ul class="{{ $wrapClass }}">
-    {{ range $pages }}
-      <li{{ with $itemClass }} class="{{ . }}"{{ end }}>
-        {{ partial "article-card.html" (dict "page" . "variant" $variant) }}
-      </li>
-    {{ end }}
-  </ul>
-{{ end }}
+{{/* ── LIST LAYOUT ── */}}
+<ul class="articles-list">
+  {{- range $pages -}}
+  {{- $page       := . -}}
+  {{- $authorSlug := $page.Params.author | urlize -}}
+  {{- $authorPage := site.GetPage (printf "/autori/%s" $authorSlug) -}}
+  {{- $coverRes   := $page.Resources.GetMatch $page.Params.cover -}}
+  <article>
+
+    {{- with $coverRes -}}
+    <a href="{{ $page.RelPermalink }}" class="article-thumb-link" tabindex="-1">
+      <img src="{{ .RelPermalink }}" alt="" class="article-thumb">
+    </a>
+    {{- else -}}
+    <div class="article-thumb-placeholder"></div>
+    {{- end -}}
+
+    <div class="article-info">
+
+      {{- if $showSection -}}
+      {{- with $page.CurrentSection -}}
+      <span class="article-meta meta-section">{{ .Title }}</span>
+      {{- end -}}
+      {{- end -}}
+
+      <h2 class="article-title">
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+      </h2>
+
+      {{- with $page.Params.subtitle -}}
+      <p class="article-subtitle">{{ . }}</p>
+      {{- end -}}
+
+      <div class="article-meta">
+        {{- with $page.Date -}}
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>
+        {{- end -}}
+        {{- if $page.Params.author -}}
+        <span class="meta-sep">·</span>
+        {{- with $authorPage -}}
+        <a href="{{ .RelPermalink }}" class="article-author">{{ $page.Params.author }}</a>
+        {{- else -}}
+        <span class="article-author">{{ $page.Params.author }}</span>
+        {{- end -}}
+        {{- end -}}
+      </div>
+
+    </div>
+  </article>
+  {{- end -}}
+</ul>
+
+{{- else -}}
+
+{{/* ── GRID LAYOUT ── */}}
+<ul class="articles-grid">
+  {{- range $pages -}}
+  {{- $page       := . -}}
+  {{- $authorSlug := $page.Params.author | urlize -}}
+  {{- $authorPage := site.GetPage (printf "/autori/%s" $authorSlug) -}}
+  {{- $coverRes   := $page.Resources.GetMatch $page.Params.cover -}}
+  <article>
+
+    {{- with $coverRes -}}
+    <a href="{{ $page.RelPermalink }}" class="article-grid-thumb-link" tabindex="-1">
+      <img src="{{ .RelPermalink }}" alt="" class="article-grid-thumb">
+    </a>
+    {{- else -}}
+    <div class="article-grid-thumb-placeholder"></div>
+    {{- end -}}
+
+    <div class="article-grid-info">
+
+      {{- if $showSection -}}
+      {{- with $page.CurrentSection -}}
+      <span class="article-meta meta-section">{{ .Title }}</span>
+      {{- end -}}
+      {{- end -}}
+
+      <h2 class="article-grid-title">
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+      </h2>
+
+      {{- with $page.Params.subtitle -}}
+      <p class="article-subtitle">{{ . }}</p>
+      {{- end -}}
+
+      <div class="article-meta">
+        {{- with $page.Date -}}
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>
+        {{- end -}}
+        {{- if $page.Params.author -}}
+        <span class="meta-sep">·</span>
+        {{- with $authorPage -}}
+        <a href="{{ .RelPermalink }}" class="article-author">{{ $page.Params.author }}</a>
+        {{- else -}}
+        <span class="article-author">{{ $page.Params.author }}</span>
+        {{- end -}}
+        {{- end -}}
+      </div>
+
+    </div>
+  </article>
+  {{- end -}}
+</ul>
+
+{{- end -}}

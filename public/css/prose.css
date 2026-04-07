@@ -12,14 +12,153 @@
  */
 
 /* ============================================================
+ *  16. STANDALONE PAGES — Despre / Contact / Donează
+ * ============================================================ */
+
+/* Full-width override: remove main's side padding for standalone */
+.pg-standalone main {
+  max-width: 100%;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+.pg-standalone {
+  width: 100%;
+}
+
+/* Hero and body are internally constrained for readability */
+.pg-standalone__hero,
+.pg-standalone__body {
+  max-width: var(--site-max-w);
+  margin-inline: auto;
+  padding-inline: var(--side-pad);
+}
+
+.pg-standalone__hero {
+  padding-top:    var(--space-16);
+  padding-bottom: var(--space-12);
+  max-width: 820px;         /* hero text reads better narrower */
+  margin-inline: 0;         /* left-align hero, not centered */
+  padding-inline: var(--side-pad);
+}
+
+.pg-standalone__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-6);
+}
+
+.pg-standalone__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.pg-standalone__subtitle {
+  display: block;
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.pg-standalone__lead {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-top: var(--space-8);
+  max-width: 56ch;
+}
+
+/* Body prose */
+.pg-standalone__body {
+  padding-top:    var(--space-10);
+  padding-bottom: var(--space-20);
+}
+
+.pg-standalone__body p {
+  margin-bottom: var(--space-5);
+  max-width: 70ch;
+  line-height: 1.78;
+}
+
+.pg-standalone__body a { color: var(--color-primary); }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .pg-standalone__hero       { padding-top: var(--space-10); }
+  .pg-standalone__title      { font-size: var(--text-2xl); }
+  .pg-standalone__lead       { font-size: var(--text-base); }
+}
+
+/* ============================================================
+ *  16b. SHORTCODE — section-heading
+ *  Use {{< section-heading >}} instead of ## inside standalone pages.
+ *  Renders as a page-level context switch with generous space.
+ * ============================================================ */
+
+.sc-section-heading {
+  max-width: var(--site-max-w);
+  margin-inline: auto;
+  padding-inline: var(--side-pad);
+  margin-top:    var(--space-20);
+  margin-bottom: var(--space-8);
+}
+
+.sc-section-heading__eyebrow {
+  font-family:    var(--font-ui);
+  font-size:      var(--text-xs);
+  font-weight:    700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color:          var(--color-text-faint);
+  margin-bottom:  var(--space-3);
+}
+
+.sc-section-heading__title {
+  font-family:    var(--font-display);
+  font-size:      var(--text-2xl);
+  font-weight:    500;
+  letter-spacing: -0.02em;
+  line-height:    1.1;
+  color:          var(--color-text);
+  margin:         0;
+}
+
+/* Full-width divider above each section heading */
+.sc-section-heading::before {
+  content:          '';
+  display:          block;
+  width:            100vw;
+  margin-left:      calc(-1 * var(--side-pad));
+  height:           1px;
+  background:       var(--color-divider);
+  margin-bottom:    var(--space-10);
+}
+
+@media (max-width: 640px) {
+  .sc-section-heading              { margin-top: var(--space-16); }
+  .sc-section-heading__title       { font-size: var(--text-xl); }
+}
+/* ============================================================
  1 1. ARTICLE BODY — prose typography                  *
  ============================================================ */
 
-.article-body {
+{
     /* width flows from parent <article> which is capped at --content-article */
 }
 
-.article-body h2 {
+h2 {
     font-family: var(--font-display);
     font-size: var(--text-xl);
     font-weight: 500;
@@ -29,7 +168,7 @@
     color: var(--color-text);
 }
 
-.article-body h3 {
+h3 {
     font-family: var(--font-display);
     font-size: var(--text-lg);
     font-weight: 500;
@@ -37,7 +176,7 @@
     margin-bottom: var(--space-2);
 }
 
-.article-body h4 {
+h4 {
     font-family: var(--font-ui);
     font-size: var(--text-sm);
     font-weight: 600;
@@ -48,24 +187,24 @@
     margin-bottom: var(--space-2);
 }
 
-.article-body p {
+p {
     margin-bottom: var(--space-5);
 }
 
-.article-body ul,
-.article-body ol {
+ul,
+ol {
     margin-bottom: var(--space-5);
     padding-left: var(--space-6);
 }
 
-.article-body li {
+li {
     margin-bottom: var(--space-2);
 }
 
-.article-body strong { font-weight: 600; }
-.article-body em { font-style: italic; }
+strong { font-weight: 600; }
+em { font-style: italic; }
 
-.article-body blockquote {
+blockquote {
     margin-block: var(--space-8);
     padding: var(--space-6) var(--space-8);
     background: var(--color-surface);
@@ -73,7 +212,7 @@
     position: relative;
 }
 
-.article-body blockquote::before {
+blockquote::before {
     content: '\201C';
     font-family: var(--font-display);
     font-size: 4.5rem;
@@ -86,11 +225,11 @@
     user-select: none;
 }
 
-[data-theme="dark"] .article-body blockquote::before {
+[data-theme="dark"] blockquote::before {
     color: var(--color-surface-dynamic);
 }
 
-.article-body blockquote p {
+blockquote p {
     font-family: var(--font-display);
     font-size: var(--text-lg);
     font-style: italic;
@@ -101,8 +240,8 @@
     z-index: 1;
 }
 
-.article-body blockquote cite,
-.article-body blockquote footer {
+blockquote cite,
+blockquote footer {
     display: block;
     margin-top: var(--space-3);
     font-family: var(--font-ui);
@@ -112,27 +251,27 @@
     letter-spacing: 0.04em;
 }
 
-.article-body hr {
+hr {
     border: none;
     border-top: 1px solid var(--color-divider);
     margin-block: var(--space-10);
 }
 
-.article-body img {
+img {
     max-width: 100%;
     height: auto;
     border-radius: var(--radius-lg);
     margin-block: var(--space-6);
 }
 
-.article-body figure { margin-block: var(--space-8); }
+figure { margin-block: var(--space-8); }
 
-.article-body figure img {
+figure img {
     margin-block: 0;
     width: 100%;
 }
 
-.article-body figcaption {
+figcaption {
     font-family: var(--font-ui);
     font-size: var(--text-xs);
     color: var(--color-text-muted);
@@ -291,7 +430,7 @@ sup a:hover { text-decoration: underline; }
  * 11a. ARTICLE BODY — extended headings
  * ============================================================ */
 
-.article-body h1 {
+h1 {
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   font-weight: 500;
@@ -302,7 +441,7 @@ sup a:hover { text-decoration: underline; }
   color: var(--color-text);
 }
 
-.article-body h2 {
+h2 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 500;
@@ -313,7 +452,7 @@ sup a:hover { text-decoration: underline; }
   color: var(--color-text);
 }
 
-.article-body h3 {
+h3 {
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: 500;
@@ -322,7 +461,7 @@ sup a:hover { text-decoration: underline; }
   color: var(--color-text);
 }
 
-.article-body h4 {
+h4 {
   font-family: var(--font-ui);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -333,8 +472,8 @@ sup a:hover { text-decoration: underline; }
   margin-bottom: var(--space-2);
 }
 
-.article-body h5,
-.article-body h6 {
+h5,
+h6 {
   font-family: var(--font-ui);
   font-size: var(--text-xs);
   font-weight: 600;
