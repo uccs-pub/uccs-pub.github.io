@@ -1,10 +1,14 @@
 {{/*
   Partial: upcoming-posts.html
   Data source: data/upcoming.yaml
-  Renders the editorial calendar block showing scheduled articles with a
-  live countdown timer (JS-powered, updates every 30 s client-side).
-  Hidden entirely when data/upcoming.yaml sets enabled: false.
-  Styled by homepage.css (.upcoming-posts).
+
+  Renders the editorial calendar block with a live JS countdown.
+  The entire block is hidden when data/upcoming.yaml has enabled: false.
+
+  Called ONCE from home.html — do not call inside a range loop.
+  This partial reads site.Data.upcoming internally and renders all posts.
+
+  Styled by homepage.css (.upcoming-posts, .upcoming-card-*, etc.)
 */}}
 {{ if and site.Data.upcoming site.Data.upcoming.enabled }}
 {{ $data := site.Data.upcoming }}
@@ -14,21 +18,16 @@
   <div class="upcoming-header">
     <div class="upcoming-header-left">
       <span class="upcoming-badge">{{ $data.badge }}</span>
-      <h2 class="upcoming-posts-title" id="upcoming-posts-title">
-        Urmează în revistă
-      </h2>
+      <h2 class="upcoming-posts-title" id="upcoming-posts-title">Urmează în revistă</h2>
     </div>
   </div>
 
   <ul class="upcoming-grid" role="list">
     {{ range $data.posts }}
     {{ $pub := .publish_date | time }}
-    <li class="upcoming-card
-               {{ if eq .status "tentative" }} upcoming-card--tentative{{ end }}
-               {{ if eq .status "draft" }} upcoming-card--draft{{ end }}"
+    <li class="upcoming-card{{ if eq .status "tentative" }} upcoming-card--tentative{{ end }}{{ if eq .status "draft" }} upcoming-card--draft{{ end }}"
         data-publish="{{ .publish_date }}">
 
-      {{/* ── Section label + formatted date ── */}}
       <div class="upcoming-card-top">
         <span class="upcoming-section-label">{{ .section }}</span>
         <time class="upcoming-date" datetime="{{ .publish_date }}">
@@ -36,25 +35,22 @@
         </time>
       </div>
 
-      {{/* ── Title & description ── */}}
       <h3 class="upcoming-card-title">{{ .title }}</h3>
+
       {{ with .description }}
-        <p class="upcoming-card-desc">{{ . }}</p>
+      <p class="upcoming-card-desc">{{ . }}</p>
       {{ end }}
 
-      {{/* ── Author ── */}}
       {{ with .author }}
-        <p class="upcoming-card-author">{{ . }}</p>
+      <p class="upcoming-card-author">{{ . }}</p>
       {{ end }}
 
-      {{/* ── Tentative / draft label ── */}}
       {{ if eq .status "tentative" }}
         <p class="upcoming-card-status">Dată aproximativă</p>
       {{ else if eq .status "draft" }}
         <p class="upcoming-card-status">În pregătire</p>
       {{ end }}
 
-      {{/* ── Countdown (populated by JS below) ── */}}
       {{ if ne .status "draft" }}
       <div class="upcoming-countdown" aria-live="polite">
         <span class="upcoming-countdown-value" aria-label="Timp rămas">—</span>

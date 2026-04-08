@@ -1,47 +1,58 @@
+{{/*
+  layouts/_default/page.html (or single.html)
+  Standalone pages: Despre, Contact, Donează, and any page with
+  standalone: true in front matter.
+*/}}
+
 {{ define "body_class" }}pg-standalone{{ end }}
 
 {{ define "head_extra" }}
-  <link rel="stylesheet" href="/css/prose.css">
+  <link rel="stylesheet" href="{{ "css/prose.css" | relURL }}">
 {{ end }}
 
 {{ define "main" }}
 <article class="pg-standalone">
 
   <header class="pg-standalone__hero">
-    {{/* Category pentru eyebrow */}}
-    {{ $cat := "" }}
-    {{ if .File }}
-      {{ $parts := split .File.Dir "/" }}
-      {{ if ge (len $parts) 1 }}
-        {{ $section := index $parts 0 }}
-        {{ if eq $section "uccs-analyticus" }}{{ $cat = "Analyticus" }}{{ else if eq $section "uccs-cultural" }}{{ $cat = "Cultural" }}{{ else }}{{ $cat = $section | title }}{{ end }}
-      {{ end }}
+
+    {{/* ── Eyebrow ──────────────────────────────────────────────
+         Priority: YAML `eyebrow` param → current section title.
+         .CurrentSection.Title is always available and handles
+         nested sections correctly without path-splitting hacks.
+    */}}
+    {{ $eyebrow := .CurrentSection.Title }}
+    {{ with .Params.eyebrow }}{{ $eyebrow = . }}{{ end }}
+    {{ with $eyebrow }}
+    <p class="pg-standalone__eyebrow">{{ . }}</p>
     {{ end }}
 
-    {{/* Eyebrow: YAML sau category */}}
-    {{ $eyebrow := $cat }}
-    {{ with .Params.eyebrow }}{{ $eyebrow = . }}{{ end }}
-    {{ with $eyebrow }}<p class="pg-standalone__eyebrow">{{ $eyebrow }}</p>{{ end }}
     <h1 class="pg-standalone__title">
       {{ .Title }}
-      {{ with .Params.subtitle }}<span class="pg-standalone__subtitle">{{ . }}</span>{{ end }}
+      {{ with .Params.subtitle }}
+      <span class="pg-standalone__subtitle">{{ . }}</span>
+      {{ end }}
     </h1>
-    {{ with .Params.lead }}<p class="pg-standalone__lead">{{ . }}</p>{{ end }}
 
-    {{/* --- Metadata bar (author, date, category) --- */}}
+    {{ with .Params.lead }}
+    <p class="pg-standalone__lead">{{ . }}</p>
+    {{ end }}
+
+    {{/* ── Meta bar (author + date) ── */}}
+    {{ if or .Params.author .Date }}
     <div class="pg-standalone__meta">
-      {{/* Author (single, linked) */}}
+
       {{ with .Params.author }}
       <span class="pg-standalone__author">
+        {{/* Author can be a plain string or a map with .slug and .name */}}
         {{ if reflect.IsMap . }}
-          {{ $authorPage := site.GetPage (printf "/authors/%s" .slug) }}
+          {{ $authorPage := site.GetPage (printf "/autori/%s" .slug) }}
           {{ with $authorPage }}
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{ else }}
             {{ .name }}
           {{ end }}
         {{ else }}
-          {{ $authorPage := site.GetPage (printf "/authors/%s" (urlize .)) }}
+          {{ $authorPage := site.GetPage (printf "/autori/%s" (urlize .)) }}
           {{ with $authorPage }}
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{ else }}
@@ -51,13 +62,15 @@
       </span>
       {{ end }}
 
-      {{/* Date (date-month-year, RO) */}}
       {{ with .Date }}
-      <time class="pg-standalone__date" datetime="{{ .Format `2006-01-02` }}">
-          {{ time.Format ":date_full" . }}
+      <time class="pg-standalone__date" datetime="{{ .Format "2006-01-02" }}">
+        {{ time.Format ":date_full" . }}
       </time>
       {{ end }}
+
     </div>
+    {{ end }}
+
   </header>
 
   <div class="pg-standalone__body prose">
@@ -65,18 +78,16 @@
       {{- partial "toc.html" . -}}
     {{ end }}
     {{ .Content }}
+    {{ with .Params.tags }}
     <div class="tag-list">
       <ol>
-        {{ range .Params.tags }}
-        <li>
-          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"> #{{ . }}</a>
-        </li>
+        {{ range . }}
+        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
         {{ end }}
       </ol>
     </div>
+    {{ end }}
   </div>
-
-
 
 </article>
 {{ end }}

@@ -2,8 +2,17 @@
   Partial: article-card.html
   Context (dict):
     page         Page    Required.
-    layout       string  "grid" (default) or "list"
+    layout       string  "grid" (default) or "list".
     showSection  bool    Optional. Default false.
+
+  Class conventions:
+    Parent container:  .article-grid  /  .article-list
+    Card:              .article-card
+    Sub-elements:      .article-card__* (BEM)
+
+  The card is layout-agnostic — CSS uses the parent container class
+  to switch between grid (column) and list (row) presentation,
+  so this partial emits the same markup regardless of $layout.
 ───────────────────────────────────────────────────────────────── */ -}}
 
 {{- $page        := .page -}}
@@ -13,55 +22,49 @@
 {{- $authorPage  := site.GetPage (printf "/autori/%s" $authorSlug) -}}
 {{- $coverRes    := $page.Resources.GetMatch $page.Params.cover -}}
 
-{{- $thumbLink  := "article-thumb-link" -}}
-{{- $thumb      := "article-thumb" -}}
-{{- $thumbPH    := "article-thumb-placeholder" -}}
-{{- $info       := "article-info" -}}
-{{- $titleClass := "article-title" -}}
-{{- if eq $layout "grid" -}}
-  {{- $thumbLink  = "article-grid-thumb-link" -}}
-  {{- $thumb      = "article-grid-thumb" -}}
-  {{- $thumbPH    = "article-grid-thumb-placeholder" -}}
-  {{- $info       = "article-grid-info" -}}
-  {{- $titleClass = "article-grid-title" -}}
-{{- end -}}
+<li>
+  <article class="article-card">
 
-<article>
-  {{- with $coverRes -}}
-  <a href="{{ $page.RelPermalink }}" class="{{ $thumbLink }}" tabindex="-1">
-    <img src="{{ .RelPermalink }}" alt="" class="{{ $thumb }}">
-  </a>
-  {{- else -}}
-  <div class="{{ $thumbPH }}"></div>
-  {{- end -}}
-
-  <div class="{{ $info }}">
-    {{- if $showSection -}}
-    {{- with $page.CurrentSection -}}
-    <span class="article-meta meta-section">{{ .Title }}</span>
-    {{- end -}}
+    {{/* ── Thumbnail ── */}}
+    {{- with $coverRes -}}
+    <a href="{{ $page.RelPermalink }}" class="article-card__thumb" tabindex="-1" aria-hidden="true">
+      <img src="{{ .RelPermalink }}" alt="" class="article-card__img">
+    </a>
+    {{- else -}}
+    <div class="article-card__thumb-ph" aria-hidden="true"></div>
     {{- end -}}
 
-    <h2 class="{{ $titleClass }}">
-      <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
-    </h2>
+    {{/* ── Body ── */}}
+    <div class="article-card__body">
 
-    {{- with $page.Params.subtitle -}}
-    <p class="article-subtitle">{{ . }}</p>
-    {{- end -}}
+      {{- if $showSection -}}
+        {{- with $page.CurrentSection -}}
+        <span class="article-meta meta-section">{{ .Title }}</span>
+        {{- end -}}
+      {{- end -}}
 
-    <div class="article-meta">
-      {{- with $page.Date -}}
-      <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>
+      <h2 class="article-card__title">
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+      </h2>
+
+      {{- with $page.Params.subtitle -}}
+      <p class="article-card__subtitle">{{ . }}</p>
       {{- end -}}
-      {{- if $page.Params.author -}}
-      <span class="meta-sep">·</span>
-      {{- with $authorPage -}}
-      <a href="{{ .RelPermalink }}" class="article-author">{{ $page.Params.author }}</a>
-      {{- else -}}
-      <span class="article-author">{{ $page.Params.author }}</span>
-      {{- end -}}
-      {{- end -}}
+
+      <div class="article-meta">
+        {{- with $page.Date -}}
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>
+        {{- end -}}
+        {{- if $page.Params.author -}}
+        <span class="meta-sep" aria-hidden="true">·</span>
+        {{- with $authorPage -}}
+        <a href="{{ .RelPermalink }}" class="article-author">{{ $page.Params.author }}</a>
+        {{- else -}}
+        <span class="article-author">{{ $page.Params.author }}</span>
+        {{- end -}}
+        {{- end -}}
+      </div>
+
     </div>
-  </div>
-</article>
+  </article>
+</li>

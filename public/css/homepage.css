@@ -1,16 +1,19 @@
 /*
- * UCCS — homepage.css
- * Styles exclusive to the homepage (index.html).
+ * UCCS — homepage.css — v5
+ * Styles exclusive to the homepage (layouts/index.html).
  * Loaded via {{ block "head_extra" }} — never global.
  *
  * Sections:
- *   A.  "Ce este UCCS?" editorial manifesto
- *   B.  "Explorează" section grid
- *   C.  Upcoming posts timetable
+ *   A.  "Ce este UCCS?" editorial manifesto  (.uccs-intro)
+ *   B.  "Explorează" section grid            (.sections-explore, .section-explore-*)
+ *   C.  Upcoming posts timetable             (.upcoming-posts, .upcoming-*)
+ *
+ * Note: .featured-hero and .team-* live in components.css
+ * because article-render.html and team.html can be used on any page.
  */
 
 /* ============================================================
- *  A. "CE ESTE UCCS?" EDITORIAL MANIFESTO
+ *  A. "CE ESTE UCCS?" — editorial manifesto
  * ============================================================ */
 
 .uccs-intro {
@@ -19,7 +22,6 @@
   margin-block: var(--space-6) var(--space-8);
 }
 
-/* Label */
 .uccs-intro-label {
   font-family: var(--font-ui);
   font-size: var(--text-xs);
@@ -30,7 +32,7 @@
   margin-bottom: var(--space-5);
 }
 
-/* Manifesto — large italic display sentence */
+/* Large italic manifesto sentence */
 .uccs-intro-manifesto {
   font-family: var(--font-display);
   font-size: var(--text-2xl);
@@ -44,7 +46,7 @@
   text-wrap: balance;
 }
 
-/* Supporting body — two columns on wide screens */
+/* Two-column supporting body */
 .uccs-intro-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -60,46 +62,31 @@
 }
 
 @media (max-width: 640px) {
-  .uccs-intro                 { padding-block: var(--space-8); }
-  .uccs-intro-body            { grid-template-columns: 1fr; gap: var(--space-4); }
-  .uccs-intro-manifesto       { font-size: var(--text-xl); }
+  .uccs-intro           { padding-block: var(--space-8); }
+  .uccs-intro-body      { grid-template-columns: 1fr; gap: var(--space-4); }
+  .uccs-intro-manifesto { font-size: var(--text-xl); }
+}
+
+@media (max-width: 480px) {
+  .uccs-intro-manifesto { font-size: var(--text-lg); }
 }
 
 /* ============================================================
- *  B. "EXPLOREAZĂ" SECTION GRID
+ *  B. "EXPLOREAZĂ" — section grid
+ *
+ *  Root:   .sections-explore   (the <section> wrapper)
+ *  Header: .editorial-header   (in components.css)
+ *  Grid:   .section-explore-grid
+ *  Card:   .section-explore-card
  * ============================================================ */
 
-.section-explore {
+.sections-explore {
   margin-top: var(--space-12);
   padding-top: var(--space-10);
   border-top: 1px solid var(--color-divider);
 }
 
-.section-explore-header { margin-bottom: var(--space-8); }
-
-.section-explore-eyebrow {
-  font-family: var(--font-ui);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-text-faint);
-  margin-bottom: var(--space-2);
-}
-
-.section-explore-lead {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 400;
-  font-style: italic;
-  color: var(--color-text-muted);
-  line-height: 1.45;
-  margin: 0;
-  max-width: 58ch;
-  text-wrap: pretty;
-}
-
-/* Grid */
+/* 3-column grid */
 .section-explore-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -109,7 +96,7 @@
   margin: 0;
 }
 
-/* Individual card */
+/* Card */
 .section-explore-card {
   display: flex;
   flex-direction: column;
@@ -119,11 +106,12 @@
   border: 1px solid var(--color-divider);
   border-radius: var(--radius-lg);
   transition:
-    box-shadow var(--transition-interactive),
-    border-color var(--transition-interactive),
-    background var(--transition-interactive);
+    box-shadow    var(--transition-interactive),
+    border-color  var(--transition-interactive),
+    background    var(--transition-interactive);
 }
 
+/* Accent bar */
 .section-explore-card::before {
   content: '';
   display: block;
@@ -141,6 +129,7 @@
   box-shadow: var(--shadow-md);
 }
 
+/* Card top row: section label + article count */
 .section-explore-card-top {
   display: flex;
   align-items: center;
@@ -189,6 +178,7 @@
   flex: 1;
 }
 
+/* Action links at card bottom */
 .section-explore-actions {
   display: flex;
   flex-direction: column;
@@ -208,21 +198,27 @@
   transition: color var(--transition-fast);
 }
 
-.section-explore-link:hover                     { color: var(--color-primary); }
-.section-explore-link--primary                  { color: var(--color-primary); }
-.section-explore-link--primary:hover            { color: var(--color-primary-hover); }
+.section-explore-link:hover              { color: var(--color-primary); }
+.section-explore-link--primary           { color: var(--color-primary); }
+.section-explore-link--primary:hover     { color: var(--color-primary-hover); }
 
+/* ── Explore grid responsive ── */
+
+/* 2 columns on tablet */
 @media (max-width: 900px) {
   .section-explore-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* 1 column on mobile, more breathing room in cards */
 @media (max-width: 520px) {
-  .section-explore-grid { grid-template-columns: 1fr; }
-  .section-explore-card { padding: var(--space-5); }
+  .section-explore-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+  .section-explore-card { padding: var(--space-5); gap: var(--space-2); }
+  /* Slightly less vertical padding inside card on small screens */
+  .section-explore-actions { padding-top: var(--space-3); }
 }
 
 /* ============================================================
- *  C. UPCOMING POSTS TIMETABLE
+ *  C. UPCOMING POSTS — editorial calendar
  * ============================================================ */
 
 .upcoming-posts {
@@ -233,6 +229,7 @@
   border-radius: var(--radius-lg);
 }
 
+/* Header row: badge + title */
 .upcoming-header {
   display: flex;
   align-items: flex-start;
@@ -249,6 +246,7 @@
   gap: var(--space-2);
 }
 
+/* Animated "En direct" badge */
 .upcoming-badge {
   display: inline-flex;
   align-items: center;
@@ -294,6 +292,7 @@
   line-height: 1.2;
 }
 
+/* Post grid */
 .upcoming-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
@@ -303,6 +302,7 @@
   margin: 0;
 }
 
+/* Individual card */
 .upcoming-card {
   display: flex;
   flex-direction: column;
@@ -315,6 +315,7 @@
 
 .upcoming-card--tentative { border-style: dashed; }
 
+/* Card top: section label + date */
 .upcoming-card-top {
   display: flex;
   align-items: center;
@@ -377,6 +378,7 @@
   margin: 0;
 }
 
+/* Live countdown */
 .upcoming-countdown {
   display: flex;
   align-items: baseline;
@@ -404,159 +406,17 @@
   text-transform: uppercase;
 }
 
+/* ── Upcoming responsive ── */
+
 @media (max-width: 640px) {
   .upcoming-posts  { padding: var(--space-6) var(--space-5); }
-  .upcoming-header { flex-direction: column; gap: var(--space-3); }
+  .upcoming-header { flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-6); }
+  .upcoming-grid   { gap: var(--space-4); }
+  .upcoming-card   { padding: var(--space-5); gap: var(--space-2); }
 }
 
-/* ============================================================
- *  23. TEAM
- * ============================================================ */
-
-/* Section wrapper — full-width divider above, padding to match standalone body */
-.team-list-wrapper {
-  max-width: var(--site-max-w);
-  margin-inline: auto;
-  padding-inline: var(--side-pad);
-  margin-top: var(--space-20);
-}
-
-/* ── Section header ── */
-.team-section-header {
-  margin-bottom: var(--space-8);
-}
-
-.team-section-eyebrow {
-  font-family:    var(--font-ui);
-  font-size:      var(--text-xs);
-  font-weight:    700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color:          var(--color-text-faint);
-  margin-bottom:  var(--space-4);
-}
-
-/* No ::after line on the eyebrow — the section-heading divider above handles separation */
-
-.team-section-title {
-  font-family:    var(--font-display);
-  font-size:      var(--text-3xl);
-  font-weight:    500;
-  letter-spacing: -0.02em;
-  line-height:    1.05;
-  color:          var(--color-text);
-  margin:         0;
-}
-
-.team-section-subtitle {
-  display:    block;
-  font-style: italic;
-  color:      var(--color-gold);
-}
-
-/* ── Member list — no outer borders, tight stack ── */
-.team-list {
-  display:        flex;
-  flex-direction: column;
-  margin-top:     var(--space-10);
-}
-
-/* ── Individual member ── */
-.team-member {
-  display:       flex;
-  flex-direction: column;
-  gap:           var(--space-5);
-  padding-block: var(--space-8);
-  border-bottom: 1px solid var(--color-divider);
-}
-
-/* No top border on first member — the header above already separates */
-.team-member:first-child { border-top: none; }
-.team-member:last-child  { border-bottom: none; }
-
-/* Top row: avatar + name/role in one flex line */
-.team-member__top {
-  display:     flex;
-  align-items: center;          /* vertically center avatar with name+role */
-  gap:         var(--space-4);
-}
-
-/* Avatar */
-.team-member__avatar {
-  width:       64px;
-  height:      64px;
-  min-width:   64px;            /* prevent flex shrink */
-  background:  var(--color-surface-offset);
-  border:      1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  display:     flex;
-  align-items: center;
-  justify-content: center;
-  overflow:    hidden;
-}
-
-.team-member__avatar span {
-  font-family: var(--font-display);
-  font-size:   var(--text-2xl);
-  font-weight: 400;
-  color:       var(--color-text-muted);
-  line-height: 1;
-  user-select: none;
-}
-
-.team-member__photo {
-  width:            100%;
-  height:           100%;
-  object-fit:       cover;
-  object-position:  center top;
-  display:          block;
-}
-
-/* Name + role stacked beside avatar */
-.team-member__identity {
-  display:        flex;
-  flex-direction: column;
-  gap:            var(--space-1);
-}
-
-.team-member__name {
-  font-family: var(--font-display);
-  font-size:   var(--text-xl);
-  font-weight: 400;
-  color:       var(--color-text);
-  line-height: 1.15;
-  margin:      0;
-}
-
-.team-member__role {
-  font-family:    var(--font-ui);
-  font-size:      var(--text-xs);
-  font-weight:    700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color:          var(--color-gold);
-}
-
-/* Bio — full width, max readable line length */
-.team-member__bio {
-  display:        flex;
-  flex-direction: column;
-  gap:            var(--space-4);
-  max-width:      70ch;
-}
-
-.team-member__bio p {
-  font-family: var(--font-body);
-  font-size:   var(--text-base);
-  line-height: 1.78;
-  color:       var(--color-text-muted);
-  margin:      0;
-  hyphens:     auto;
-  -webkit-hyphens: auto;
-}
-
-/* ── Responsive ── */
-@media (max-width: 640px) {
-  .team-section-title { font-size: var(--text-2xl); }
-  .team-member__bio   { max-width: 100%; }
+@media (max-width: 480px) {
+  .upcoming-posts          { padding: var(--space-5) var(--space-4); }
+  .upcoming-card           { padding: var(--space-4); }
+  .upcoming-countdown-value { font-size: var(--text-xl); }
 }

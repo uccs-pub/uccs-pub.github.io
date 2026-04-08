@@ -1,9 +1,8 @@
 {{/*
   Partial: uccs-intro.html
   Renders the "Ce este UCCS?" editorial manifesto on the homepage.
-  Content lives in data/about.yaml → .intro so it can be edited without
-  touching any template file.
-  Styled by homepage.css (.uccs-intro).
+  Content lives in data/about.yaml → .intro — edit there, not here.
+  Styled by homepage.css (.uccs-intro-*).
 */}}
 {{ with site.Data.about.intro }}
 <section class="uccs-intro" aria-label="Despre publicație">
@@ -11,15 +10,13 @@
   <p class="uccs-intro-label">{{ .eyebrow }}</p>
 
   {{ with .manifesto }}
-    <p class="uccs-intro-manifesto">{{ . }}</p>
+  <p class="uccs-intro-manifesto">{{ . }}</p>
   {{ end }}
 
   {{ with .paragraphs }}
-    <div class="uccs-intro-body">
-      {{ range . }}
-        <p>{{ . }}</p>
-      {{ end }}
-    </div>
+  <div class="uccs-intro-body">
+    {{ range . }}<p>{{ . }}</p>{{ end }}
+  </div>
   {{ end }}
 
 </section>

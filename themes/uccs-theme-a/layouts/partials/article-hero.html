@@ -1,6 +1,13 @@
 {{- /* ─────────────────────────────────────────────────────────────
-  Partial: article-hero.html (image BG + text overlay)
-*/ -}}
+  Partial: article-hero.html
+  Context (dict):
+    page         Page    Required.
+    layout       string  CSS class prefix. Default "featured-hero".
+    showSection  bool    Optional. Default false.
+
+  All child classes are derived from $layout so this partial can be
+  reused with a different visual skin by passing a different prefix.
+───────────────────────────────────────────────────────────────── */ -}}
 
 {{- $page        := .page -}}
 {{- $layout      := .layout | default "featured-hero" -}}
@@ -13,33 +20,35 @@
   {{- end -}}
 {{- end -}}
 
-<a href="{{ $page.Permalink }}"
+<a href="{{ $page.RelPermalink }}"
    class="{{ $layout }}{{ if not $img }} {{ $layout }}--text{{ end }}"
    aria-label="Citește: {{ $page.Title }}">
 
+  {{/* ── Media panel (only when cover image exists) ── */}}
   {{- if $img -}}
-  <!-- Image background + dark overlay -->
   <div class="{{ $layout }}-media">
     <img src="{{ $img.RelPermalink }}"
          alt="{{ $page.Params.coveralt | default $page.Title }}"
          class="{{ $layout }}-img"
          loading="eager"
          decoding="async">
-    <div class="{{ $layout }}-overlay"></div>
+    <div class="{{ $layout }}-overlay" aria-hidden="true"></div>
   </div>
   {{- end -}}
 
+  {{/* ── Text panel ── */}}
   <div class="{{ $layout }}-body">
+
     <div class="{{ $layout }}-eyebrow">
-      <span class="{{ $layout }}-label">{{ $page.Section }}</span>
+      <span class="{{ $layout }}-label">{{ $page.CurrentSection.Title | default $page.Section }}</span>
       <span class="{{ $layout }}-badge">Articol recomandat</span>
     </div>
 
     <h2 class="{{ $layout }}-title">{{ $page.Title }}</h2>
 
-    {{ with $page.Params.description -}}
-      <p class="{{ $layout }}-desc">{{ . }}</p>
-    {{ end }}
+    {{- with $page.Params.description -}}
+    <p class="{{ $layout }}-desc">{{ . }}</p>
+    {{- end -}}
 
     <div class="{{ $layout }}-footer">
       <div class="{{ $layout }}-meta">
@@ -55,6 +64,6 @@
       </div>
       <span class="{{ $layout }}-cta" aria-hidden="true">Citește →</span>
     </div>
-  </div>
 
+  </div>
 </a>

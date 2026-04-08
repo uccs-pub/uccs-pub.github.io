@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Unde Cuvintele Capătă Sens</title>
-    <link>https://uccs.codeberg.page/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
     <language>ro-RO</language>
-    <atom:link href="https://uccs.codeberg.page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How debate teaches intellectual honesty</title>
-      <link>https://uccs.codeberg.page/analyticus/how-debate-teaches-intellectual-honesty/</link>
+      <link>http://localhost:1313/analyticus/how-debate-teaches-intellectual-honesty/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/analyticus/how-debate-teaches-intellectual-honesty/</guid>
+      <guid>http://localhost:1313/analyticus/how-debate-teaches-intellectual-honesty/</guid>
       <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How debate teaches intellectual honesty</title>
-      <link>https://uccs.codeberg.page/cultural/how-debate-teaches-intellectual-honesty/</link>
+      <link>http://localhost:1313/cultural/how-debate-teaches-intellectual-honesty/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/cultural/how-debate-teaches-intellectual-honesty/</guid>
+      <guid>http://localhost:1313/cultural/how-debate-teaches-intellectual-honesty/</guid>
       <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How debate teaches intellectual honesty</title>
-      <link>https://uccs.codeberg.page/dezbateri/how-debate-teaches-intellectual-honesty/</link>
+      <link>http://localhost:1313/dezbateri/how-debate-teaches-intellectual-honesty/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/how-debate-teaches-intellectual-honesty/</guid>
+      <guid>http://localhost:1313/dezbateri/how-debate-teaches-intellectual-honesty/</guid>
       <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Despre noi</title>
-      <link>https://uccs.codeberg.page/despre/</link>
+      <link>http://localhost:1313/despre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/despre/</guid>
+      <guid>http://localhost:1313/despre/</guid>
       <description>&lt;h1 id=&#34;cum-scriem&#34;&gt;Cum scriem?&lt;/h1&gt;&#xA;&lt;p&gt;Fiecare text publicat pe UCCS trebuie să îndeplinească trei condiții: să clarifice&#xA;o problemă reală, să reziste la verificări și să nu degradeze spațiul public prin&#xA;care circulă. Critica noastră se îndreaptă spre idei și instituții, nu spre persoane.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Home</title>
-      <link>https://uccs.codeberg.page/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;Welcome to UCCS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Home</title>
-      <link>https://uccs.codeberg.page/doneaza/</link>
+      <link>http://localhost:1313/doneaza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/doneaza/</guid>
+      <guid>http://localhost:1313/doneaza/</guid>
       <description>&lt;p&gt;Welcome to UCCS.&lt;/p&gt;</description>
     </item>
   </channel>

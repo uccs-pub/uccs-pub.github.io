@@ -1,10 +1,28 @@
-<div class="team-list-wrapper">
+{{/*
+  Partial: team.html
+  Data source: data/team.yaml
+  Renders the team section on the homepage.
+
+  This partial owns its own <section> semantic root — the caller
+  (home.html) does NOT wrap it in an extra element.
+
+  Classes used:
+    .team-section        — root <section>
+    .editorial-header    — shared header pattern (also used by sections-explore)
+    .editorial-header__* — subparts
+    .team-list           — member stack
+    .team-member         — individual member
+    .team-member__*      — BEM subparts
+*/}}
+
+<section class="team-section" aria-labelledby="team-heading">
+
   {{ with site.Data.team.intro }}
-  <div class="team-section-header">
-    <p class="team-section-eyebrow">{{ .eyebrow }}</p>
-    <h2 class="team-section-title">
+  <div class="editorial-header">
+    <p class="editorial-header__eyebrow">{{ .eyebrow }}</p>
+    <h2 class="editorial-header__title" id="team-heading">
       {{ .title }}
-      {{ with .subtitle }}<em class="team-section-subtitle">{{ . }}</em>{{ end }}
+      {{ with .subtitle }}<em class="editorial-header__subtitle">{{ . }}</em>{{ end }}
     </h2>
   </div>
   {{ end }}
@@ -12,9 +30,18 @@
   <div class="team-list">
     {{ range where site.Data.team.members "active" true }}
     <article class="team-member">
+
       <div class="team-member__top">
         <div class="team-member__avatar">
-          <img src="/team/{{ .photo }}" alt="{{ .display_name }}" class="team-member__photo" width="64" height="64" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          {{/* onerror hides the broken img and shows the initial fallback */}}
+          <img
+            src="/team/{{ .photo }}"
+            alt="{{ .display_name }}"
+            class="team-member__photo"
+            width="64" height="64"
+            loading="lazy"
+            decoding="async"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <span aria-hidden="true" style="display:none">{{ .initial }}</span>
         </div>
         <div class="team-member__identity">
@@ -22,10 +49,13 @@
           <span class="team-member__role">{{ .role }}</span>
         </div>
       </div>
+
       <div class="team-member__bio">
         {{ range .bio }}<p>{{ . }}</p>{{ end }}
       </div>
+
     </article>
     {{ end }}
   </div>
-</div>
+
+</section>

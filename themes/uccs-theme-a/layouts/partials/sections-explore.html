@@ -1,51 +1,47 @@
 {{- /*
-  Partial: sections-explore
-  Renders the "Explorează" section grid by scraping section _index.md metadata.
+  Partial: sections-explore.html
+  Renders the "Explorează" thematic section grid.
+  Reads section metadata from each section's _index.md front matter.
   No data/sections.yaml dependency.
 
-  Expected section index front matter (content/<slug>/_index.md):
-    ---
-    title: "UCCS Analyticus"
-    tagline: "Analiză rece, fără isterie"
-    description: "Despre instituții, idei și mecanisme sociale."
-    # optional: pin a specific article
-    # featured: "/analyticus/un-articol-cheie/"
-    editor: "Velcea-Petru"
+  Expected _index.md front matter per section:
+    title:        "UCCS Analyticus"
+    tagline:      "Analiză rece, fără isterie"
+    description:  "Despre instituții, idei și mecanisme sociale."
+    featured:     "/analyticus/un-articol-cheie/"   # optional pin
+    editor:       "Velcea-Petru"
     content_type: "Analize"
-    ---
 
-  Styled by homepage.css (.section-explore-*).
+  Classes used:
+    .editorial-header    — shared header (same as team.html)
+    .section-explore-*   — grid + card styles (homepage.css)
 */ -}}
 
 {{ $sections := where site.Sections "Kind" "section" }}
-{{ if not $sections }}
-  {{ return }}
-{{ end }}
+{{ if not $sections }}{{ return }}{{ end }}
 
-<section>
-  
+<section class="sections-explore" aria-labelledby="explore-heading">
 
-  <div class="team-section-header">
-    <p class="team-section-eyebrow" aria-hidden="true">Explorează</p>
-    <h2 class="team-section-title">
+  <div class="editorial-header">
+    <p class="editorial-header__eyebrow" aria-hidden="true">Explorează</p>
+    <h2 class="editorial-header__title" id="explore-heading">
       Traseele tematice
-      <em class="team-section-subtitle">nu clickbait</em>
+      <em class="editorial-header__subtitle">nu clickbait</em>
     </h2>
   </div>
 
   <ul class="section-explore-grid" role="list">
     {{ range $sections }}
-      {{ $section := . }}
-      {{ $slug   := $section.File.TranslationBaseName }}
-      {{ $count  := len $section.RegularPages }}
+      {{ $section     := . }}
+      {{ $slug        := $section.File.TranslationBaseName }}
+      {{ $count       := len $section.RegularPages }}
 
-      {{/* Determine featured URL: manual override or latest article */}}
+      {{/* Featured URL: manual pin or latest published article */}}
       {{ $featuredURL := "" }}
       {{ if $section.Params.featured }}
         {{ $featuredURL = $section.Params.featured }}
       {{ else if gt $count 0 }}
-        {{ $latest := first 1 (where $section.RegularPages "Date" "<=" now) }}
-        {{ with index $latest 0 }}
+        {{ with index (first 1 (where $section.RegularPages "Date" "<=" now)) 0 }}
           {{ $featuredURL = .RelPermalink }}
         {{ end }}
       {{ end }}
@@ -55,9 +51,7 @@
         <div class="section-explore-card-top">
           <span class="section-explore-label">{{ $section.Title }}</span>
           {{ if gt $count 0 }}
-            <span class="section-explore-count" aria-label="{{ $count }} articole">
-              {{ $count }}
-            </span>
+          <span class="section-explore-count" aria-label="{{ $count }} articole">{{ $count }}</span>
           {{ end }}
         </div>
 
@@ -71,19 +65,10 @@
 
         <div class="section-explore-actions">
           {{ if $featuredURL }}
-            <a href="{{ $featuredURL }}"
-               class="section-explore-link section-explore-link--primary">
-              Începe de aici →
-            </a>
-            <a href="{{ $section.RelPermalink }}"
-               class="section-explore-link">
-              Toate articolele
-            </a>
+            <a href="{{ $featuredURL }}" class="section-explore-link section-explore-link--primary">Începe de aici →</a>
+            <a href="{{ $section.RelPermalink }}" class="section-explore-link">Toate articolele</a>
           {{ else }}
-            <a href="{{ $section.RelPermalink }}"
-               class="section-explore-link section-explore-link--primary">
-              Explorează →
-            </a>
+            <a href="{{ $section.RelPermalink }}" class="section-explore-link section-explore-link--primary">Explorează →</a>
           {{ end }}
         </div>
 

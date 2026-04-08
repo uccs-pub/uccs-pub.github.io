@@ -1,6 +1,8 @@
 {{- /*
-  layouts/index.html
-  Homepage shell.
+  layouts/index.html — Homepage shell.
+
+  Partials called here must NOT be wrapped in extra <section> tags;
+  each partial owns its own semantic root element.
 */ -}}
 
 {{ define "head_extra" }}
@@ -8,25 +10,30 @@
 {{ end }}
 
 {{ define "main" }}
-    {{ partial "article-render.html" (dict
-    "pages"     site.RegularPages
-    "layout"    "grid"
-    "hero"      true
-    "heading"   (printf "Ultimele articole")
-    "limit"     4
+
+  {{/* ── 1. Hero + article grid ── */}}
+  {{ partial "article-render.html" (dict
+    "pages"   site.RegularPages
+    "layout"  "grid"
+    "hero"    true
+    "heading" "Ultimele articole"
+    "limit"   4
   ) }}
-  {{ partial "uccs-intro.html"}}
-  <section class="team">
-    {{ partial "team.html" . }}
-  </section>
-  <section class="upcoming">
-    {{ $upcoming := site.Data.posts.upcoming }}
-    {{ if $upcoming }}
-    {{ range ($upcoming | first 5) }}
-    {{ partial "upcoming-posts.html" . }}
-    {{ end }}
-    {{ end }}
-  </section>
+
+  {{/* ── 2. Editorial manifesto ── */}}
+  {{ partial "uccs-intro.html" . }}
+
+  {{/* ── 3. Team — partial owns its <section> wrapper ── */}}
+  {{ partial "team.html" . }}
+
+  {{/* ── 4. Upcoming posts — partial reads site.Data.upcoming internally;
+             call once, not in a range loop ── */}}
+  {{ partial "upcoming-posts.html" . }}
+
+  {{/* ── 5. Section explore grid ── */}}
   {{ partial "sections-explore.html" . }}
-  {{ .Content }}
+
+  {{/* ── 6. Optional page body (set via _index.md content) ── */}}
+  {{ with .Content }}{{ . | safeHTML }}{{ end }}
+
 {{ end }}

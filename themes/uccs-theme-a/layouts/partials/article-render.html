@@ -3,13 +3,13 @@
   Context (dict):
     pages        Pages   Required.
     layout       string  "grid" (default) or "list"
-    heading      string  Optional.
-    limit        int     Optional.
-    skip         int     Optional.
+    heading      string  Optional section heading above the grid/list.
+    limit        int     Optional. 0 = no limit.
+    skip         int     Optional. 0 = no skip.
     showSection  bool    Optional. Default false.
     author       string  Optional. Filter by Params.author.
-    hero         bool    Optional. Default false. Show first article as hero.
-    heroLayout   string  Optional. "featured-hero" (default if hero=true).
+    hero         bool    Optional. Show first article as featured hero.
+    heroLayout   string  Optional. CSS prefix for hero. Default "featured-hero".
 ───────────────────────────────────────────────────────────────── */ -}}
 
 {{- $pages       := .pages -}}
@@ -22,29 +22,37 @@
 {{- $hero        := .hero        | default false -}}
 {{- $heroLayout  := .heroLayout  | default "featured-hero" -}}
 
+{{/* ── Filter ── */}}
 {{- $pages = where $pages "Params.standalone" "ne" true -}}
 {{- if $author -}}{{- $pages = where $pages "Params.author" $author -}}{{- end -}}
 {{- if gt $skip  0 -}}{{- $pages = after $skip  $pages -}}{{- end -}}
 {{- if gt $limit 0 -}}{{- $pages = first $limit $pages -}}{{- end -}}
 
-{{- /* ── HERO (first article) ── */ -}}
+{{/* ── Hero (first article) ── */}}
 {{- if and $hero (gt (len $pages) 0) -}}
-  {{- $heroPage := index $pages 0 -}}
-  {{ partial "article-hero.html" (dict "page" $heroPage "layout" $heroLayout "showSection" $showSection) }}
+  {{ partial "article-hero.html" (dict
+    "page"        (index $pages 0)
+    "layout"      $heroLayout
+    "showSection" $showSection
+  ) }}
   {{- $pages = after 1 $pages -}}
 {{- end -}}
 
-{{- /* ── HEADING (if pages remain) ── */ -}}
+{{/* ── Optional heading ── */}}
 {{- if and $heading (gt (len $pages) 0) -}}
-<h2 class="articles-heading">{{ $heading }}</h2>
+<h2 class="article-heading">{{ $heading }}</h2>
 {{- end -}}
 
-{{- /* ── LIST/GRID (remaining pages) ── */ -}}
+{{/* ── Grid or list ── */}}
 {{- if gt (len $pages) 0 -}}
-  {{- $listClass := cond (eq $layout "list") "articles-list" "articles-grid" -}}
-  <ul class="{{ $listClass }}">
+  {{- $containerClass := cond (eq $layout "list") "article-list" "article-grid" -}}
+  <ul class="{{ $containerClass }}" role="list">
     {{- range $pages -}}
-    {{ partial "article-card.html" (dict "page" . "layout" $layout "showSection" $showSection) }}
+      {{ partial "article-card.html" (dict
+        "page"        .
+        "layout"      $layout
+        "showSection" $showSection
+      ) }}
     {{- end -}}
   </ul>
 {{- end -}}
