@@ -29,25 +29,39 @@
       <description>&lt;h1 id=&#34;dezbateri&#34;&gt;Dezbateri&lt;/h1&gt;&#xA;&lt;h2 id=&#34;de-ce-dezbaterea-e-mai-mult-decât-câștigarea&#34;&gt;De ce dezbaterea e mai mult decât „câștigarea”&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;strong&gt;Sed do eiusmod tempor incididunt&lt;/strong&gt; ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Despre noi</title>
+      <title>Cine este UCCS?</title>
       <link>http://localhost:1313/despre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/despre/</guid>
-      <description>&lt;h1 id=&#34;cum-scriem&#34;&gt;Cum scriem?&lt;/h1&gt;&#xA;&lt;p&gt;Fiecare text publicat pe UCCS trebuie să îndeplinească trei condiții: să clarifice&#xA;o problemă reală, să reziste la verificări și să nu degradeze spațiul public prin&#xA;care circulă. Critica noastră se îndreaptă spre idei și instituții, nu spre persoane.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Unde Cuvintele Capătă Sens&lt;/strong&gt; este un proiect editorial independent care urmărește creșterea clarității în spațiul public.&lt;/p&gt;&#xA;&lt;p&gt;Publicăm analize, eseuri și texte literare care explică fenomene politice, sociale și culturale. Lucram fără isterie, fără cultul personalității și fără dezumanizare.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Home</title>
-      <link>http://localhost:1313/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;Welcome to UCCS.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Home</title>
+      <title>Cum ne poți susține?</title>
       <link>http://localhost:1313/doneaza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/doneaza/</guid>
-      <description>&lt;p&gt;Welcome to UCCS.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Unde Cuvintele Capătă Sens este un proiect editorial independent, fără finanțare externă, fără publicitate și fără interese ascunse.&lt;/p&gt;&#xA;&lt;p&gt;Existența sa depinde exclusiv de cititori care cred că claritatea publică merită protejată. Într-un mediu digital dominat de algoritmi și interese comerciale, sprijinul tău asigură independența acestui proiect și îi permite să rămână un spațiu de gândire lucidă, fără compromisuri editoriale. Fiecare donație, oricât de mică, contribuie direct la menținerea UCCS ca resursă stabilă și credibilă pentru cititorii care caută analiză riguroasă, nu zgomot informațional.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cum ne poți susține?</title>
+      <link>http://localhost:1313/transparenta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/transparenta/</guid>
+      <description>&lt;p&gt;Această pagină documentează statutul legal, beneficiarul real și fluxurile financiare ale proiectului „Unde Cuvintele Capătă Sens” (UCCS). Scopul este de a oferi cititorilor o imagine clară și verificabilă asupra modului în care este organizat și finanțat proiectul.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cum ne puteți contacta?</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;UCCS este un proiect editorial solo. Nu există formular de contact, doar o adresă de email pentru corespondență directă.&lt;/p&gt;&#xA;&lt;h2 id=&#34;scrie-pentru&#34;&gt;Scrie pentru:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Propuneri de articole sau teme de research&lt;/li&gt;&#xA;&lt;li&gt;Prezentarea unei erori factuale și indicarea sursei corecte&lt;/li&gt;&#xA;&lt;li&gt;Solicitarea dreptului la replică dacă ești vizat direct într-un articol (ca persoană fizică sau reprezentant al unei instituții)&lt;/li&gt;&#xA;&lt;li&gt;Invitații de colaborare (eveniment, podcast, parteneriat)&lt;/li&gt;&#xA;&lt;li&gt;Întrebări despre cadrele analitice folosite&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;nu-scrie-pentru&#34;&gt;Nu scrie pentru:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pitch-uri de PR, comunicate de presă sau cereri de link-building&lt;/li&gt;&#xA;&lt;li&gt;Mesaje generice de tip „felicitări&amp;quot; fără conținut verificabil&lt;/li&gt;&#xA;&lt;li&gt;Atacuri la persoană sau solicitări de intervenție în dezbateri tribale&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;adresa&#34;&gt;Adresa&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;mailto:redactia@uccs.ro&#34;&gt;redactia@uccs.ro&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cum protejăm datele tale personale</title>
+      <link>http://localhost:1313/protectia-datelor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/protectia-datelor/</guid>
+      <description>&lt;p&gt;„Unde Cuvintele Capătă Sens” (UCCS) respectă dreptul tău la confidențialitate și se conformează strict prevederilor Regulamentului General privind Protecția Datelor (GDPR 2016/679).&lt;/p&gt;&#xA;&lt;p&gt;Această pagină explică transparent ce date colectăm, de ce și cum le protejăm.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

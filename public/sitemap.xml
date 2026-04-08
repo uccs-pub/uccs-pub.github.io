@@ -23,23 +23,26 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-07T22:11:22+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <loc>http://localhost:1313/autori/</loc>
   </url><url>
     <loc>http://localhost:1313/despre/</loc>
     <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/doneaza/</loc>
+    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/transparenta/</loc>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/protectia-datelor/</loc>
   </url><url>
     <loc>http://localhost:1313/dezbateri/</loc>
     <lastmod>2026-04-07T22:11:22+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/contact/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/doneaza/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <lastmod>2026-04-08T11:31:04+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/themes/</loc>
   </url><url>
@@ -49,7 +52,6 @@
     <loc>http://localhost:1313/cultural/</loc>
     <lastmod>2026-04-07T22:11:22+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/velcea-petru/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <loc>http://localhost:1313/autori/velcea-petru/</loc>
   </url>
 </urlset>

@@ -1,13 +1,9 @@
 ---
 title: "UCCS Cultural"
 tagline: "Literatuă și limbă"
-description: "Aici intră eseuri, lecturi atente, intervenții explicative și texte care reconstruiesc contextul necesar pentru a citi mai bine un fenomen cultural ca semnal social."
+description: "Texte care folosesc cultura ca instrument de înțelegere: eseuri, lecturi și intervenții care reconstruiesc contextul necesar pentru a interpreta fenomene culturale ca semnale sociale."
 editor: "Velcea-Petru"
-content_type: "Analize"
+content_type: "Eseuri"
 ---
 
-UCCS **Cultural** publică texte pedagogice și literare care ajută cititorul să înțeleagă mai bine limbajul, cultura și formele prin care sensul circulă în spațiul public.
-
-Aici intră eseuri, lecturi atente, intervenții explicative și texte care reconstruiesc contextul necesar pentru a citi mai bine un fenomen cultural.
-
-Scopul nu este prestigiul cultural ca semnal social, ci folosirea culturii ca instrument de orientare și discernământ.
+Texte care folosesc cultura ca instrument de înțelegere: eseuri, lecturi și intervenții care reconstruiesc contextul necesar pentru a interpreta fenomene culturale ca semnale sociale.

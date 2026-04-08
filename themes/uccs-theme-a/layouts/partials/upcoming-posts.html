@@ -3,15 +3,27 @@
   Data source: data/upcoming.yaml
 
   Renders the editorial calendar block with a live JS countdown.
-  The entire block is hidden when data/upcoming.yaml has enabled: false.
+  The entire block is hidden when:
+    - data/upcoming.yaml has enabled: false, OR
+    - all posts have a publish_date in the past
 
   Called ONCE from home.html — do not call inside a range loop.
-  This partial reads site.Data.upcoming internally and renders all posts.
-
-  Styled by homepage.css (.upcoming-posts, .upcoming-card-*, etc.)
 */}}
 {{ if and site.Data.upcoming site.Data.upcoming.enabled }}
 {{ $data := site.Data.upcoming }}
+
+{{/* ── Filter: keep only posts whose publish_date is in the future ── */}}
+{{ $now := now }}
+{{ $futurePosts := slice }}
+{{ range $data.posts }}
+  {{ $pub := .publish_date | time }}
+  {{ if $pub.After $now }}
+    {{ $futurePosts = $futurePosts | append . }}
+  {{ end }}
+{{ end }}
+
+{{/* ── If nothing is left, render nothing ── */}}
+{{ if gt (len $futurePosts) 0 }}
 
 <section class="upcoming-posts" aria-labelledby="upcoming-posts-title">
 
@@ -23,7 +35,7 @@
   </div>
 
   <ul class="upcoming-grid" role="list">
-    {{ range $data.posts }}
+    {{ range $futurePosts }}
     {{ $pub := .publish_date | time }}
     <li class="upcoming-card{{ if eq .status "tentative" }} upcoming-card--tentative{{ end }}{{ if eq .status "draft" }} upcoming-card--draft{{ end }}"
         data-publish="{{ .publish_date }}">
@@ -100,4 +112,5 @@
 })();
 </script>
 
+{{ end }}
 {{ end }}

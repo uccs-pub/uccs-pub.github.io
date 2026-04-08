@@ -7,12 +7,14 @@
 {{ with site.Data.about.intro }}
 <section class="uccs-intro" aria-label="Despre publicație">
 
-  <p class="uccs-intro-label">{{ .eyebrow }}</p>
+  <div class="editorial-header">
+    <p class="uccs-intro-label">{{ .eyebrow }}</p>
 
-  {{ with .manifesto }}
-  <p class="uccs-intro-manifesto">{{ . }}</p>
-  {{ end }}
-
+    <h2 class="editorial-header__title">
+      {{ .title }}
+      <em class="editorial-header__subtitle">{{ .subtitle }}.</em>
+    </h2>
+  </div>
   {{ with .paragraphs }}
   <div class="uccs-intro-body">
     {{ range . }}<p>{{ . }}</p>{{ end }}

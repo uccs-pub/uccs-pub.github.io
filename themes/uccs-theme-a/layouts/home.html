@@ -5,10 +5,6 @@
   each partial owns its own semantic root element.
 */ -}}
 
-{{ define "head_extra" }}
-  <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
-{{ end }}
-
 {{ define "main" }}
 
   {{/* ── 1. Hero + article grid ── */}}
@@ -26,12 +22,12 @@
   {{/* ── 3. Team — partial owns its <section> wrapper ── */}}
   {{ partial "team.html" . }}
 
-  {{/* ── 4. Upcoming posts — partial reads site.Data.upcoming internally;
+  {{/* ── 4. Section explore grid ── */}}
+  {{ partial "sections-explore.html" . }}
+
+  {{/* ── 5. Upcoming posts — partial reads site.Data.upcoming internally;
              call once, not in a range loop ── */}}
   {{ partial "upcoming-posts.html" . }}
-
-  {{/* ── 5. Section explore grid ── */}}
-  {{ partial "sections-explore.html" . }}
 
   {{/* ── 6. Optional page body (set via _index.md content) ── */}}
   {{ with .Content }}{{ . | safeHTML }}{{ end }}

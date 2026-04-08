@@ -1,18 +1,25 @@
 ---
-title: "Despre noi"
+eyebrow: "Despre noi"
+title: "Cine este UCCS?"
 standalone: true
 ---
 
+**Unde Cuvintele Capătă Sens** este un proiect editorial independent care urmărește creșterea clarității în spațiul public.
+
+Publicăm analize, eseuri și texte literare care explică fenomene politice, sociale și culturale. Lucram fără isterie, fără cultul personalității și fără dezumanizare.
+
+Ne adresăm cititorilor care nu caută doar opinii, ci instrumente de înțelegere.
+
 # Cum scriem?
 
-Fiecare text publicat pe UCCS trebuie să îndeplinească trei condiții: să clarifice
-o problemă reală, să reziste la verificări și să nu degradeze spațiul public prin
-care circulă. Critica noastră se îndreaptă spre idei și instituții, nu spre persoane.
+Fiecare text publicat pe UCCS pornește de la o problemă reală și urmărește să o clarifice fără distorsiuni. Pentru a fi publicat, trebuie să reziste la verificări și să nu degradeze spațiul public prin care circulă.
 
-Textele trec prin același traseu: idee → research și schiță → draft → editare și
-fact-check → publicare → eventuale corecții transparente, notate în changelog.
+Critica noastră se îndreaptă spre idei și instituții, nu spre persoane.
+
+Textele urmează un proces editorial constant: de la idee și documentare, la schiță, redactare, editare și fact-check. După publicare, atunci când este necesar, corecții transparente și actualizări.
 
 {{< values >}}
+
 
 # Ce scriem?
 

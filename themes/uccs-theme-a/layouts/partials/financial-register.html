@@ -1,0 +1,66 @@
+{{ $csvResource := resources.Get "registru-financiar.csv" }}
+{{ $data := $csvResource | transform.Unmarshal (dict "delimiter" ",") }}
+{{ $total := 0 }}
+{{ $currentYear := now.Year }}
+
+{{ $months := slice "Ianuarie" "Februarie" "Martie" "Aprilie" "Mai" "Iunie" "Iulie" "August" "Septembrie" "Octombrie" "Noiembrie" "Decembrie" }}
+
+<table class="financial-register">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Categorie</th>
+      <th>Suma (RON)</th>
+      <th>Detaliere</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $i, $row := $data }}
+      {{ if eq $i 0 }}
+        {{/* Sări peste header */}}
+      {{ else }}
+        {{ $dataCol := index $row 0 }}
+        {{ $categorie := index $row 1 }}
+        {{ $suma := index $row 2 | float }}
+        {{ $detaliere := index $row 3 }}
+
+        {{/* Parsează data și filtrează după anul curent */}}
+        {{ $dateObj := time.AsTime $dataCol }}
+        {{ if eq $dateObj.Year $currentYear }}
+          {{ $total = add $total $suma }}
+          {{ $valoareAbsoluta := $suma }}
+          {{ if lt $suma 0 }}
+            {{ $valoareAbsoluta = mul $suma -1 }}
+          {{ end }}
+          {{ $day := $dateObj.Day }}
+          {{ $monthIndex := sub $dateObj.Month 1 }}
+          {{ $monthName := index $months $monthIndex }}
+          {{ $dataFormatata := printf "%d %s" $day $monthName }}
+          
+          {{/* Determină clasa CSS */}}
+          {{ $cssClass := "venit" }}
+          {{ if lt $suma 0 }}
+            {{ $cssClass = "cheltuiala" }}
+          {{ end }}
+          
+          <tr class="{{ $cssClass }}">
+            <td>{{ $dataFormatata }}</td>
+            <td>{{ $categorie }}</td>
+            <td class="{{ $cssClass }}-suma">
+              {{ if lt $suma 0 }}-{{ else }}+{{ end }}{{ printf "%.2f" $valoareAbsoluta }}
+            </td>
+            <td>{{ $detaliere }}</td>
+          </tr>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><strong>TOTAL</strong></td>
+      <td><strong>Sold {{ $currentYear }}</strong></td>
+      <td><strong>{{ printf "%.2f" $total }}</strong></td>
+      <td>Disponibil în contul Revolut</td>
+    </tr>
+  </tfoot>
+</table>

@@ -15,7 +15,7 @@ theme = "uccs-theme-a"
 
 [taxonomies]
     tag = "tags"
-    author = "authors"
+    author = "autori"
     theme = "themes"
 
 [outputs]

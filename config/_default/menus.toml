@@ -14,17 +14,28 @@
   weight = 30
 
 
+
+# ── FOOTER / standalone pages ──────────────────────────────────
+
 [[footer]]
-  name = "Arhivă"
-  pageRef = "/archive"
+  name = "Transparență"
+  pageRef = "/politica-de-confidentialitate"
   weight = 10
 
 [[footer]]
-  name = "Politica editorială"
+  name = "Politică editorială"
   pageRef = "/politica-editoriala"
   weight = 20
 
+[[footer]]
+  name = "Protecția Datelor"
+  pageRef = "/protectia-datelor"
+  weight = 30
+
+
+
 # ── Row 1 (right): utility / standalone pages ──────────────────────────────────
+
 [[utility]]
 name    = "Despre"
 pageRef = "/despre"
@@ -44,8 +55,8 @@ weight  = 30
 # To point to an internal page instead, remove `url` and add: pageRef = "/doneaza"
 [[utility]]
 name   = "Donează"
-url    = "https://www.instagram.com/istorie.petru/"
-params = { donate = true, external = true }
+#url    = "https://www.instagram.com/istorie.petru/"
+#params = { donate = true, external = true }
 weight = 40
-#url    = "/doneaza"
-#params = { donate = true }
+url    = "/doneaza"
+params = { donate = true }

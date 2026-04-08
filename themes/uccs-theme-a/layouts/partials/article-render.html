@@ -29,7 +29,9 @@
 {{- if gt $limit 0 -}}{{- $pages = first $limit $pages -}}{{- end -}}
 
 {{/* ── Hero (first article) ── */}}
+{{/* ── Hero (first article) ── */}}
 {{- if and $hero (gt (len $pages) 0) -}}
+  <p class="article-heading mobile-only">Ultimul articol</p>
   {{ partial "article-hero.html" (dict
     "page"        (index $pages 0)
     "layout"      $heroLayout

@@ -175,7 +175,7 @@
   padding-inline: var(--side-pad);
   padding-block: var(--space-12) var(--space-10);
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: var(--space-10) var(--space-8);
   align-items: start;
 }

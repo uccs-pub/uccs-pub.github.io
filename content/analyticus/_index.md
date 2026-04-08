@@ -1,13 +1,9 @@
 ---
 title: "UCCS Analyticus"
 tagline: "Analiză rece, fără isterie"
-description: "textele care explică instituții, idei, regimuri, conflicte de interpretare și mecanisme sociale fără isterie, fără cultul personalității și fără dezumanizare."
+description: "Texte care explică instituții, idei și mecanisme sociale prin cadre conceptuale explicite și argumente verificabile. Fără simplificări populiste, fără cultul personalității, fără dezumanizare."
 editor: "Velcea-Petru"
 content_type: "Analize"
 ---
 
-UCCS **Analyticus** publică texte de analiză „rece”: argumente, cadre conceptuale și distincții care clarifică probleme reale din spațiul public.
-
-Aici intră textele care explică instituții, idei, regimuri de argumentare, conflicte de interpretare și mecanisme sociale fără isterie, fără cultul personalității și fără dezumanizare.
-
-Cititorul ideal nu caută doar opinie, ci orientare intelectuală: ce se întâmplă, prin ce concepte poate fi înțeles și ce merită reținut.
+Texte care explică instituții, idei și mecanisme sociale prin cadre conceptuale explicite și argumente verificabile. Fără simplificări populiste, fără cultul personalității, fără dezumanizare.

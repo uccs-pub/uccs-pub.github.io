@@ -106,6 +106,21 @@
         </ul>
       </div>
 
+      <!-- Utility links — driven by [[footer]] in menus.toml -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Instituție</h3>
+        <ul class="footer-links">
+          {{ range site.Menus.footer }}
+            <li>
+              <a href="{{ .URL }}"
+                 {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
     </div>
 
     <div class="footer-bottom">

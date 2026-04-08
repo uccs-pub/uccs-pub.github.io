@@ -33,7 +33,7 @@
   <ul class="section-explore-grid" role="list">
     {{ range $sections }}
       {{ $section     := . }}
-      {{ $slug        := $section.File.TranslationBaseName }}
+      {{ $slug := $section.Section }}
       {{ $count       := len $section.RegularPages }}
 
       {{/* Featured URL: manual pin or latest published article */}}

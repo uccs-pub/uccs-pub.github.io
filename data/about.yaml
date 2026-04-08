@@ -3,7 +3,8 @@
 
 intro:
   eyebrow: "Ce este UCCS?"
-  manifesto: "Revistă editorială independentă cu substanță, nu doar formă."
+  title: "Revistă editorială independentă"
+  subtitle: "cu substanță, nu doar formă."
   paragraphs:
     - "UCCS explică fenomene politice, sociale și culturale într-un limbaj inteligibil.
        Nu urmărim viralitate și nu scriem pentru algoritmi, ci pentru cititorul care
@@ -14,14 +15,11 @@ intro:
 
 values:
   - title: "Substanță"
-    body: "Fiecare articol pornește de la o întrebare reală și se termină cu un răspuns
-           onest — nu cu un titlu sclipitor care acoperă un gol de idei."
+    body: "Întrebări reale, răspunsuri oneste."
   - title: "Claritate"
-    body: "Complexitatea nu e un motiv de obscurantism. Dacă nu poți explica simplu,
-           nu ai înțeles suficient de bine."
+    body: "Dacă nu poți explica simplu, nu ai înțeles suficient."
   - title: "Independență"
-    body: "UCCS nu are finanțatori instituționali, nu are agende editoriale ascunse
-           și nu are parteneriate comerciale care să influențeze conținutul."
+    body: "Fără finanțare instituțională, fără agende ascunse, fără influență comercială."
 
 founders_intro:
   eyebrow: "Echipă"
