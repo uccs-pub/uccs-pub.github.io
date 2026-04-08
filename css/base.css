@@ -1,19 +1,39 @@
 /*
  * UCCS — Unde Cuvintele Capătă Sens
- * style.css — v4
+ * base.css — v5
  *
  * Sections:
  *   1.  Design tokens
  *   2.  Base reset
  *   3.  Accessibility utilities
  *   4.  Layout
-*/
+ *   5.  Selection
+ */
 
 /* ============================================================
  *  1. DESIGN TOKENS
  * ============================================================ */
 
+/*
+ * Breakpoints — consumed by all other stylesheets.
+ * Use in media queries as: @media (max-width: 640px) { ... }
+ * or reference the token name in comments for clarity.
+ * --bp-sm:  480px   (large phones, landscape)
+ * --bp-md:  640px   (small tablets / large phones)
+ * --bp-lg:  768px   (tablets)
+ * --bp-xl: 1024px   (small desktops)
+ */
+
+:root {
+  --bp-sm:  480px;
+  --bp-md:  640px;
+  --bp-lg:  768px;
+  --bp-xl: 1024px;
+}
+
 :root, [data-theme="light"] {
+
+  /* Surfaces */
   --color-bg:              #f8f5ef;
   --color-surface:         #faf8f3;
   --color-surface-2:       #fcfbf8;
@@ -22,36 +42,48 @@
   --color-divider:         #ddd6ca;
   --color-border:          #d4ccc0;
 
+  /* Text */
   --color-text:            #1c1a14;
   --color-text-muted:      #6b6459;
   --color-text-faint:      #b3a99a;
   --color-text-inverse:    #f8f5ef;
 
-  --color-primary:         #5a3e2b;
-  --color-primary-hover:   #432d1c;
-  --color-primary-active:  #2e1d10;
+  /* Brand */
+  --color-primary:           #5a3e2b;
+  --color-primary-hover:     #432d1c;
+  --color-primary-active:    #2e1d10;
   --color-primary-highlight: #e0d4c8;
 
-  --color-gold:            #b07d3a;
-  --color-gold-hover:      #9a6b2a;
+  --color-gold:              #b07d3a;
+  --color-gold-hover:        #9a6b2a;
 
-  --color-error:           #9b2c2c;
-  --color-success:         #3a6b20;
+  /* Semantic */
+  --color-error:   #9b2c2c;
+  --color-success: #3a6b20;
 
+  /* Component-level semantic tokens */
+  --color-code-border: rgba(28, 26, 20, 0.08);   /* inline code + pre borders */
+  --color-th-border:   rgba(28, 26, 20, 0.18);   /* table <th> bottom rule   */
+
+  /* Radii */
   --radius-sm:   0.25rem;
   --radius-md:   0.375rem;
   --radius-lg:   0.5rem;
   --radius-xl:   0.75rem;
   --radius-full: 9999px;
 
+  /* Transitions */
   --transition-fast:        120ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
 
-  --shadow-sm: 0 1px 2px rgba(30, 20, 10, 0.06);
+  /* Shadows */
+  --shadow-sm: 0 1px 2px  rgba(30, 20, 10, 0.06);
   --shadow-md: 0 4px 14px rgba(30, 20, 10, 0.08);
   --shadow-lg: 0 12px 36px rgba(30, 20, 10, 0.11);
 
-  /* ↓ Change this one variable to resize the whole site */
+  /* ── Site geometry ─────────────────────────────────────────
+   * Change --site-max-w to resize the whole layout in one go.
+   * --content-* are semantic aliases used by individual layouts. */
   --site-max-w:      1120px;
 
   --content-article: 780px;
@@ -59,17 +91,22 @@
   --content-default: 1120px;
   --content-wide:    var(--site-max-w);
   --content-full:    100%;
-  --content-medium:   60%;
-  --content-small:    40%;
+  --content-medium:  60%;
+  --content-small:   40%;
 
-  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.8125rem);
+  /* ── Fluid type scale ──────────────────────────────────────
+   * Each step clamps between a minimum (mobile) and maximum
+   * (desktop) value, scaling linearly with the viewport. */
+  --text-xs:   clamp(0.75rem,   0.7rem  + 0.25vw, 0.8125rem);
   --text-sm:   clamp(0.8125rem, 0.78rem + 0.25vw, 0.9375rem);
-  --text-base: clamp(1rem,     0.96rem + 0.2vw,  1.125rem);
-  --text-lg:   clamp(1.125rem, 1rem    + 0.6vw,  1.375rem);
-  --text-xl:   clamp(1.375rem, 1.1rem  + 1.1vw,  2rem);
-  --text-2xl:  clamp(1.75rem,  1.2rem  + 2vw,    3rem);
-  --text-3xl:  clamp(2.25rem,  1rem    + 3.8vw,  4.5rem);
+  --text-base: clamp(1rem,      0.96rem + 0.2vw,  1.125rem);
+  --text-lg:   clamp(1.125rem,  1rem    + 0.6vw,  1.375rem);
+  --text-xl:   clamp(1.375rem,  1.1rem  + 1.1vw,  2rem);
+  --text-2xl:  clamp(1.75rem,   1.2rem  + 2vw,    3rem);
+  --text-3xl:  clamp(2.25rem,   1rem    + 3.8vw,  4.5rem);
 
+  /* ── Spacing scale (4px base) ─────────────────────────────
+   * Named by multiplier: --space-4 = 1rem = 16px. */
   --space-1:  0.25rem;
   --space-2:  0.5rem;
   --space-3:  0.75rem;
@@ -83,10 +120,15 @@
   --space-20: 5rem;
   --space-24: 6rem;
 
+  /* ── Typography ───────────────────────────────────────────
+   * --font-ui inherits --font-body; override if you add a
+   * dedicated sans-serif later. */
   --font-display: 'Cormorant Garamond', 'Georgia', serif;
   --font-body:    'Source Serif 4', 'Georgia', serif;
   --font-ui:       var(--font-body);
 }
+
+/* ── Dark theme token overrides ───────────────────────────── */
 
 [data-theme="dark"] {
   --color-bg:              #17140d;
@@ -102,21 +144,26 @@
   --color-text-faint:      #5e5749;
   --color-text-inverse:    #17140d;
 
-  --color-primary:         #c4956a;
-  --color-primary-hover:   #d4a87e;
-  --color-primary-active:  #e0bc96;
+  --color-primary:           #c4956a;
+  --color-primary-hover:     #d4a87e;
+  --color-primary-active:    #e0bc96;
   --color-primary-highlight: #2e2318;
 
-  --color-gold:            #c9973f;
-  --color-gold-hover:      #d9a84e;
+  --color-gold:      #c9973f;
+  --color-gold-hover:#d9a84e;
 
-  --color-error:           #e07070;
-  --color-success:         #7ab856;
+  --color-error:   #e07070;
+  --color-success: #7ab856;
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --color-code-border: rgba(224, 216, 203, 0.1);
+  --color-th-border:   rgba(224, 216, 203, 0.2);
+
+  --shadow-sm: 0 1px 2px  rgba(0, 0, 0, 0.25);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.45);
 }
+
+/* ── System dark mode (no explicit data-theme attribute) ───── */
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
@@ -127,19 +174,27 @@
     --color-surface-dynamic: #2a261c;
     --color-divider:         #2e2a20;
     --color-border:          #3d3829;
+
     --color-text:            #e0d8cb;
     --color-text-muted:      #9a9183;
     --color-text-faint:      #5e5749;
     --color-text-inverse:    #17140d;
-    --color-primary:         #c4956a;
-    --color-primary-hover:   #d4a87e;
-    --color-primary-active:  #e0bc96;
+
+    --color-primary:           #c4956a;
+    --color-primary-hover:     #d4a87e;
+    --color-primary-active:    #e0bc96;
     --color-primary-highlight: #2e2318;
-    --color-gold:            #c9973f;
-    --color-gold-hover:      #d9a84e;
-    --color-error:           #e07070;
-    --color-success:         #7ab856;
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+    --color-gold:       #c9973f;
+    --color-gold-hover: #d9a84e;
+
+    --color-error:   #e07070;
+    --color-success: #7ab856;
+
+    --color-code-border: rgba(224, 216, 203, 0.1);
+    --color-th-border:   rgba(224, 216, 203, 0.2);
+
+    --shadow-sm: 0 1px 2px  rgba(0, 0, 0, 0.25);
     --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.45);
   }
@@ -202,11 +257,6 @@ button { cursor: pointer; background: none; border: none; }
 
 table { border-collapse: collapse; width: 100%; }
 
-::selection {
-  background: rgba(90, 62, 43, 0.2);
-  color: var(--color-text);
-}
-
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
@@ -268,7 +318,11 @@ a:hover { color: var(--color-primary-hover); }
  *  4. LAYOUT
  * ============================================================ */
 
-:root { --side-pad: clamp(var(--space-5), 4vw, var(--space-10)); }
+/*
+ * --side-pad: minimum is var(--space-4) = 1rem so narrow phones
+ * (375px) still get comfortable edge breathing room.
+ */
+:root { --side-pad: clamp(var(--space-4), 4vw, var(--space-10)); }
 
 main {
   flex: 1;
@@ -286,27 +340,32 @@ main {
 }
 
 /* ============================================================
- *  4b. SELECTIONN
+ *  5. SELECTION
  * ============================================================ */
 
-/* Text selection — dynamic by theme */
+/*
+ * One canonical selection style using theme tokens.
+ * The [data-theme="dark"] block and the @media block mirror
+ * each other — explicit data-theme wins over system preference
+ * because it appears later in the cascade.
+ */
+
 ::selection {
   background: var(--color-primary-highlight);
   color: var(--color-text);
 }
 
-[data-theme="dark"] ::selection {
-  background: var(--color-primary);
-  color: var(--color-text-inverse);
-}
-
-/* Optional: Firefox */
 ::-moz-selection {
   background: var(--color-primary-highlight);
   color: var(--color-text);
 }
 
-[data-theme="dark"] ::-moz-selection {
-  background: var(--color-primary);
-  color: var(--color-text-inverse);
+/* Explicit dark theme */
+[data-theme="dark"] ::selection    { background: var(--color-primary); color: var(--color-text-inverse); }
+[data-theme="dark"] ::-moz-selection { background: var(--color-primary); color: var(--color-text-inverse); }
+
+/* System dark mode (no data-theme set) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) ::selection      { background: var(--color-primary); color: var(--color-text-inverse); }
+  :root:not([data-theme]) ::-moz-selection { background: var(--color-primary); color: var(--color-text-inverse); }
 }
