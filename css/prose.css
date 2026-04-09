@@ -116,7 +116,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: var(--radius-lg);
-  margin-block: var(--space-6);
+  /*margin-block: var(--space-6);*/
 }
 
 figure        { margin-block: var(--space-8); }

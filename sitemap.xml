@@ -2,26 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://uccs.codeberg.page/tags/argument/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <loc>https://uccs.codeberg.page/cultural/poem-book-0001/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
-    <loc>https://uccs.codeberg.page/tags/dezbateri/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <loc>https://uccs.codeberg.page/cultural/autobuzul-196/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
-    <loc>https://uccs.codeberg.page/tags/ghid/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
-  </url><url>
-    <loc>https://uccs.codeberg.page/analyticus/how-debate-teaches-intellectual-honesty/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
-  </url><url>
-    <loc>https://uccs.codeberg.page/cultural/how-debate-teaches-intellectual-honesty/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
-  </url><url>
-    <loc>https://uccs.codeberg.page/dezbateri/how-debate-teaches-intellectual-honesty/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <loc>https://uccs.codeberg.page/tags/poezie/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>https://uccs.codeberg.page/tags/</loc>
-    <lastmod>2026-04-07T22:11:22+03:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/cultural/bab%C4%83-de-dame/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/analyticus/decentralizarea-educa%C8%9Biei-din-rom%C3%A2nia/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/tags/descentralizare/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/tags/educa%C8%9Bie/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/tags/sistemul-educa%C8%9Bional/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/analyticus/istoria-din-liceu/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/tags/istorie/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/tags/programe-%C8%99colare/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/cultural/dincolo-de-umbre/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/analyticus/critica-programei-de-istorie-din-liceu/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>https://uccs.codeberg.page/autori/</loc>
     <lastmod>2026-04-08T18:51:49+03:00</lastmod>
@@ -29,10 +53,10 @@
     <loc>https://uccs.codeberg.page/despre/</loc>
     <lastmod>2026-04-08T18:51:49+03:00</lastmod>
   </url><url>
-    <loc>https://uccs.codeberg.page/doneaza/</loc>
-    <lastmod>2026-04-08T18:51:49+03:00</lastmod>
-  </url><url>
     <loc>https://uccs.codeberg.page/transparenta/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/doneaza/</loc>
     <lastmod>2026-04-08T18:51:49+03:00</lastmod>
   </url><url>
     <loc>https://uccs.codeberg.page/contact/</loc>
@@ -46,6 +70,9 @@
   </url><url>
     <loc>https://uccs.codeberg.page/</loc>
     <lastmod>2026-04-08T11:31:04+03:00</lastmod>
+  </url><url>
+    <loc>https://uccs.codeberg.page/politica-editoriala/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>https://uccs.codeberg.page/themes/</loc>
   </url><url>

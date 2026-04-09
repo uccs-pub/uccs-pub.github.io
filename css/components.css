@@ -130,6 +130,7 @@ a.article-author:hover {
   flex-direction: column;
   gap: var(--space-5);
   margin-top: var(--space-6);
+  padding-left: 0px;
 }
 
 /* ── Card shell ── */
@@ -190,6 +191,8 @@ a.article-author:hover {
   object-fit: cover;
   display: block;
   transition: opacity var(--transition-interactive);
+  margin-block: 0;
+  border-radius: 0;
 }
 
 .article-card:hover .article-card__img { opacity: 0.92; }
@@ -311,7 +314,7 @@ a.article-author:hover {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text);
-  margin: 0 0 var(--space-6);
+  margin: var(--space-6) 0;
 }
 
 .article-heading::after {
