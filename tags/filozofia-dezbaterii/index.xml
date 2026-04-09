@@ -6,63 +6,49 @@
     <description>Recent content in Filozofia-Dezbaterii on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
     <language>ro-RO</language>
-    <lastBuildDate>Thu, 09 Apr 2026 18:35:53 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 23:42:35 +0300</lastBuildDate>
     <atom:link href="https://uccs.codeberg.page/tags/filozofia-dezbaterii/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>001. Formatul World Schools</title>
-      <link>https://uccs.codeberg.page/dezbateri/001.-formatul-world-schools/</link>
+      <title>Anatomia argumentului</title>
+      <link>https://uccs.codeberg.page/dezbateri/anatomia-argumentului/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/001.-formatul-world-schools/</guid>
-      <description>&lt;h1 id=&#34;formatul-world-schools&#34;&gt;Formatul World Schools&lt;/h1&gt;&#xA;&lt;h2 id=&#34;aspecte-generale-ale-formatului&#34;&gt;Aspecte generale ale formatului&lt;/h2&gt;&#xA;&lt;p&gt;Dezbaterea reprezintă o succesiune de discursuri pe o anumită temă, desfășurate conform unui set de reguli bine stabilite.&lt;/p&gt;&#xA;&lt;p&gt;În sistemul World Schools (prescurtat World Schools), alternanța are loc între două echipe formate fiecare din trei membri, numiți vorbitori: echipa guvernului și echipa opoziției.  Dezbaterea este structurată în două etape distincte: etapa constructivă (~54 de minute) și etapa concluzivă (~8 minute).  Un discurs constructiv durează 8 minute, iar cel concluziv 4 minute.&lt;/p&gt;</description>
+      <guid>https://uccs.codeberg.page/dezbateri/anatomia-argumentului/</guid>
+      <description>&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;&#xA;  &lt;p class=&#34;nerdnote__label&#34;&gt;Ce este un argument?&lt;/p&gt;&#xA;  &lt;div class=&#34;nerdnote__body&#34;&gt;Un argument este o demonstrație logică care susține o afirmație prin rațiune și dovezi. El explică de ce o idee este adevărată sau valabilă, trecând de la o premisă comună la o concluzie justificată. Scopul său nu este doar să afirme, ci să convingă prin coerență, relevanță și exemple care arată funcționarea mecanismului în realitate.&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;&#xA;  &lt;p class=&#34;nerdnote__label&#34;&gt;Cum arată un argument?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>002. Discursul constructiv</title>
-      <link>https://uccs.codeberg.page/dezbateri/002.-discursul-constructiv/</link>
+      <title>Discursul constructiv</title>
+      <link>https://uccs.codeberg.page/dezbateri/discursul-constructiv/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/002.-discursul-constructiv/</guid>
+      <guid>https://uccs.codeberg.page/dezbateri/discursul-constructiv/</guid>
       <description>&lt;p&gt;Rolul primului vorbitor într-o dezbatere nu este acela de a arunca direct cu argumente, ci de a așeza fundația pe care se va construi întreaga discuție. Pentru ca terenul de joc să fie clar și echitabil încă din primele minute, discursul de deschidere trebuie să funcționeze ca o hartă, oferind răspunsuri limpezi la trei întrebări fundamentale:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>003. Anatomia argumentului</title>
-      <link>https://uccs.codeberg.page/dezbateri/003.-anatomia-argumentului/</link>
+      <title>Discursul sumativ</title>
+      <link>https://uccs.codeberg.page/dezbateri/discursul-sumativ/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/003.-anatomia-argumentului/</guid>
-      <description>&lt;h1 id=&#34;anatomia-argumentului&#34;&gt;Anatomia argumentului&lt;/h1&gt;&#xA;&lt;p&gt;Într-o dezbatere, diferența dintre un vorbitor mediocru și unul excelent nu constă în vocea mai puternică sau în gestica mai dramatică, ci în capacitatea de a transforma o simplă opinie într-o demonstrație logică completă. Mulți debatteri începători confundă o afirmație fermă cu un argument solid, crezând că dacă declari ceva cu suficientă convingere, ascultătorii vor fi obligați să te creadă. Realitatea este cu totul diferită: un argument convingător nu este o declarație isolată, ci o arhitectură precisă, construită din piese interdependente, care ghidează ascultătorul pas cu pas de la o realitate comună până la concluzia dorită.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>004. Exemplificarea în argumentare</title>
-      <link>https://uccs.codeberg.page/dezbateri/004.-exemplificarea-%C3%AEn-argumentare/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/004.-exemplificarea-%C3%AEn-argumentare/</guid>
-      <description>&lt;p&gt;Exemplul este un instrument de susținere: poate (a) să ilustreze un mecanism, (b) să sprijine inductiv o generalizare, (c) să funcționeze ca analogie/precedent sau (d) să opereze ca contraexemplu (limitând/invalidând o regulă).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>005. Discursul sumativ</title>
-      <link>https://uccs.codeberg.page/dezbateri/005.-discursul-sumativ/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/005.-discursul-sumativ/</guid>
+      <guid>https://uccs.codeberg.page/dezbateri/discursul-sumativ/</guid>
       <description>&lt;p&gt;Discursul sumativ este singurul discurs de patru minute dintr-o rundă și, probabil, cel mai neînțeles rol din întregul format. Mulți debatteri îl tratează ca pe un rezumat plictisitor sau ca pe o simplă repetare a argumentelor deja rostite, fără să realizeze că acest discurs final poate decide câștigătorul în rundele echilibrate. Rolul fundamental al acestui discurs nu este să repete cronologic tot ce s-a întâmplat („el a zis, noi am răspuns, apoi ei au zis&amp;hellip;&amp;quot;), ci să &lt;strong&gt;cristalizeze dezbaterea&lt;/strong&gt;: să o condenseze în jurul celor mai importante ciocniri de idei și să arate arbitrului, printr-o analiză lucidă și ordonată, de ce tabăra ta a câștigat per ansamblu.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>006. Persuasiunea aristotelică</title>
-      <link>https://uccs.codeberg.page/dezbateri/006.-persuasiunea-aristotelic%C4%83/</link>
+      <title>Exemplificarea în argumentare</title>
+      <link>https://uccs.codeberg.page/dezbateri/exemplificarea-%C3%AEn-argumentare/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/006.-persuasiunea-aristotelic%C4%83/</guid>
+      <guid>https://uccs.codeberg.page/dezbateri/exemplificarea-%C3%AEn-argumentare/</guid>
+      <description>&lt;p&gt;Exemplul este un instrument de susținere: poate (a) să ilustreze un mecanism, (b) să sprijine inductiv o generalizare, (c) să funcționeze ca analogie/precedent sau (d) să opereze ca contraexemplu (limitând/invalidând o regulă).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Formatul World Schools</title>
+      <link>https://uccs.codeberg.page/dezbateri/formatul-world-schools/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://uccs.codeberg.page/dezbateri/formatul-world-schools/</guid>
+      <description>&lt;h2 id=&#34;aspecte-generale-ale-formatului&#34;&gt;Aspecte generale ale formatului&lt;/h2&gt;&#xA;&lt;p&gt;Dezbaterea reprezintă o succesiune de discursuri pe o anumită temă, desfășurate conform unui set de reguli bine stabilite.&lt;/p&gt;&#xA;&lt;p&gt;În sistemul World Schools (prescurtat World Schools), alternanța are loc între două echipe formate fiecare din trei membri, numiți vorbitori: echipa guvernului și echipa opoziției.  Dezbaterea este structurată în două etape distincte: etapa constructivă (~54 de minute) și etapa concluzivă (~8 minute).  Un discurs constructiv durează 8 minute, iar cel concluziv 4 minute.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Persuasiunea aristotelică</title>
+      <link>https://uccs.codeberg.page/dezbateri/persuasiunea-aristotelic%C4%83/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://uccs.codeberg.page/dezbateri/persuasiunea-aristotelic%C4%83/</guid>
       <description>&lt;h1 id=&#34;arhitectura-persuasiunii-aristotelice&#34;&gt;Arhitectura persuasiunii aristotelice&lt;/h1&gt;&#xA;&lt;p&gt;Cu peste două milenii în urmă, Aristotel a identificat în lucrarea sa &lt;em&gt;Retorică&lt;/em&gt; cele trei moduri fundamentale prin care un vorbitor poate convinge un auditoriu: &lt;strong&gt;logos&lt;/strong&gt; (apelul la rațiune și logică), &lt;strong&gt;ethos&lt;/strong&gt; (apelul la credibilitatea și caracterul vorbitorului) și &lt;strong&gt;pathos&lt;/strong&gt; (apelul la emoțiile și valorile audienței). Aceste concepte reprezintă atât categorii teoretice, cât și o hartă practică a persuasiunii, recunoscând faptul că oamenii nu sunt ființe pur raționale, ci decid pe baza unei combinații complexe de raționament logic, încredere în sursa informației și rezonanță emotională.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>990. Glosar</title>
-      <link>https://uccs.codeberg.page/dezbateri/990.-glosar/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/990.-glosar/</guid>
-      <description>&lt;h1 id=&#34;glosar&#34;&gt;Glosar&lt;/h1&gt;&#xA;&lt;h4 id=&#34;dez&#34;&gt;[Dezbaterea]&lt;/h4&gt;&#xA;&lt;p&gt;Evenimentul competițional structurat în care o moțiune este analizată și contestată prin intermediul unui număr prestabilit de discursuri susținute alternativ de echipele participante, cu scopul de a convinge juriul de validitatea poziției adoptate.^[În formatul World Schools, o dezbatere cuprinde 8 discursuri.]&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>999. Bibliografie</title>
-      <link>https://uccs.codeberg.page/dezbateri/999.-bibliografie/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/999.-bibliografie/</guid>
-      <description>&lt;h1 id=&#34;bibliografie-academică-și-instituțională&#34;&gt;Bibliografie Academică și Instituțională&lt;/h1&gt;&#xA;&lt;p&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Caietul profesorului pentru disciplina opțională&lt;/em&gt;. ARDOR România, 2016.&lt;/p&gt;&#xA;&lt;p&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Ghid de arbitraj World Schools&lt;/em&gt;. ARDOR, 2022.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
