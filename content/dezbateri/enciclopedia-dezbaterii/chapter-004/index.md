@@ -1,5 +1,5 @@
 ---
-title: "004. Exemplificarea în argumentare"
+title: "Exemplificarea în argumentare"
 publishDate: 2026-03-27
 lead: "wip"
 author: "velcea-petru"

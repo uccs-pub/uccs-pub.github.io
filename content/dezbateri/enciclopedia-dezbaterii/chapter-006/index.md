@@ -1,5 +1,5 @@
 ---
-title: "006. Persuasiunea aristotelică"
+title: "Persuasiunea aristotelică"
 publishDate: 2026-03-27
 lead: "wip"
 author: "velcea-petru"

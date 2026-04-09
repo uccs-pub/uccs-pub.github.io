@@ -1,5 +1,5 @@
 ---
-title: "002. Discursul constructiv"
+title: "Discursul constructiv"
 publishDate: 2026-03-27
 lead: "wip"
 author: "velcea-petru"

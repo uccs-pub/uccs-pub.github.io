@@ -1,5 +1,5 @@
 ---
-title: "001. Formatul World Schools"
+title: "Formatul World Schools"
 publishDate: 2026-03-27
 lead: "wip"
 author: "velcea-petru"
@@ -8,8 +8,6 @@ tags:
     - filozofia-dezbaterii
     - world-schools
 ---
-
-# Formatul World Schools
 
 ## Aspecte generale ale formatului
 
