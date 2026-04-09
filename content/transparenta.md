@@ -1,6 +1,6 @@
 ---
 eyebrow: "Transparență"
-title: "Cum ne poți susține?"
+title: "Cine este UCCS?"
 standalone: true
 ---
 

@@ -21,12 +21,53 @@
 {{- $author      := .author      | default "" -}}
 {{- $hero        := .hero        | default false -}}
 {{- $heroLayout  := .heroLayout  | default "featured-hero" -}}
+{{- $collapseBooks := .collapseBooks | default true -}}
 
 {{/* ── Filter ── */}}
 {{- $pages = where $pages "Params.standalone" "ne" true -}}
 {{- if $author -}}{{- $pages = where $pages "Params.author" $author -}}{{- end -}}
 {{- if gt $skip  0 -}}{{- $pages = after $skip  $pages -}}{{- end -}}
-{{- if gt $limit 0 -}}{{- $pages = first $limit $pages -}}{{- end -}}
+
+{{/* ── Adjust limit for book collapse ── */}}
+{{- $effectiveLimit := $limit -}}
+{{- if and $collapseBooks (gt $limit 0) -}}
+  {{/* Count duplicates: for each book, count children beyond the first */}}
+  {{- $duplicateCount := 0 -}}
+  {{- $seenBooks := dict -}}
+  {{- range $pages -}}
+    {{- if and .Parent (eq .Parent.Params.layout "book") -}}
+      {{- $bookURL := .Parent.Permalink -}}
+      {{- $count := 1 -}}
+      {{- if isset $seenBooks $bookURL -}}
+        {{- $count = add (index $seenBooks $bookURL) 1 -}}
+      {{- end -}}
+      {{- $seenBooks = merge $seenBooks (dict $bookURL $count) -}}
+      {{- if gt $count 1 -}}
+        {{- $duplicateCount = add $duplicateCount 1 -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $effectiveLimit = add $limit $duplicateCount -}}
+{{- end -}}
+{{- if gt $effectiveLimit 0 -}}{{- $pages = first $effectiveLimit $pages -}}{{- end -}}
+
+{{- if $collapseBooks -}}
+  {{/* ── Book collapse (only when enabled) ── */}}
+  {{- $collapsed := slice -}}
+  {{- $seenBooks := slice -}}
+  {{- range $pages -}}
+    {{- if and .Parent (eq .Parent.Params.layout "book") -}}
+      {{- $bookURL := .Parent.Permalink -}}
+      {{- if not (in $seenBooks $bookURL) -}}
+        {{- $collapsed = $collapsed | append .Parent -}}
+        {{- $seenBooks = $seenBooks | append $bookURL -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $collapsed = $collapsed | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $pages = $collapsed -}}
+{{- end -}}
 
 {{/* ── Hero (first article) ── */}}
 {{/* ── Hero (first article) ── */}}

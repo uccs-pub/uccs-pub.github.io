@@ -38,10 +38,21 @@
 
   {{/* ── Text panel ── */}}
   <div class="{{ $layout }}-body">
-
     <div class="{{ $layout }}-eyebrow">
-      <span class="{{ $layout }}-label">{{ $page.CurrentSection.Title | default $page.Section }}</span>
-      <span class="{{ $layout }}-badge">Articol recomandat</span>
+      {{- $eyebrow := $page.Params.eyebrow | default "" -}}
+      {{- if not $eyebrow -}}
+        {{- if eq $page.Params.layout "book" -}}
+          {{- $eyebrow = $page.Title -}}
+        {{- else -}}
+          {{- with $page.CurrentSection -}}
+            {{- $eyebrow = .Title -}}
+          {{- end -}}
+          {{- if not $eyebrow -}}
+            {{- $eyebrow = $page.Section -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      <span class="{{ $layout }}-label">{{ $eyebrow }}</span>
     </div>
 
     <h2 class="{{ $layout }}-title">{{ $page.Title }}</h2>

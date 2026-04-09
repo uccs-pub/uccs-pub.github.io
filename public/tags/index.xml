@@ -6,27 +6,48 @@
     <description>Recent content in Tags on Unde Cuvintele Capătă Sens</description>
     <generator>Hugo</generator>
     <language>ro-RO</language>
-    <lastBuildDate>Tue, 07 Apr 2026 22:11:22 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Argument</title>
-      <link>http://localhost:1313/tags/argument/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/argument/</guid>
+      <title>Poezie</title>
+      <link>http://localhost:1313/tags/poezie/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/poezie/</guid>
       <description></description>
     </item>
     <item>
-      <title>Dezbateri</title>
-      <link>http://localhost:1313/tags/dezbateri/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dezbateri/</guid>
+      <title>Descentralizare</title>
+      <link>http://localhost:1313/tags/descentralizare/</link>
+      <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/descentralizare/</guid>
       <description></description>
     </item>
     <item>
-      <title>Ghid</title>
-      <link>http://localhost:1313/tags/ghid/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ghid/</guid>
+      <title>Educație</title>
+      <link>http://localhost:1313/tags/educa%C8%9Bie/</link>
+      <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/educa%C8%9Bie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sistemul-Educațional</title>
+      <link>http://localhost:1313/tags/sistemul-educa%C8%9Bional/</link>
+      <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sistemul-educa%C8%9Bional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Istorie</title>
+      <link>http://localhost:1313/tags/istorie/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/istorie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programe-Școlare</title>
+      <link>http://localhost:1313/tags/programe-%C8%99colare/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/programe-%C8%99colare/</guid>
       <description></description>
     </item>
   </channel>

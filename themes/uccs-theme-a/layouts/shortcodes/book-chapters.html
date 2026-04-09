@@ -1,0 +1,21 @@
+{{/*
+  Shortcode: book-chapters
+  Randeaza lista de capitole ale book-ului curent.
+
+  Parametri optionali:
+    heading  — titlul sectiunii (default: "Capitole")
+    layout   — "list" (default) sau "grid"
+*/}}
+
+{{ $heading := .Get "heading" | default "Capitole" }}
+{{ $layout  := .Get "layout"  | default "list" }}
+{{ $page    := .Page }}
+
+{{ with $page.RegularPagesRecursive }}
+  {{ partial "article-render.html" (dict
+    "pages"   .
+    "layout"  $layout
+    "heading" $heading
+    "collapseBooks" false
+  ) }}
+{{ end }}

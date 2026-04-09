@@ -1,20 +1,22 @@
 {{- /* ─────────────────────────────────────────────────────────────
   Shortcode: articles
-  Usage: 
-    {{ articles layout="grid" hero=true heading="Cele mai recente" limit=9 }}
-    {{ articles layout="list" author=.Title hero=true }}
+  Usage:
+    {{< articles layout="grid" hero=true heading="Cele mai recente" limit=9 >}}
+    {{< articles pages=.Site.RegularPages layout="list" author="Ion" >}}
+    {{< articles pages=.CurrentSection.Pages limit=5 >}}
 ───────────────────────────────────────────────────────────────── */ -}}
 
-{{ $pages := .Get 0 | default "site.RegularPages" -}}
-{{ $layout := .Get 1 | default "grid" -}}
-{{ $heading := .Get 2 | default "" -}}
-{{ $limit := .Get 3 | int | default 0 -}}
-{{ $skip := .Get 4 | int | default 0 -}}
-{{ $author := .Get 5 | default "" -}}
-{{ $hero := .Get 6 | default false -}}
-{{ $showSection := .Get 7 | default false -}}
+{{ $pages := .Get "pages" | default .Site.RegularPages -}}
+{{ $layout := .Get "layout" | default "grid" -}}
+{{ $heading := .Get "heading" | default "" -}}
+{{ $limit := .Get "limit" | int | default 0 -}}
+{{ $skip := .Get "skip" | int | default 0 -}}
+{{ $author := .Get "author" | default "" -}}
+{{ $hero := .Get "hero" | default false -}}
+{{ $showSection := .Get "showSection" | default false -}}
+{{ $collapseBooks := .Get "collapseBooks" | default true -}}
 
-{{ partial "article-render.html" (dict 
+{{ partial "article-render.html" (dict
   "pages"       $pages
   "layout"      $layout
   "heading"     $heading
@@ -23,4 +25,5 @@
   "author"      $author
   "hero"        $hero
   "showSection" $showSection
+  "collapseBooks" $collapseBooks
 ) }}
