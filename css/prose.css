@@ -306,7 +306,7 @@ sup a {
   text-decoration: none;
   font-weight: 500;
   padding-inline: 1px;
-  vertical-align: super;
+  /*vertical-align: super;*/
 }
 
 sup a:hover { text-decoration: underline; }
