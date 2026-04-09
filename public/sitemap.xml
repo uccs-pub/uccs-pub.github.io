@@ -3,49 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/cultural/poem-book-0001/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dezbateri/enciclopedia-dezbaterii/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cultural/autobuzul-196/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dezbateri/autobuzul-196/</loc>
     <lastmod>2026-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/poezie/</loc>
-    <lastmod>2026-03-27T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-03-27T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cultural/bab%C4%83-de-dame/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dezbateri/bab%C4%83-de-dame/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/analyticus/decentralizarea-educa%C8%9Biei-din-rom%C3%A2nia/</loc>
-    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/descentralizare/</loc>
-    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/educa%C8%9Bie/</loc>
-    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sistemul-educa%C8%9Bional/</loc>
-    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/analyticus/istoria-din-liceu/</loc>
-    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/istorie/</loc>
-    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/programe-%C8%99colare/</loc>
-    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dezbateri/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</loc>
     <lastmod>2025-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cultural/dincolo-de-umbre/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/analyticus/critica-programei-de-istorie-din-liceu/</loc>
-    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/autori/</loc>
     <lastmod>2026-04-08T18:51:49+03:00</lastmod>
@@ -54,7 +66,7 @@
     <lastmod>2026-04-08T18:51:49+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/transparenta/</loc>
-    <lastmod>2026-04-08T18:51:49+03:00</lastmod>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/doneaza/</loc>
     <lastmod>2026-04-08T18:51:49+03:00</lastmod>
@@ -72,6 +84,7 @@
     <lastmod>2026-04-08T11:31:04+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/politica-editoriala/</loc>
+    <lastmod>2026-04-09T16:31:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/themes/</loc>
   </url><url>

@@ -1,4 +1,6 @@
 /public/
 /resources/
 /.hugo_build.lock
-/deploy.sh
+/dev.sh
+/pub.sh
+/transform.py
