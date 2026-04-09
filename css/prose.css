@@ -534,9 +534,9 @@ sup a:hover { text-decoration: underline; }
   padding-bottom: var(--space-20);
 }
 
-.pg-standalone__body p {
+.pg-standalone__body p {/*
   margin-top: var(--space-5);
-  max-width: 70ch;
+  max-width: 70ch;*/
   line-height: 1.78;
 }
 
