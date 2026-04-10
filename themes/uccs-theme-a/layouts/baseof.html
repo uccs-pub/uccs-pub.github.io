@@ -28,7 +28,7 @@
   {{- $image := "/images/default-og.png" | absURL -}}
   {{- if .IsPage -}}
     {{- $cover := .Resources.GetMatch "cover.jpg" -}}
-    {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.jpeg" -}}{{- end -}}
+    {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.jpg" -}}{{- end -}}
     {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.png" -}}{{- end -}}
     {{- with $cover -}}{{- $image = .Permalink -}}{{- end -}}
   {{- end -}}
