@@ -24,7 +24,6 @@ theme = "uccs-theme-a"
   page = ["HTML"]
   taxonomy = ["HTML"]
   term = ["HTML"]
-  standalone = ["HTML"]
 
 [markup]
     [markup.goldmark]
