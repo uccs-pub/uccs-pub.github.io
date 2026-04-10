@@ -25,9 +25,16 @@
   {{- end -}}
   {{- $description := $rawDescription | plainify | htmlUnescape | truncate 160 -}}
 
+  {{- /* IMAGE: cover.jpg/.png from page bundle, else static fallback */ -}}
   {{- $image := "/images/default-og.png" | absURL -}}
-  {{- with .Params.cover -}}
-    {{- $image = . | absURL -}}
+  {{- if .IsPage -}}
+    {{- $cover := .Resources.GetMatch "cover.{jpg,jpeg,png}" -}}
+    {{- with $cover -}}
+      {{- $image = $cover.Permalink -}}
+    {{- else -}}
+      {{- /* Also check static/images/default-og.png explicitly */ -}}
+      {{- $image = "/images/default-og.png" | absURL -}}
+    {{- end -}}
   {{- end -}}
 
   <title>{{ $title }}</title>
