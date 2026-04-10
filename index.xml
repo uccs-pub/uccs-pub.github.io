@@ -3,30 +3,94 @@
   <channel>
     <title>Home on Unde Cuvintele Capătă Sens</title>
     <link>https://uccs.codeberg.page/</link>
-    <description>Recent content in Home on Unde Cuvintele Capătă Sens</description>
-    <generator>Hugo</generator>
+    <description>Recent content on Unde Cuvintele Capătă Sens</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>ro-RO</language>
-    <atom:link href="https://uccs.codeberg.page/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://uccs.codeberg.page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anatomia argumentului</title>
       <link>https://uccs.codeberg.page/dezbateri/anatomia-argumentului/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/dezbateri/anatomia-argumentului/</guid>
-      <description>&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;&#xA;  &lt;p class=&#34;nerdnote__label&#34;&gt;Ce este un argument?&lt;/p&gt;&#xA;  &lt;div class=&#34;nerdnote__body&#34;&gt;Un argument este o demonstrație logică care susține o afirmație prin rațiune și dovezi. El explică de ce o idee este adevărată sau valabilă, trecând de la o premisă comună la o concluzie justificată. Scopul său nu este doar să afirme, ci să convingă prin coerență, relevanță și exemple care arată funcționarea mecanismului în realitate.&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;&#xA;  &lt;p class=&#34;nerdnote__label&#34;&gt;Cum arată un argument?&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;
+  &lt;p class=&#34;nerdnote__label&#34;&gt;Ce este un argument?&lt;/p&gt;
+  &lt;div class=&#34;nerdnote__body&#34;&gt;Un argument este o demonstrație logică care susține o afirmație prin rațiune și dovezi. El explică de ce o idee este adevărată sau valabilă, trecând de la o premisă comună la o concluzie justificată. Scopul său nu este doar să afirme, ci să convingă prin coerență, relevanță și exemple care arată funcționarea mecanismului în realitate.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;
+  &lt;p class=&#34;nerdnote__label&#34;&gt;Cum arată un argument?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Autobuzul 196</title>
       <link>https://uccs.codeberg.page/cultural/autobuzul-196/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/cultural/autobuzul-196/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Când mă urc în autobuzul&#xA;numarul 196&#xA;Viața înconjor se face&#xA;cu intestine&#xA;pe covor&#xA;&#xA;Cerul alb se face&#xA;mov învinețit&#xA;Centru&amp;#39; de unde-l iau&#xA;mahala sălbatică&#xA;mă transport&#xA;&#xA;Țipete stridente&#xA;Scaune menstruate&#xA;Bărbați cu mustăți&#xA;și topoare&#xA;mă însoțesc&#xA;&#xA;Din cladiri pătrate&#xA;în arhitectura de demolate&#xA;purici mici&#xA;se fac gigantici&#xA;&#xA;A canal miroase aici,&#xA;verde mâzgă pe podele&#xA;A gunoi miroase aici&#xA;metamorfozat în oi&#xA;și foi-de-coi&#xA;&#xA;1-Babă = 2-Babă&#xA;Mă străpunge atent&#xA;Cu privirea ea atacă&#xA;Timpul opreșt latent&#xA;&#xA;Drujba cap întors se întoarce&#xA;Spre a mea ajutorare&#xA;Când circul cu 196&#xA;Mereu norocul mă întoarce&#xA;Spre centrul liniștit-cavalerisit&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Când mă urc în autobuzul
+numarul 196
+Viața înconjor se face
+cu intestine
+pe covor
+
+Cerul alb se face
+mov învinețit
+Centru&amp;#39; de unde-l iau
+mahala sălbatică
+mă transport
+
+Țipete stridente
+Scaune menstruate
+Bărbați cu mustăți
+și topoare
+mă însoțesc
+
+Din cladiri pătrate
+în arhitectura de demolate
+purici mici
+se fac gigantici
+
+A canal miroase aici,
+verde mâzgă pe podele
+A gunoi miroase aici
+metamorfozat în oi
+și foi-de-coi
+
+1-Babă = 2-Babă
+Mă străpunge atent
+Cu privirea ea atacă
+Timpul opreșt latent
+
+Drujba cap întors se întoarce
+Spre a mea ajutorare
+Când circul cu 196
+Mereu norocul mă întoarce
+Spre centrul liniștit-cavalerisit
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Bibliografie</title>
       <link>https://uccs.codeberg.page/dezbateri/bibliografie/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/dezbateri/bibliografie/</guid>
-      <description>&lt;h2 id=&#34;bibliografie-academică-și-instituțională&#34;&gt;Bibliografie Academică și Instituțională&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Caietul profesorului pentru disciplina opțională&lt;/em&gt;. ARDOR România, 2016.&lt;/li&gt;&#xA;&lt;li&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Ghid de arbitraj World Schools&lt;/em&gt;. ARDOR, 2022.&lt;/li&gt;&#xA;&lt;li&gt;Cerchez, Genoveva, et al. &lt;em&gt;Manualul elevului pentru disciplina opțională „Dezbatere, Oratorie și Retorică”&lt;/em&gt;. ARDOR România, 2016.&lt;/li&gt;&#xA;&lt;li&gt;Freely, Austin J., and David L. Steinberg. &lt;em&gt;Argumentation and Debate: Critical Thinking for Reasoned Decision Making&lt;/em&gt;. 13th ed., Wadsworth, 2014.&lt;/li&gt;&#xA;&lt;li&gt;Groarke, Leo. &lt;a href=&#34;https://plato.stanford.edu/entries/logic-informal/&#34;&gt;“Informal Logic.”&lt;/a&gt; Stanford Encyclopedia of Philosophy. First published November 25, 1996; substantive revision January 28, 2026. Accessed March 5, 2026.&lt;/li&gt;&#xA;&lt;li&gt;Ministerul Educației. &lt;em&gt;Regulamentul specific de organizare și desfășurare a Olimpiadei Naționale de Argumentare, Dezbatere și Gândire Critică „Tinerii Dezbat” (Nr. 24415/23.01.2025)&lt;/em&gt;. Ministerul Educației, 23 Jan. 2025.&lt;/li&gt;&#xA;&lt;li&gt;Ministerul Educației. &lt;em&gt;Regulamentul specific de organizare și desfășurare a Olimpiadei Naționale de Argumentare, Dezbatere și Gândire Critică „Tinerii Dezbat” (Nr. 26479/13.03.2024)&lt;/em&gt;. Ministerul Educației, 13 Mar. 2024.&lt;/li&gt;&#xA;&lt;li&gt;Ministerul Educației, Cercetării, Tineretului și Sportului. &lt;em&gt;Programa școlară pentru disciplina opțională Dezbatere, Oratorie și Retorică (Nr. 4074/21.04.2011)&lt;/em&gt;. MECTS, 21 Apr. 2011.&lt;/li&gt;&#xA;&lt;li&gt;National Speech &amp;amp; Debate Association. &lt;a href=&#34;www.speechanddebate.org/wp-content/uploads/USWSDI-Manual-2023.pdf&#34;&gt;&lt;em&gt;USA World Schools Debate Invitational Manual: Debate Rules and Procedures&lt;/em&gt;&lt;/a&gt;. 2023,. Accessed 5 Mar. 2026.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;www.ethosdebate.com/the-fallacious-fiat/&#34;&gt;&amp;ldquo;The Fallacious Fiat.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Ethos Debate, LLC&lt;/em&gt;, 9 Sep. 2021,. Accessed 5 Mar. 2026.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;www.nfcfl.org/world-schools-debate.html&#34;&gt;&amp;ldquo;World Schools Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;National Federation of State High School Associations&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;&#xA;&lt;li&gt;Ko, T. M., &amp;amp; Mezuk, B. (2021). Debate participation and academic achievement among high school students in the Houston Independent School District: 2012–2015. Educational Research and Reviews, 16(5), 215–224.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;resurse-web-și-materiale-practice&#34;&gt;Resurse Web și Materiale Practice&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;www.girlswhodebate.com/post/types-of-motions-in-parliamentary-debate&#34;&gt;&amp;ldquo;Types of Motions in Parliamentary Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Girls Who Debate&lt;/em&gt;, 1 Apr. 2021. Accessed 5 Mar. 2026.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;www.learnspeechanddebate.com/post/fiat-power-policy-case-types&#34;&gt;&amp;ldquo;Fiat Power — Policy Case Types.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Learn Speech and Debate&lt;/em&gt;, 25 Aug. 2022. Accessed 5 Mar. 2026.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;betterdebatemanual.wixsite.com/better/impromptu-debates&#34;&gt;&amp;ldquo;Impromptu Debates.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Better Debate Manual&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <description>&lt;h2 id=&#34;bibliografie-academică-și-instituțională&#34;&gt;Bibliografie Academică și Instituțională&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Caietul profesorului pentru disciplina opțională&lt;/em&gt;. ARDOR România, 2016.&lt;/li&gt;
+&lt;li&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Ghid de arbitraj World Schools&lt;/em&gt;. ARDOR, 2022.&lt;/li&gt;
+&lt;li&gt;Cerchez, Genoveva, et al. &lt;em&gt;Manualul elevului pentru disciplina opțională „Dezbatere, Oratorie și Retorică”&lt;/em&gt;. ARDOR România, 2016.&lt;/li&gt;
+&lt;li&gt;Freely, Austin J., and David L. Steinberg. &lt;em&gt;Argumentation and Debate: Critical Thinking for Reasoned Decision Making&lt;/em&gt;. 13th ed., Wadsworth, 2014.&lt;/li&gt;
+&lt;li&gt;Groarke, Leo. &lt;a href=&#34;https://plato.stanford.edu/entries/logic-informal/&#34;&gt;“Informal Logic.”&lt;/a&gt; Stanford Encyclopedia of Philosophy. First published November 25, 1996; substantive revision January 28, 2026. Accessed March 5, 2026.&lt;/li&gt;
+&lt;li&gt;Ministerul Educației. &lt;em&gt;Regulamentul specific de organizare și desfășurare a Olimpiadei Naționale de Argumentare, Dezbatere și Gândire Critică „Tinerii Dezbat” (Nr. 24415/23.01.2025)&lt;/em&gt;. Ministerul Educației, 23 Jan. 2025.&lt;/li&gt;
+&lt;li&gt;Ministerul Educației. &lt;em&gt;Regulamentul specific de organizare și desfășurare a Olimpiadei Naționale de Argumentare, Dezbatere și Gândire Critică „Tinerii Dezbat” (Nr. 26479/13.03.2024)&lt;/em&gt;. Ministerul Educației, 13 Mar. 2024.&lt;/li&gt;
+&lt;li&gt;Ministerul Educației, Cercetării, Tineretului și Sportului. &lt;em&gt;Programa școlară pentru disciplina opțională Dezbatere, Oratorie și Retorică (Nr. 4074/21.04.2011)&lt;/em&gt;. MECTS, 21 Apr. 2011.&lt;/li&gt;
+&lt;li&gt;National Speech &amp;amp; Debate Association. &lt;a href=&#34;www.speechanddebate.org/wp-content/uploads/USWSDI-Manual-2023.pdf&#34;&gt;&lt;em&gt;USA World Schools Debate Invitational Manual: Debate Rules and Procedures&lt;/em&gt;&lt;/a&gt;. 2023,. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;www.ethosdebate.com/the-fallacious-fiat/&#34;&gt;&amp;ldquo;The Fallacious Fiat.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Ethos Debate, LLC&lt;/em&gt;, 9 Sep. 2021,. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;www.nfcfl.org/world-schools-debate.html&#34;&gt;&amp;ldquo;World Schools Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;National Federation of State High School Associations&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;Ko, T. M., &amp;amp; Mezuk, B. (2021). Debate participation and academic achievement among high school students in the Houston Independent School District: 2012–2015. Educational Research and Reviews, 16(5), 215–224.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resurse-web-și-materiale-practice&#34;&gt;Resurse Web și Materiale Practice&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;www.girlswhodebate.com/post/types-of-motions-in-parliamentary-debate&#34;&gt;&amp;ldquo;Types of Motions in Parliamentary Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Girls Who Debate&lt;/em&gt;, 1 Apr. 2021. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;www.learnspeechanddebate.com/post/fiat-power-policy-case-types&#34;&gt;&amp;ldquo;Fiat Power — Policy Case Types.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Learn Speech and Debate&lt;/em&gt;, 25 Aug. 2022. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;betterdebatemanual.wixsite.com/better/impromptu-debates&#34;&gt;&amp;ldquo;Impromptu Debates.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Better Debate Manual&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Discursul constructiv</title>
@@ -54,98 +118,112 @@
       <link>https://uccs.codeberg.page/dezbateri/formatul-world-schools/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/dezbateri/formatul-world-schools/</guid>
-      <description>&lt;h2 id=&#34;aspecte-generale-ale-formatului&#34;&gt;Aspecte generale ale formatului&lt;/h2&gt;&#xA;&lt;p&gt;Dezbaterea reprezintă o succesiune de discursuri pe o anumită temă, desfășurate conform unui set de reguli bine stabilite.&lt;/p&gt;&#xA;&lt;p&gt;În sistemul World Schools (prescurtat World Schools), alternanța are loc între două echipe formate fiecare din trei membri, numiți vorbitori: echipa guvernului și echipa opoziției.  Dezbaterea este structurată în două etape distincte: etapa constructivă (~54 de minute) și etapa concluzivă (~8 minute).  Un discurs constructiv durează 8 minute, iar cel concluziv 4 minute.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;aspecte-generale-ale-formatului&#34;&gt;Aspecte generale ale formatului&lt;/h2&gt;
+&lt;p&gt;Dezbaterea reprezintă o succesiune de discursuri pe o anumită temă, desfășurate conform unui set de reguli bine stabilite.&lt;/p&gt;
+&lt;p&gt;În sistemul World Schools (prescurtat World Schools), alternanța are loc între două echipe formate fiecare din trei membri, numiți vorbitori: echipa guvernului și echipa opoziției.  Dezbaterea este structurată în două etape distincte: etapa constructivă (~54 de minute) și etapa concluzivă (~8 minute).  Un discurs constructiv durează 8 minute, iar cel concluziv 4 minute.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Persuasiunea aristotelică</title>
       <link>https://uccs.codeberg.page/dezbateri/persuasiunea-aristotelic%C4%83/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/dezbateri/persuasiunea-aristotelic%C4%83/</guid>
-      <description>&lt;h1 id=&#34;arhitectura-persuasiunii-aristotelice&#34;&gt;Arhitectura persuasiunii aristotelice&lt;/h1&gt;&#xA;&lt;p&gt;Cu peste două milenii în urmă, Aristotel a identificat în lucrarea sa &lt;em&gt;Retorică&lt;/em&gt; cele trei moduri fundamentale prin care un vorbitor poate convinge un auditoriu: &lt;strong&gt;logos&lt;/strong&gt; (apelul la rațiune și logică), &lt;strong&gt;ethos&lt;/strong&gt; (apelul la credibilitatea și caracterul vorbitorului) și &lt;strong&gt;pathos&lt;/strong&gt; (apelul la emoțiile și valorile audienței). Aceste concepte reprezintă atât categorii teoretice, cât și o hartă practică a persuasiunii, recunoscând faptul că oamenii nu sunt ființe pur raționale, ci decid pe baza unei combinații complexe de raționament logic, încredere în sursa informației și rezonanță emotională.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;arhitectura-persuasiunii-aristotelice&#34;&gt;Arhitectura persuasiunii aristotelice&lt;/h1&gt;
+&lt;p&gt;Cu peste două milenii în urmă, Aristotel a identificat în lucrarea sa &lt;em&gt;Retorică&lt;/em&gt; cele trei moduri fundamentale prin care un vorbitor poate convinge un auditoriu: &lt;strong&gt;logos&lt;/strong&gt; (apelul la rațiune și logică), &lt;strong&gt;ethos&lt;/strong&gt; (apelul la credibilitatea și caracterul vorbitorului) și &lt;strong&gt;pathos&lt;/strong&gt; (apelul la emoțiile și valorile audienței). Aceste concepte reprezintă atât categorii teoretice, cât și o hartă practică a persuasiunii, recunoscând faptul că oamenii nu sunt ființe pur raționale, ci decid pe baza unei combinații complexe de raționament logic, încredere în sursa informației și rezonanță emotională.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Babă de dame</title>
       <link>https://uccs.codeberg.page/cultural/bab%C4%83-de-dame/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/cultural/bab%C4%83-de-dame/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Bătălie acerbă&#xA;În troleul 96&#xA;&#xA;Sânge menstrual&#xA;fereastra a ascuns&#xA;Sămânțe secrete&#xA;pe la uși gardieni &#xA;nesupuse&#xA;&#xA;Boschetarul chestorul&#xA;Croitorul boscheților sectoriale&#xA;autor a mirosurilor&#xA;autor cu rol salubrizant&#xA;&#xA;Unghii murdare&#xA;Față lungă desfigurată&#xA;Sifilisului purtător&#xA;Hepatitelor colector&#xA;Colecționarilor ideal&#xA;&#xA;Baba nova&#xA;Damă de pension&#xA;Transformată în luptator&#xA;de lupte grele&#xA;Izgonește boschetul din troleu&#xA;Înapoi pe străzile ce-l caracterizau&#xA;&#xA;Acum troleul este plin&#xA;bucuros de victorie&#xA;flori aduse babei&#xA;96 de crizanteme&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Bătălie acerbă
+În troleul 96
+
+Sânge menstrual
+fereastra a ascuns
+Sămânțe secrete
+pe la uși gardieni 
+nesupuse
+
+Boschetarul chestorul
+Croitorul boscheților sectoriale
+autor a mirosurilor
+autor cu rol salubrizant
+
+Unghii murdare
+Față lungă desfigurată
+Sifilisului purtător
+Hepatitelor colector
+Colecționarilor ideal
+
+Baba nova
+Damă de pension
+Transformată în luptator
+de lupte grele
+Izgonește boschetul din troleu
+Înapoi pe străzile ce-l caracterizau
+
+Acum troleul este plin
+bucuros de victorie
+flori aduse babei
+96 de crizanteme
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Decentralizarea educației din România</title>
       <link>https://uccs.codeberg.page/analyticus/decentralizarea-educa%C8%9Biei-din-rom%C3%A2nia/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/analyticus/decentralizarea-educa%C8%9Biei-din-rom%C3%A2nia/</guid>
-      <description>&lt;h2 id=&#34;introducere&#34;&gt;Introducere&lt;/h2&gt;&#xA;&lt;p&gt;Pe data de 5 noiembrie 2025, Ministerul Educației a publicat Ordinul 4444/2025 privind înființarea „Programului Național pentru pilotarea sistemică de planuri-cadru în învățământul liceal de stat, particular și confesional”. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Acest program presupune descentralizarea învățământului preuniversitar superior, mutând deciziile despre curriculum, planuri-cadru și metodologie la nivelul unităților de învățământ. Chiar dacă în prezent este doar un program-pilot, miza este uriașă, deoarece succesul acestuia poate duce la o schimbare fundamentală a educației la nivel național, afectând generații întregi. Chiar ministrul Daniel David are o viziune optimistă, spunând:&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introducere&#34;&gt;Introducere&lt;/h2&gt;
+&lt;p&gt;Pe data de 5 noiembrie 2025, Ministerul Educației a publicat Ordinul 4444/2025 privind înființarea „Programului Național pentru pilotarea sistemică de planuri-cadru în învățământul liceal de stat, particular și confesional”. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Acest program presupune descentralizarea învățământului preuniversitar superior, mutând deciziile despre curriculum, planuri-cadru și metodologie la nivelul unităților de învățământ. Chiar dacă în prezent este doar un program-pilot, miza este uriașă, deoarece succesul acestuia poate duce la o schimbare fundamentală a educației la nivel național, afectând generații întregi. Chiar ministrul Daniel David are o viziune optimistă, spunând:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Istoria din liceu</title>
       <link>https://uccs.codeberg.page/analyticus/istoria-din-liceu/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/analyticus/istoria-din-liceu/</guid>
-      <description>&lt;h2 id=&#34;introducere&#34;&gt;Introducere&lt;/h2&gt;&#xA;&lt;p&gt;La data de 16 decembrie 2024, Ministrul Educației anunță aprobarea primei programe școlare pentru disciplina obligatorie „Istoria comunismului din România” pentru toți elevii din clasa a XII-a, începând cu anul școlar 2025-2026&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Același lucru s-a întâmplat cu doi ani înainte, când a fost introdusă „Istoria evreilor. Holocaustul” pentru elevii de clasa a XI-a.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introducere&#34;&gt;Introducere&lt;/h2&gt;
+&lt;p&gt;La data de 16 decembrie 2024, Ministrul Educației anunță aprobarea primei programe școlare pentru disciplina obligatorie „Istoria comunismului din România” pentru toți elevii din clasa a XII-a, începând cu anul școlar 2025-2026&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Același lucru s-a întâmplat cu doi ani înainte, când a fost introdusă „Istoria evreilor. Holocaustul” pentru elevii de clasa a XI-a.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ochii îmbătrăniți</title>
       <link>https://uccs.codeberg.page/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</link>
       <pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Mă uit în ochii îmbătrăniți&#xA;O privire și îngheț&#xA;&#xA;Mâna rece nu-mi ivește&#xA;Sufletul bate a ieșii&#xA;&#xA;Baba chicotește îngeresc&#xA;Baba răget învârtit&#xA;&#xA;Cerul înnegrit avarițios&#xA;Avarie a rațiunii alpine&#xA;&#xA;Alungită baba înmână&#xA;Innebunită învarte întregul univers&#xA;&#xA;De pe scaun eu ridic&#xA;Și din autobuz cobor&#xA;Vără să mă uit înnapoi&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Mă uit în ochii îmbătrăniți
+O privire și îngheț
+
+Mâna rece nu-mi ivește
+Sufletul bate a ieșii
+
+Baba chicotește îngeresc
+Baba răget învârtit
+
+Cerul înnegrit avarițios
+Avarie a rațiunii alpine
+
+Alungită baba înmână
+Innebunită învarte întregul univers
+
+De pe scaun eu ridic
+Și din autobuz cobor
+Vără să mă uit înnapoi
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Dincolo de Umbre</title>
       <link>https://uccs.codeberg.page/cultural/dincolo-de-umbre/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/cultural/dincolo-de-umbre/</guid>
-      <description>&lt;h2 id=&#34;miezul-nopții&#34;&gt;Miezul nopții&lt;/h2&gt;&#xA;&lt;p&gt;În adâncul unei caverne umede, ai cărei pereți absorbeau sunetul și reflectau doar umbre chinuite, trăiau oameni care nu cunoscuseră niciodată lumina. Nici ziua, nici noaptea, nici răsăritul, nici apusul – doar o întunecime constantă, în care realitatea era formată din siluete ce se perindau pe zidul din fața lor. Aceștia erau înlănțuiți de lanțuri groase de oțel, dar și de propria lor realitate, de umbrele unor obiecte ce se mișcau, proiectate undeva în spatele lor, la o distanță pe care mintea lor n-o putea măsura și care, poate, nici nu exista cu adevărat.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;miezul-nopții&#34;&gt;Miezul nopții&lt;/h2&gt;
+&lt;p&gt;În adâncul unei caverne umede, ai cărei pereți absorbeau sunetul și reflectau doar umbre chinuite, trăiau oameni care nu cunoscuseră niciodată lumina. Nici ziua, nici noaptea, nici răsăritul, nici apusul – doar o întunecime constantă, în care realitatea era formată din siluete ce se perindau pe zidul din fața lor. Aceștia erau înlănțuiți de lanțuri groase de oțel, dar și de propria lor realitate, de umbrele unor obiecte ce se mișcau, proiectate undeva în spatele lor, la o distanță pe care mintea lor n-o putea măsura și care, poate, nici nu exista cu adevărat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Critica programei de istorie din liceu</title>
       <link>https://uccs.codeberg.page/analyticus/critica-programei-de-istorie-din-liceu/</link>
       <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/analyticus/critica-programei-de-istorie-din-liceu/</guid>
-      <description>&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;&#xA;&lt;p&gt;Educația din România continuă să sufere de probleme majore, reflectate atât în statistici alarmante privind abandonul școlar și analfabetismul funcțional, cât și în analfabetismul istoric. Fondurile sunt insuficiente, instituțiile sunt slab dotate pentru a asigura mai mult decât șase ore de studiu pe zi (în sensul existenței unei cantine, a unor săli libere, de lectură etc.), iar programele și manualele rămân neactualizate de decenii.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cine este UCCS?</title>
-      <link>https://uccs.codeberg.page/despre/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/despre/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Unde Cuvintele Capătă Sens&lt;/strong&gt; este un proiect editorial independent care urmărește creșterea clarității în spațiul public.&lt;/p&gt;&#xA;&lt;p&gt;Publicăm analize, eseuri și texte literare care explică fenomene politice, sociale și culturale. Lucram fără isterie, fără cultul personalității și fără dezumanizare.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cine este UCCS?</title>
-      <link>https://uccs.codeberg.page/transparenta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/transparenta/</guid>
-      <description>&lt;p&gt;Această pagină documentează statutul legal, beneficiarul real și fluxurile financiare ale proiectului „Unde Cuvintele Capătă Sens” (UCCS). Scopul este de a oferi cititorilor o imagine clară și verificabilă asupra modului în care este organizat și finanțat proiectul.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cum ne poți susține?</title>
-      <link>https://uccs.codeberg.page/doneaza/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/doneaza/</guid>
-      <description>&lt;p&gt;Unde Cuvintele Capătă Sens este un proiect editorial independent, fără finanțare externă, fără publicitate și fără interese ascunse.&lt;/p&gt;&#xA;&lt;p&gt;Existența sa depinde exclusiv de cititori care cred că claritatea publică merită protejată. Într-un mediu digital dominat de algoritmi și interese comerciale, sprijinul tău asigură independența acestui proiect și îi permite să rămână un spațiu de gândire lucidă, fără compromisuri editoriale. Fiecare donație, oricât de mică, contribuie direct la menținerea UCCS ca resursă stabilă și credibilă pentru cititorii care caută analiză riguroasă, nu zgomot informațional.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cum ne puteți contacta?</title>
-      <link>https://uccs.codeberg.page/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/contact/</guid>
-      <description>&lt;p&gt;UCCS este un proiect editorial solo. Nu există formular de contact, doar o adresă de email pentru corespondență directă.&lt;/p&gt;&#xA;&lt;h2 id=&#34;scrie-pentru&#34;&gt;Scrie pentru:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Propuneri de articole sau teme de research&lt;/li&gt;&#xA;&lt;li&gt;Prezentarea unei erori factuale și indicarea sursei corecte&lt;/li&gt;&#xA;&lt;li&gt;Solicitarea dreptului la replică dacă ești vizat direct într-un articol (ca persoană fizică sau reprezentant al unei instituții)&lt;/li&gt;&#xA;&lt;li&gt;Invitații de colaborare (eveniment, podcast, parteneriat)&lt;/li&gt;&#xA;&lt;li&gt;Întrebări despre cadrele analitice folosite&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;nu-scrie-pentru&#34;&gt;Nu scrie pentru:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pitch-uri de PR, comunicate de presă sau cereri de link-building&lt;/li&gt;&#xA;&lt;li&gt;Mesaje generice de tip „felicitări&amp;quot; fără conținut verificabil&lt;/li&gt;&#xA;&lt;li&gt;Atacuri la persoană sau solicitări de intervenție în dezbateri tribale&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;adresa&#34;&gt;Adresa&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;mailto:redactia@uccs.ro&#34;&gt;redactia@uccs.ro&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cum protejăm datele tale personale</title>
-      <link>https://uccs.codeberg.page/protectia-datelor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/protectia-datelor/</guid>
-      <description>&lt;p&gt;„Unde Cuvintele Capătă Sens” (UCCS) respectă dreptul tău la confidențialitate și se conformează strict prevederilor Regulamentului General privind Protecția Datelor (GDPR 2016/679).&lt;/p&gt;&#xA;&lt;p&gt;Această pagină explică transparent ce date colectăm, de ce și cum le protejăm.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Principiile care ghidează redacția</title>
-      <link>https://uccs.codeberg.page/politica-editoriala/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/politica-editoriala/</guid>
-      <description>&lt;p&gt;„Unde Cuvintele Capătă Sens&amp;quot; este un proiect editorial independent care urmează principiile de mai jos:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Critica ideilor, nu a persoanelor&lt;/strong&gt; — ne adresăm argumentelor, instituțiilor și fenomenelor, nu indivizilor.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fără tribalism&lt;/strong&gt; — respingem narativele binare (bine/rău, noi/ei) și căutăm nuanțe.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Transparență metodologică&lt;/strong&gt; — explicăm cum am ajuns la concluzii, cităm sursele și corectăm public erorile.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fără isterie&lt;/strong&gt; — tonul este calm, analitic, orientat spre claritate, nu spre viralitate.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Independență financiară&lt;/strong&gt; — nu acceptăm sponsorizări condiționate; trăim exclusiv din donații necondiționate.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Aceste principii sunt publice și verificabile. Orice abatere de la ele va fi corectată cu changelog vizibil.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
+&lt;p&gt;Educația din România continuă să sufere de probleme majore, reflectate atât în statistici alarmante privind abandonul școlar și analfabetismul funcțional, cât și în analfabetismul istoric. Fondurile sunt insuficiente, instituțiile sunt slab dotate pentru a asigura mai mult decât șase ore de studiu pe zi (în sensul existenței unei cantine, a unor săli libere, de lectură etc.), iar programele și manualele rămân neactualizate de decenii.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
