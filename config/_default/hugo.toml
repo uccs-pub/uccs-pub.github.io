@@ -19,9 +19,12 @@ theme = "uccs-theme-a"
     theme = "themes"
 
 [outputs]
-    home = ["HTML", "RSS"]
-    section = ["HTML", "RSS"]
-    page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+  standalone = ["HTML"]
 
 [markup]
     [markup.goldmark]

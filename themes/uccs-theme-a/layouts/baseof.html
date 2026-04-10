@@ -25,16 +25,12 @@
   {{- end -}}
   {{- $description := $rawDescription | plainify | htmlUnescape | truncate 160 -}}
 
-  {{- /* IMAGE: cover.jpg/.png from page bundle, else static fallback */ -}}
   {{- $image := "/images/default-og.png" | absURL -}}
   {{- if .IsPage -}}
-    {{- $cover := .Resources.GetMatch "cover.{jpg,jpeg,png}" -}}
-    {{- with $cover -}}
-      {{- $image = $cover.Permalink -}}
-    {{- else -}}
-      {{- /* Also check static/images/default-og.png explicitly */ -}}
-      {{- $image = "/images/default-og.png" | absURL -}}
-    {{- end -}}
+    {{- $cover := .Resources.GetMatch "cover.jpg" -}}
+    {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.jpeg" -}}{{- end -}}
+    {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.png" -}}{{- end -}}
+    {{- with $cover -}}{{- $image = .Permalink -}}{{- end -}}
   {{- end -}}
 
   <title>{{ $title }}</title>
