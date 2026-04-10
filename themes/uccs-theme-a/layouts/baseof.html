@@ -25,12 +25,23 @@
   {{- end -}}
   {{- $description := $rawDescription | plainify | htmlUnescape | truncate 160 -}}
 
+  {{- /* SOCIAL IMAGE: Generate 1200x630 JPEG from cover.jpg/.png, else fallback */ -}}
   {{- $image := "/images/default-og.png" | absURL -}}
+  {{- $imgWidth := "1200" -}}
+  {{- $imgHeight := "630" -}}
+  {{- $imgType := "image/jpeg" -}}
+
   {{- if .IsPage -}}
     {{- $cover := .Resources.GetMatch "cover.jpg" -}}
-    {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.jpg" -}}{{- end -}}
+    {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.jpeg" -}}{{- end -}}
     {{- if not $cover -}}{{- $cover = .Resources.GetMatch "cover.png" -}}{{- end -}}
-    {{- with $cover -}}{{- $image = .Permalink -}}{{- end -}}
+
+    {{- with $cover -}}
+      {{- $ogImage := .Fill "1200x630 jpg q85" -}}
+      {{- $image = $ogImage.Permalink -}}
+      {{- $imgWidth = (string $ogImage.Width) -}}
+      {{- $imgHeight = (string $ogImage.Height) -}}
+    {{- end -}}
   {{- end -}}
 
   <title>{{ $title }}</title>
@@ -44,6 +55,9 @@
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:locale" content="ro_RO">
   <meta property="og:image" content="{{ $image }}">
+  <meta property="og:image:width" content="{{ $imgWidth }}">
+  <meta property="og:image:height" content="{{ $imgHeight }}">
+  <meta property="og:image:type" content="{{ $imgType }}">
   <meta property="og:image:secure_url" content="{{ $image }}">
 
   <meta name="twitter:card" content="summary_large_image">
