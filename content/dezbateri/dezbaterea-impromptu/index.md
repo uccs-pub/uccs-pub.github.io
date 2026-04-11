@@ -25,45 +25,6 @@ flowchart TD
     J --> K[Cazul echipei]
 ```
 
-```goat
-      ┌─────────────────┐
-      │ Tipul moțiunii  │
-      └────────┬────────┘
-               │
-               ▼
-      ┌─────────────────┐
-      │   Miza centrală │
-      └────────┬────────┘
-               │
-               ▼
-      ┌─────────────────┐
-      │ Sarcina echipei │
-      └────────┬────────┘
-               │
-               ▼
-      ╭─────────────────╮
-      │ burden suficient│
-      │    & necesar    │
-      ╰────────┬────────╯
-               │
-               ▼
-      ╭──────────────────────────────╮
-      │   Ariile de conflict         │
-      │   Unde se CÂȘTIGĂ moțiunea?  │
-      ╰──────────────┬───────────────╯
-                     │
-                     ▼
-      ╭──────────────────────────────╮
-      │ stabilirea ariei principale  │
-      ╰──────────────┬───────────────╯
-                     │
-                     ▼
-      ┌─────────────────┐
-      │  Cazul echipei  │
-      └─────────────────┘
-
-```
-
 ## De ce analiza moțiunii vine înaintea oricărui argument
 
 Există un reflex comun în pregătire: auzi moțiunea, îți vin imediat în minte argumente, și începi să le dezvolți. Acesta este cel mai scump obicei pe care îl poți avea în impromptu.

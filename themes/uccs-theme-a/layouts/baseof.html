@@ -220,11 +220,181 @@
       <p>© UCCS, 2025– {{ now.Format "2006" }}.  Licențiat sub <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ro">CC BY-NC-ND 4.0.</a></p>
     </div>
   </footer>
-{{ if .Store.Get "hasMermaid" }}
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
+{{ if .Page.Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from '{{ site.Params.mermaid.js_url | default "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs" }}';
+
+  const SELECTOR = '.mermaid';
+
+  const mermaidThemes = {
+    light: {
+      startOnLoad: false,
+      theme: 'base',
+      securityLevel: 'loose',
+      themeVariables: {
+        darkMode: false,
+
+        background: '{{ site.Params.mermaid.theme.light.background | default "#f8f5ef" }}',
+        fontFamily: '{{ site.Params.mermaid.theme.fontFamily | default "Inter, sans-serif" }}',
+        fontSize: '{{ site.Params.mermaid.theme.fontSize | default "16px" }}',
+
+        primaryColor: '{{ site.Params.mermaid.theme.light.primaryColor | default "#e0d4c8" }}',
+        primaryTextColor: '{{ site.Params.mermaid.theme.light.primaryTextColor | default "#1c1a14" }}',
+        primaryBorderColor: '{{ site.Params.mermaid.theme.light.primaryBorderColor | default "#5a3e2b" }}',
+
+        secondaryColor: '{{ site.Params.mermaid.theme.light.secondaryColor | default "#faf8f3" }}',
+        secondaryTextColor: '{{ site.Params.mermaid.theme.light.secondaryTextColor | default "#1c1a14" }}',
+        secondaryBorderColor: '{{ site.Params.mermaid.theme.light.secondaryBorderColor | default "#d4ccc0" }}',
+
+        tertiaryColor: '{{ site.Params.mermaid.theme.light.tertiaryColor | default "#fcfbf8" }}',
+        tertiaryTextColor: '{{ site.Params.mermaid.theme.light.tertiaryTextColor | default "#1c1a14" }}',
+        tertiaryBorderColor: '{{ site.Params.mermaid.theme.light.tertiaryBorderColor | default "#ddd6ca" }}',
+
+        lineColor: '{{ site.Params.mermaid.theme.light.lineColor | default "#6b6459" }}',
+        textColor: '{{ site.Params.mermaid.theme.light.textColor | default "#1c1a14" }}',
+        mainBkg: '{{ site.Params.mermaid.theme.light.mainBkg | default "#faf8f3" }}',
+
+        nodeBorder: '{{ site.Params.mermaid.theme.light.nodeBorder | default "#5a3e2b" }}',
+        clusterBkg: '{{ site.Params.mermaid.theme.light.clusterBkg | default "#f2ede4" }}',
+        clusterBorder: '{{ site.Params.mermaid.theme.light.clusterBorder | default "#d4ccc0" }}',
+        titleColor: '{{ site.Params.mermaid.theme.light.titleColor | default "#5a3e2b" }}',
+        edgeLabelBackground: '{{ site.Params.mermaid.theme.light.edgeLabelBackground | default "#fcfbf8" }}',
+
+        noteBkgColor: '{{ site.Params.mermaid.theme.light.noteBkgColor | default "#e0c89a" }}',
+        noteTextColor: '{{ site.Params.mermaid.theme.light.noteTextColor | default "#1c1a14" }}',
+        noteBorderColor: '{{ site.Params.mermaid.theme.light.noteBorderColor | default "#b07d3a" }}',
+
+        errorBkgColor: '{{ site.Params.mermaid.theme.light.errorBkgColor | default "#e6b4b4" }}',
+        errorTextColor: '{{ site.Params.mermaid.theme.light.errorTextColor | default "#1c1a14" }}'
+      }
+    },
+
+    dark: {
+      startOnLoad: false,
+      theme: 'base',
+      securityLevel: 'loose',
+      themeVariables: {
+        darkMode: true,
+
+        background: '{{ site.Params.mermaid.theme.dark.background | default "#1c1a14" }}',
+        fontFamily: '{{ site.Params.mermaid.theme.fontFamily | default "Inter, sans-serif" }}',
+        fontSize: '{{ site.Params.mermaid.theme.fontSize | default "16px" }}',
+
+        primaryColor: '{{ site.Params.mermaid.theme.dark.primaryColor | default "#432d1c" }}',
+        primaryTextColor: '{{ site.Params.mermaid.theme.dark.primaryTextColor | default "#f8f5ef" }}',
+        primaryBorderColor: '{{ site.Params.mermaid.theme.dark.primaryBorderColor | default "#b07d3a" }}',
+
+        secondaryColor: '{{ site.Params.mermaid.theme.dark.secondaryColor | default "#2e1d10" }}',
+        secondaryTextColor: '{{ site.Params.mermaid.theme.dark.secondaryTextColor | default "#f8f5ef" }}',
+        secondaryBorderColor: '{{ site.Params.mermaid.theme.dark.secondaryBorderColor | default "#6b6459" }}',
+
+        tertiaryColor: '{{ site.Params.mermaid.theme.dark.tertiaryColor | default "#5a3e2b" }}',
+        tertiaryTextColor: '{{ site.Params.mermaid.theme.dark.tertiaryTextColor | default "#f8f5ef" }}',
+        tertiaryBorderColor: '{{ site.Params.mermaid.theme.dark.tertiaryBorderColor | default "#b07d3a" }}',
+
+        lineColor: '{{ site.Params.mermaid.theme.dark.lineColor | default "#d4ccc0" }}',
+        textColor: '{{ site.Params.mermaid.theme.dark.textColor | default "#f8f5ef" }}',
+        mainBkg: '{{ site.Params.mermaid.theme.dark.mainBkg | default "#432d1c" }}',
+
+        nodeBorder: '{{ site.Params.mermaid.theme.dark.nodeBorder | default "#b07d3a" }}',
+        clusterBkg: '{{ site.Params.mermaid.theme.dark.clusterBkg | default "#2e1d10" }}',
+        clusterBorder: '{{ site.Params.mermaid.theme.dark.clusterBorder | default "#b07d3a" }}',
+        titleColor: '{{ site.Params.mermaid.theme.dark.titleColor | default "#f8f5ef" }}',
+        edgeLabelBackground: '{{ site.Params.mermaid.theme.dark.edgeLabelBackground | default "#5a3e2b" }}',
+
+        noteBkgColor: '{{ site.Params.mermaid.theme.dark.noteBkgColor | default "#9a6b2a" }}',
+        noteTextColor: '{{ site.Params.mermaid.theme.dark.noteTextColor | default "#f8f5ef" }}',
+        noteBorderColor: '{{ site.Params.mermaid.theme.dark.noteBorderColor | default "#e0c89a" }}',
+
+        errorBkgColor: '{{ site.Params.mermaid.theme.dark.errorBkgColor | default "#9b2c2c" }}',
+        errorTextColor: '{{ site.Params.mermaid.theme.dark.errorTextColor | default "#f8f5ef" }}'
+      }
+    }
+  };
+
+  function getSiteThemeName() {
+    const html = document.documentElement;
+    const attrTheme = html.getAttribute('data-theme')
+      || html.getAttribute('data-color-scheme')
+      || html.getAttribute('data-bs-theme');
+
+    if (attrTheme === 'dark') return 'dark';
+    if (attrTheme === 'light') return 'light';
+
+    if (document.body.classList.contains('dark')) return 'dark';
+    if (document.body.classList.contains('colorscheme-dark')) return 'dark';
+    if (document.body.classList.contains('colorscheme-light')) return 'light';
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function getMermaidConfig() {
+    return mermaidThemes[getSiteThemeName()];
+  }
+
+  function rememberSources() {
+    document.querySelectorAll(SELECTOR).forEach((el, i) => {
+      if (!el.dataset.src) el.dataset.src = el.textContent.trim();
+      if (!el.id) el.id = `mermaid-source-${i}`;
+    });
+  }
+
+  async function renderMermaid() {
+    rememberSources();
+    mermaid.initialize(getMermaidConfig());
+
+    const nodes = document.querySelectorAll(SELECTOR);
+
+    for (const [i, el] of [...nodes].entries()) {
+      const src = el.dataset.src?.trim();
+      if (!src) continue;
+
+      el.removeAttribute('data-processed');
+      el.innerHTML = src;
+
+      try {
+        const id = `mermaid-render-${i}-${Date.now()}`;
+        const { svg, bindFunctions } = await mermaid.render(id, src);
+        el.innerHTML = svg;
+        if (bindFunctions) bindFunctions(el);
+      } catch (err) {
+        console.error('Mermaid render failed:', err);
+        el.innerHTML = `<pre>${src.replace(/</g, '&lt;')}</pre>`;
+      }
+    }
+  }
+
+  function watchThemeChanges() {
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    if (media.addEventListener) media.addEventListener('change', renderMermaid);
+    else if (media.addListener) media.addListener(renderMermaid);
+
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (
+          m.type === 'attributes' &&
+          ['data-theme', 'data-color-scheme', 'data-bs-theme', 'class'].includes(m.attributeName)
+        ) {
+          renderMermaid();
+          break;
+        }
+      }
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
+    observer.observe(document.body, { attributes: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', async () => {
+      await renderMermaid();
+      watchThemeChanges();
+    });
+  } else {
+    await renderMermaid();
+    watchThemeChanges();
+  }
+</script>
 {{ end }}
 </body>
 </html>
