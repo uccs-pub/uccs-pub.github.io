@@ -1,7 +1,8 @@
 ---
 title: "Discursul constructiv"
+subtitle: "Cum se construiește un caz"
 publishDate: 2026-03-27
-lead: "wip"
+lead: "În World Schools, discursul constructiv e spațiul unde se adaugă substanță dezbaterii. Acestea permit analiză originală, exemple, date și raționamente noi. Acest capitol explică cum să construiești argumente solide, cum să demontezi cazul advers și cum să pregătești terenul în avantajul echipei tale."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

@@ -1,8 +1,8 @@
 ---
-title: "Decentralizarea educației din România"
+title: "Descentralizarea învățământului liceal"
 publishDate: 2025-11-21
-subtitle: "Deschiderea cutiei pandorei?"
-lead: "(WIP)"
+subtitle: "Deschiderea cutiei Pandorei?"
+lead: "Literatura internațională identifică cinci condiții esențiale pentru succesul descentralizării educaționale. România îndeplinește parțial una, încalcă clar două și are incertitudini periculoase la celelalte două. Fără un plan strategic, programul-pilot riscă să amplifice inegalitățile dintre liceele de elită și cele din mediul defavorizat."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

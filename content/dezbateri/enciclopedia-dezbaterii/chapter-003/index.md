@@ -1,7 +1,8 @@
 ---
 title: "Anatomia argumentului"
+subtitle: "De la opinie la demonstrație"
 publishDate: 2026-03-27
-lead: "Diferența dintre un vorbitor mediocru și unul excelent nu constă în vocea mai puternică sau în gestica mai dramatică, ci în capacitatea de a transforma o simplă opinie într-o demonstrație logică completă."
+lead: "Un argument nu e o afirmație aruncată în aer. E o arhitectură precisă, cu fundație, piloni și acoperiș. Fără mecanism, e doar o părere. Fără exemplu, e teorie goală. Fără impact, e inutil. Acest capitol desface argumentul în cinci piese esențiale și arată cum să le asamblezi astfel încât arbitrul să nu aibă încotro: trebuie să te creadă. Structura se numește AMELI și e cea mai clară cale de la o idee la o demonstrație de neclintit."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

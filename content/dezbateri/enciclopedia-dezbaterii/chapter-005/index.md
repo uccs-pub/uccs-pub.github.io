@@ -1,7 +1,8 @@
 ---
 title: "Discursul sumativ"
+subtitle: "Patru minute care decid meciul"
 publishDate: 2026-03-27
-lead: "wip"
+lead: "După opt discursuri și o oră de argumente, arbitrul e saturat. Discursul sumativ are patru minute să reorganizeze haosul într-o imagine clară și să scrie decizia pentru el. E momentul în care te ridici deasupra detaliilor și arăti balanța completă."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

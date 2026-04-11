@@ -1,16 +1,12 @@
 ---
 title: "Dincolo de Umbre"
 publishDate: 2025-07-21
-subtitle: "reconfigure alegorică a peșterii platoniciene"
-lead: "WIP"
+subtitle: "O evadare din peștera platoniciană"
+lead: "Ce se întâmplă când prizonierul din peștera lui Platon nu vrea să fie eliberat? Ivanovich, un profesor care și-a construit toată viața în jurul umbrelor, este smuls din închisoarea sa de fostul discipol Michail și confruntat cu o realitate pe care refuză să o accepte. Povestea explorează nu doar iluzia cunoașterii, ci și rezistența dureroasă a minții umane în fața adevărului."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 
-    - educație
-    - istorie
-    - programe-școlare
-params:
-  toc: true
+    - proză
 ---
 
 ## Miezul nopții

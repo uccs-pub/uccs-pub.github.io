@@ -1,7 +1,8 @@
 ---
 title: "Persuasiunea aristotelică"
+subtitle: "Cum convingi mintea și inima"
 publishDate: 2026-03-27
-lead: "wip"
+lead: "Oamenii nu decid pur rațional. Cântăresc logica argumentului, încrederea în cel care vorbește și rezonanța emoțională a mesajului. Aristotel a numit aceste dimensiuni logos, ethos și pathos. Aici înveți cum să le îmbini organic: logos îi arată arbitrului că ai dreptate, ethos îl face să aibă încredere în tine, iar pathos îl ajută să simtă de ce contează."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

@@ -1,7 +1,8 @@
 ---
 title: "Exemplificarea în argumentare"
+subtitle: "De la caz particular la regulă generală"
 publishDate: 2026-03-27
-lead: "wip"
+lead: "Ce face diferența dintre un exemplu care convinge și unul care plictisește? Primul e integrat într-o inferență completă, cu condiții clare, mecanism cauzal și impact palpabil. Al doilea e o anecdotă aruncată la întâmplare. Acest capitol explorează tipurile de exemple, de la contraexemplu la eșantion de cazuri, și arată cum să le evaluaezi pe baza a cinci criterii."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

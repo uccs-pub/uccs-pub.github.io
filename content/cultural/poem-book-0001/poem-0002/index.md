@@ -1,8 +1,9 @@
 ---
 eyebrow: "Volum"
 title: "Babă de dame"
+subtitle: "O victorie în troleul 96"
 publishDate: 2026-03-26
-lead: "Bătălie de proporții, în troleul 96"
+lead: "Cine are dreptul să ocupe spațiul public? Un boschetar, autor mirositor, sau o damă de pension care este transformă brusc în luptător? În troleul 96, liniștea se câștigă doar prin violență simbolică, iar victoria e sărbătorită cu flori — 96 de crizanteme."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

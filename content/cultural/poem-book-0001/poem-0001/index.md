@@ -1,8 +1,9 @@
 ---
 eyebrow: "Volum"
 title: "Autobuzul 196"
+subtitle: "O călătorie prin mahala"
 publishDate: 2026-03-27
-lead: "Poezie urbană cu iz de mâzgă"
+lead: "Țipete stridente, scaune menstruate, bărbați cu topoare și miros de canal transformat în gunoi. Autobuzul 196 nu e un mijloc de transport, ci o experiență viscerală care transformă arhitectura dezolantului în decorul unei călătorii halucinante."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

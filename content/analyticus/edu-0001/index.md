@@ -1,8 +1,8 @@
 ---
-title: "Critica programei de istorie din liceu"
+title: "Programa de Istorie"
 publishDate: 2025-07-07
-subtitle: "probleme la real și uman, plus soluții practice pentru predarea modernă."
-lead: "WIP"
+subtitle: "Superficialitate sau hiperdetaliere"
+lead: "Programa de Istorie din liceele românești are două probleme opuse și la fel de grave. La profilul real este prea superficială, iar la profilul umanist este încărcată cu detalii inutile. Ordinul de ministru nr. 4350/2025 nu aduce modificări care să corecteze aceste carențe, așa că eseul de față examinează critic structura actuală și formulează propuneri de reformă pentru fiecare profil."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

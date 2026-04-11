@@ -1,7 +1,8 @@
 ---
 title: "Formatul World Schools"
+subtitle: "Reguli, roluri și moțiuni"
 publishDate: 2026-03-27
-lead: "wip"
+lead: "World Schools este formatul standard în dezbaterile academice din România și din lume. Trei vorbitori per echipă, discursuri constructive și concluzive, moțiuni de politică, valoare sau fapt și o grilă de arbitraj care pune accent egal pe conținut, stil și strategie. Acest capitol explică structura completă a formatului, de la regulile de bază până la conceptele avansate precum fiat-ul și sarcina probei."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

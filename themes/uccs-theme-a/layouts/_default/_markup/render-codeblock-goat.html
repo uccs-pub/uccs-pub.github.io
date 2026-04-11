@@ -1,0 +1,16 @@
+{{ $diagram := diagrams.Goat .Inner }}
+<div class="goat-scroll">
+  <div class="goat-frame" style="width: {{ $diagram.Width }}px; min-width: {{ $diagram.Width }}px;">
+    <svg
+      class="goat-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      width="{{ $diagram.Width }}"
+      height="{{ $diagram.Height }}"
+      viewBox="0 0 {{ $diagram.Width }} {{ $diagram.Height }}"
+      role="img"
+      aria-label="Diagram"
+    >
+      {{ $diagram.Inner | safeHTML }}
+    </svg>
+  </div>
+</div>

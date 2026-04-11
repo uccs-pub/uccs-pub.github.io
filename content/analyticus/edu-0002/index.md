@@ -1,8 +1,8 @@
 ---
-title: "Istoria din liceu"
+title: "Dubla metodă de predare a istoriei"
 publishDate: 2025-11-07
-subtitle: "fragmentată tematic"
-lead: "O problemă majoră a programei care este înrăutățită de cele mai recente reforme (WIP)"
+subtitle: "Cinci erori care creează confuzie"
+lead: "Programa de istorie din liceele românești folosește două abordări diferite. În clasele a IX-a și a X-a se predă cronologic, iar în a XI-a și a XII-a tematic. Această dublă metodologie, deși recomandată de experți, funcționează doar dacă este coordonată deliberat. În România, ea a generat cinci tipuri de disfuncții."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags: 

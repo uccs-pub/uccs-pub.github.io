@@ -1,7 +1,8 @@
 ---
 title: "Bibliografie"
+subtitle: "Referințe și lecturi suplimentare"
 publishDate: 2026-03-27
-lead: "wip"
+lead: "Această bibliografie reunește sursele academice, instituționale și practice care stau la baza ghidului. Include manualele ARDOR, regulamentele Ministerului Educației pentru Olimpiada „Tinerii Dezbat”, lucrări de specialitate din dezbaterea internațională și resurse web esențiale pentru aprofundare. Toate materialele citate pot fi consultate pentru verificare sau pentru extinderea cunoștințelor dincolo de acest ghid."
 author: "velcea-petru"
 cover: "cover.jpg"
 ---
