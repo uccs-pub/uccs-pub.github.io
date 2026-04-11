@@ -1,6 +1,6 @@
 ---
 eyebrow: "Volum de poezie"
-title: "Mobilier urman"
+title: "Mobilier urban"
 subtitle: "Opriri în tranzit"
 publishDate: 2026-04-01
 lead: "O călătorie prin viscerele orașului, unde autobuzele devin peșteri, babele se transformă în luptători, iar privirile îngheață timpul. Poezii care captează haosul, brutalitatea și transcendența transportului în comun, exact cum le trăiește cel care nu are încotro."

@@ -29,27 +29,53 @@
 {{- if gt $skip  0 -}}{{- $pages = after $skip  $pages -}}{{- end -}}
 
 {{/* ── Adjust limit for book collapse ── */}}
-{{- $effectiveLimit := $limit -}}
-{{- if and $collapseBooks (gt $limit 0) -}}
-  {{/* Count duplicates: for each book, count children beyond the first */}}
-  {{- $duplicateCount := 0 -}}
+{{/* Apply visible-result limit before rendering */}}
+{{- if gt $limit 0 -}}
+  {{- $visiblePages := slice -}}
   {{- $seenBooks := dict -}}
+
+  {{- range $pages -}}
+    {{- $include := true -}}
+
+    {{- if and $collapseBooks .Parent (eq .Parent.Params.layout "book") -}}
+      {{- $bookURL := .Parent.Permalink -}}
+      {{- if isset $seenBooks $bookURL -}}
+        {{- $include = false -}}
+      {{- else -}}
+        {{- $seenBooks = merge $seenBooks (dict $bookURL true) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if $include -}}
+      {{- $visiblePages = $visiblePages | append . -}}
+    {{- end -}}
+
+    {{- if ge (len $visiblePages) $limit -}}
+      {{- break -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $pages = $visiblePages -}}
+{{- end -}}
+
+{{- if $collapseBooks -}}
+  {{- $collapsedPages := slice -}}
+  {{- $renderedBooks := dict -}}
+
   {{- range $pages -}}
     {{- if and .Parent (eq .Parent.Params.layout "book") -}}
       {{- $bookURL := .Parent.Permalink -}}
-      {{- $count := 1 -}}
-      {{- if isset $seenBooks $bookURL -}}
-        {{- $count = add (index $seenBooks $bookURL) 1 -}}
+      {{- if not (isset $renderedBooks $bookURL) -}}
+        {{- $collapsedPages = $collapsedPages | append . -}}
+        {{- $renderedBooks = merge $renderedBooks (dict $bookURL true) -}}
       {{- end -}}
-      {{- $seenBooks = merge $seenBooks (dict $bookURL $count) -}}
-      {{- if gt $count 1 -}}
-        {{- $duplicateCount = add $duplicateCount 1 -}}
-      {{- end -}}
+    {{- else -}}
+      {{- $collapsedPages = $collapsedPages | append . -}}
     {{- end -}}
   {{- end -}}
-  {{- $effectiveLimit = add $limit $duplicateCount -}}
+
+  {{- $pages = $collapsedPages -}}
 {{- end -}}
-{{- if gt $effectiveLimit 0 -}}{{- $pages = first $effectiveLimit $pages -}}{{- end -}}
 
 {{- if $collapseBooks -}}
   {{/* ── Book collapse (only when enabled) ── */}}
