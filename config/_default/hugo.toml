@@ -32,3 +32,61 @@ theme = "uccs-theme-a"
         startLevel = 2
         endLevel = 3
         ordered = false
+
+
+[params.mermaid]
+js_url = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs"
+
+[params.mermaid.theme]
+fontFamily = "Inter, sans-serif"
+fontSize = "16px"
+
+[params.mermaid.theme.light]
+background = "#f8f5ef"
+primaryColor = "#e0d4c8"
+primaryTextColor = "#1c1a14"
+primaryBorderColor = "#5a3e2b"
+secondaryColor = "#faf8f3"
+secondaryTextColor = "#1c1a14"
+secondaryBorderColor = "#d4ccc0"
+tertiaryColor = "#fcfbf8"
+tertiaryTextColor = "#1c1a14"
+tertiaryBorderColor = "#ddd6ca"
+lineColor = "#6b6459"
+textColor = "#1c1a14"
+mainBkg = "#faf8f3"
+nodeBorder = "#5a3e2b"
+clusterBkg = "#f2ede4"
+clusterBorder = "#d4ccc0"
+titleColor = "#5a3e2b"
+edgeLabelBackground = "#fcfbf8"
+noteBkgColor = "#e0c89a"
+noteTextColor = "#1c1a14"
+noteBorderColor = "#b07d3a"
+errorBkgColor = "#e6b4b4"
+errorTextColor = "#1c1a14"
+
+[params.mermaid.theme.dark]
+background = "#1c1a14"
+primaryColor = "#432d1c"
+primaryTextColor = "#f8f5ef"
+primaryBorderColor = "#b07d3a"
+secondaryColor = "#2e1d10"
+secondaryTextColor = "#f8f5ef"
+secondaryBorderColor = "#6b6459"
+tertiaryColor = "#5a3e2b"
+tertiaryTextColor = "#f8f5ef"
+tertiaryBorderColor = "#b07d3a"
+lineColor = "#d4ccc0"
+textColor = "#f8f5ef"
+mainBkg = "#432d1c"
+nodeBorder = "#b07d3a"
+clusterBkg = "#2e1d10"
+clusterBorder = "#b07d3a"
+titleColor = "#f8f5ef"
+edgeLabelBackground = "#5a3e2b"
+noteBkgColor = "#9a6b2a"
+noteTextColor = "#f8f5ef"
+noteBorderColor = "#e0c89a"
+errorBkgColor = "#9b2c2c"
+errorTextColor = "#f8f5ef"
