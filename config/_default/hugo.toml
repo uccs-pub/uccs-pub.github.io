@@ -16,7 +16,6 @@ theme = "uccs-theme-a"
 [taxonomies]
     tag = "tags"
     author = "autori"
-    theme = "themes"
 
 [outputs]
   home = ["HTML", "RSS"]
