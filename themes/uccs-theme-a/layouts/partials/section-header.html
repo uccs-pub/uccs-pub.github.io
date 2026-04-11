@@ -22,6 +22,7 @@
 
 {{/* ── Eyebrow ── */}}
 {{ $eyebrow := .Params.eyebrow }}
+{{ $eyebrowURL := .Parent.RelPermalink }}
 {{ if not $eyebrow }}
   {{ if      eq $kind "taxonomy" }}{{ $eyebrow = "Index" }}
   {{ else if eq $kind "term"     }}{{ $eyebrow = "Etichetă" }}
@@ -58,7 +59,7 @@
 
 <header class="section-header">
 
-  <p class="section-header__eyebrow">{{ $eyebrow }}</p>
+  <p class="section-header__eyebrow"><a href="{{ $eyebrowURL }}">{{ $eyebrow }}</a></p>
 
   <h1 class="section-header__title">
     {{ if eq $kind "term" }}#{{ end }}{{ .Title }}
