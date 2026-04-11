@@ -1,8 +1,8 @@
 ---
 title: "Substanță și cunoștințe generale"
 subtitle: "Cultură generală și mecanisme esențiale"
-publishDate: 2026-03-27
-lead: "WIP"
+publishDate: 2026-03-28
+lead: "Un debater memorează fapte. Altul înțelege mecanisme. Primul are un exemplu pentru o moțiune. Al doilea are argumente pentru zeci. Acest ghid nu îți spune ce să gândești, ci cum să gândești: mecanismele cauzale și tensiunile structurale care se repetă în majoritatea moțiunilor de dezbateri. Învață-le o dată și le recunoști oriunde."
 author: "velcea-petru"
 cover: "cover.jpg"
 tags:
