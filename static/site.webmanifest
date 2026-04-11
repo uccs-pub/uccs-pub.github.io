@@ -1,6 +1,9 @@
 {
-  "name": "Unde cuvintele capătă sens",
+  "name": "{{ .Site.Params.longName }}",
   "short_name": "UCCS",
+  "description": "{{ .Site.Params.description }}",
+  "start_url": ".",
+  "display": "minimal-ui",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -17,5 +20,5 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "minimal-ui"
 }
