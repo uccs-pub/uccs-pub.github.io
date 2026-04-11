@@ -21,9 +21,10 @@
          nested sections correctly without path-splitting hacks.
     */}}
     {{ $eyebrow := .CurrentSection.Title }}
+    {{ $eyebrowURL := .CurrentSection.RelPermalink }}
     {{ with .Params.eyebrow }}{{ $eyebrow = . }}{{ end }}
     {{ with $eyebrow }}
-    <p class="pg-standalone__eyebrow">{{ . }}</p>
+    <p class="pg-standalone__eyebrow"><a href="{{ $eyebrowURL }}">{{ . }}</a></p>
     {{ end }}
 
     <h1 class="pg-standalone__title">
