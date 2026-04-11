@@ -145,18 +145,7 @@ Spre centrul liniștit-cavalerisit
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://uccs.codeberg.page/dezbateri/tipuri-de-mo%C8%9Biuni-%C8%99i-burdenul/</guid>
       <description>&lt;h1 id=&#34;disecarea-moțiunii-și-burden-mapping&#34;&gt;Disecarea moțiunii și burden mapping&lt;/h1&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;
-  flowchart TD
-    A[Tipul moțiunii] --&amp;gt; B[Miza centrală]
-    B --&amp;gt; C[Sarcina echipei]
-    C --&amp;gt; D{{burden suficient &amp;amp; necesar}}
-    D --&amp;gt; G[&amp;#34;`Ariile de conflict
-    _Unde se **câștigă** moțiunea?_`&amp;#34;]
-    G --&amp;gt; J{{stabilirea ariei principale}}
-    J --&amp;gt; K[Cazul echipei]
-&lt;/pre&gt;
-&lt;h2 id=&#34;de-ce-analiza-moțiunii-vine-înaintea-oricărui-argument&#34;&gt;De ce analiza moțiunii vine înaintea oricărui argument&lt;/h2&gt;
-&lt;p&gt;Există un reflex comun în pregătire: auzi moțiunea, îți vin imediat în minte argumente, și începi să le dezvolți. Acesta este cel mai scump obicei pe care îl poți avea în impromptu.&lt;/p&gt;</description>
+&lt;p&gt;Există un reflex comun în pregătire: auzi moțiunea, îți vin imediat în minte argumente, și începi să le dezvolți. Acesta este cel mai scump obicei pe care îl poți avea.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Babă de dame</title>
