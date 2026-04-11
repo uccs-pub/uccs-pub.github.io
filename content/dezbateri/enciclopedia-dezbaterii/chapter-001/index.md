@@ -110,7 +110,7 @@ Moțiunile de valoare nu cer adoptarea unei politici concrete, ci cer o judecat�
 
 - Acest Parlament regretă glorificarea culturală a antreprenoriatului.
 - Acest Parlament crede că drepturile individuale ar trebui să primeze față de binele colectiv.
-- Acest Parlament consideră că colonialismul european a făcut mai mult rău decât bine.
+- Acest Parlament CC colonialismul european a făcut mai mult rău decât bine.
 
 Pentru moțiunile de valoare, echipa Guvernului trebuie să stabilească un **criteriu de evaluare** sau o **ierarhie de valori**: de exemplu, maximizarea libertății individuale, reducerea suferinței agregate, respectarea demnității umane, promovarea justiției distributive. Apoi demonstrează că, pe baza acestui criteriu, poziția lor este superioară.
 
