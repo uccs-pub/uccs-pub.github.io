@@ -179,6 +179,7 @@
   --font-display: 'Cormorant Garamond', 'Georgia', serif;
   --font-body:    'Source Serif 4', 'Georgia', serif;
   --font-ui:       var(--font-body);
+  --font-mono: 'IBM Plex Mono', 'Consolas', monospace;
 }
 
 /* ── Dark theme token overrides ────────────────────────────── */

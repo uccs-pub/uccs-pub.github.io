@@ -1169,94 +1169,6 @@ a.article-author:hover {
 }
 
 /* ============================================================
- *  24. NERDNOTE — coloured callout boxes
- * ============================================================ */
-
-.nerdnote {
-  margin-block: var(--space-6);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  overflow: hidden;
-}
-
-.nerdnote__label {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
-  background: var(--color-surface-offset);
-  font-family: var(--font-ui);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-text);
-  margin: 0;
-}
-
-.nerdnote__label::before { content: 'ⓘ'; font-size: 1em; line-height: 1; color: var(--color-text-muted); }
-
-.nerdnote__body {
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-surface);
-  font-family: var(--font-ui);
-  font-size: var(--text-sm);
-  line-height: 1.65;
-  color: var(--color-text);
-}
-
-.nerdnote__body > *:last-child  { margin-bottom: 0; }
-.nerdnote__body p               { margin-bottom: var(--space-2); max-width: unset; }
-.nerdnote__body ul,
-.nerdnote__body ol              { margin-bottom: var(--space-2); padding-left: var(--space-4); }
-.nerdnote__body li              { margin-bottom: var(--space-1); }
-.article-body .nerdnote p       { margin-bottom: 0; }
-
-/* Variants */
-
-.nerdnote--info { border-color: color-mix(in srgb, var(--color-primary) 25%, var(--color-border)); }
-.nerdnote--info .nerdnote__label {
-  background: var(--color-primary-highlight);
-  color: var(--color-primary);
-}
-.nerdnote--info .nerdnote__label::before { color: var(--color-primary); }
-.nerdnote--info .nerdnote__body {
-  background: color-mix(in srgb, var(--color-primary-highlight) 30%, var(--color-surface));
-}
-
-.nerdnote--warning { border-color: color-mix(in srgb, var(--color-gold) 30%, var(--color-border)); }
-.nerdnote--warning .nerdnote__label {
-  background: color-mix(in srgb, var(--color-gold) 15%, var(--color-surface-offset));
-  color: var(--color-gold);
-}
-.nerdnote--warning .nerdnote__label::before { content: '⚠'; color: var(--color-gold); }
-.nerdnote--warning .nerdnote__body {
-  background: color-mix(in srgb, var(--color-gold) 6%, var(--color-surface));
-}
-
-.nerdnote--error { border-color: color-mix(in srgb, var(--color-error) 30%, var(--color-border)); }
-.nerdnote--error .nerdnote__label {
-  background: color-mix(in srgb, var(--color-error) 12%, var(--color-surface-offset));
-  color: var(--color-error);
-}
-.nerdnote--error .nerdnote__label::before { content: '✕'; color: var(--color-error); }
-.nerdnote--error .nerdnote__body {
-  background: color-mix(in srgb, var(--color-error) 5%, var(--color-surface));
-}
-
-.nerdnote--success,
-.nerdnote--tip { border-color: color-mix(in srgb, var(--color-success) 30%, var(--color-border)); }
-.nerdnote--success .nerdnote__label,
-.nerdnote--tip    .nerdnote__label {
-  background: color-mix(in srgb, var(--color-success) 12%, var(--color-surface-offset));
-  color: var(--color-success);
-}
-.nerdnote--success .nerdnote__label::before,
-.nerdnote--tip    .nerdnote__label::before { content: '✓'; color: var(--color-success); }
-.nerdnote--success .nerdnote__body,
-.nerdnote--tip    .nerdnote__body {
-  background: color-mix(in srgb, var(--color-success) 5%, var(--color-surface));
-}
-
-/* ============================================================
  *  25. SECTION HEADER — canonical header for section/taxonomy pages
  * ============================================================ */
 
@@ -1274,6 +1186,21 @@ a.article-author:hover {
   text-transform: uppercase;
   color: var(--color-gold);
   margin-bottom: var(--space-2);
+}
+
+.section-header__eyebrow a {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+  text-decoration: none;
+}
+
+.section-header__eyebrow a:hover {
+  text-decoration: underline;
 }
 
 .section-header__title {
@@ -1852,4 +1779,27 @@ a.article-author:hover {
   font-weight: 700;
   border-top: 2px solid #333;
   padding-top: 0.75rem;
+}
+
+/*Style for GOAT and Mermaid*/
+
+/* Center and contain the diagram */
+.mermaid-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  overflow-x: auto;          /* allow horizontal scroll on small screens */
+}
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Make the SVG itself responsive */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;     /* optional rounded corners */
 }
