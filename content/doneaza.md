@@ -10,21 +10,12 @@ Existența sa depinde exclusiv de cititori care cred că claritatea publică mer
 
 ## Scopul donațiilor
 
-Donațiile primite sunt utilizate **exclusiv pentru cheltuielile operaționale**:
+Donațiile contribuie direct la buna funcționare și dezvoltare a proiectului. Ele acoperă cheltuieli necesare precum domeniul și găzduirea website-ului, actualizările tehnice, instrumentele de lucru colaborativ sau arhivarea materialelor educaționale.
 
-- Menținerea și reînnoirea domeniului;
-- Hosting și infrastructură (stocare, backup, CDN).
-
-Nicio sumă nu este alocată activităților lucrative, promovării plătite sau remunerațiilor personale. Transparența utilizării fondurilor este un principiu fundamental al proiectului.
+Nicio parte din sumele primite nu este utilizată în scopuri comerciale, pentru promovare plătită sau beneficii personale. Transparența rămâne una dintre valorile esențiale ale inițiativei.
 
 ## Cum poți dona?
 
-Donațiile se fac exclusiv prin transfer bancar în contul de **Revolut** al proiectului:
+Poți face o donație direct în buzunarul dedicat proiectului, scanând codul de mai jos sau accesând link-ul de plată. Toate sumele sunt gestionate separat de fondurile personale și utilizate exclusiv pentru cheltuieli operaționale.
 
-| Detaliu             | Informație                          |
-|---------------------|-------------------------------------|
-| **Titular cont**    | Unde Cuvintele Capătă Sens          |
-| **Bancă**           | Revolut Bank UAB                    |
-| **IBAN**            | `ROXX REV0 XXXX XXXX XXXX XXXX`     |
-| **Monedă**          | RON                                 |
-| **Detaliu plată**   | „Donație UCCS – sprijin tehnic”     |
+{{< donation-cta >}}

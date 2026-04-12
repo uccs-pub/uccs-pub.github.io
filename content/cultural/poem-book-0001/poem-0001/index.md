@@ -12,26 +12,26 @@ tags:
 
 ```
 Când mă urc în autobuzul
-numarul 196
-Viața înconjor se face
-cu intestine
-pe covor
+numarul 196.
+Din centru de unde-l iau,
+mă transportă,
+într-o mahala sălbatică.
 
 Cerul alb se face
 mov învinețit
-Centru' de unde-l iau
-mahala sălbatică
-mă transport
+Viața înconjor se face,
+în jos,
+intestine pe covor.
 
-Țipete stridente
-Scaune menstruate
+Țipete stridente.
+Scaune menstruate.
 Bărbați cu mustăți
 și topoare
 mă însoțesc
 
 Din cladiri pătrate
-în arhitectura de demolate
-purici mici
+în arhitectură de demolate.
+Purici mici
 se fac gigantici
 
 A canal miroase aici,
@@ -45,9 +45,9 @@ Mă străpunge atent
 Cu privirea ea atacă
 Timpul opreșt latent
 
-Drujba cap întors se întoarce
+Drujba cap întors se-ntoarce
 Spre a mea ajutorare
 Când circul cu 196
 Mereu norocul mă întoarce
-Spre centrul liniștit-cavalerisit
+Spre centrul cavalerisit
 ```

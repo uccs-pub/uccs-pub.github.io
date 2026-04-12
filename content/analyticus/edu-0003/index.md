@@ -191,6 +191,8 @@ Ordinul 4444/2025. "Încadrarea în bugetul standard alocat prin finanțare de b
 
 Suryahadi, Asep și Ridho Al Izzati. "Reforma curriculară în descentralizarea educației în Indonezia: Impactul asupra performanțelor școlare." Cakrawala Pendidikan 40(1): 158-172. 2021.
 
+{{< donation-cta >}}
+
 ---
 
 [^1]: Ministerul Educației. *Programul Național pentru pilotarea sistemică de planuri-cadru în învățământul liceal*. 2025, p. 1–3.

@@ -23,6 +23,6 @@ UCCS este un proiect editorial solo. Nu există formular de contact, doar o adre
 
 ## Adresa
 
-> <a href="mailto:redactia@uccs.ro">redactia@uccs.ro</a>
+> <a href="mailto:redactie@uccs.ro">redactie@uccs.ro</a>
 
 Răspunsul va fi trimit în limita timpului disponibil. Este prioritizată corespondența care respectă criteriile de mai sus. Un email bine structurat, cu context, surse și o întrebare clară, are șanse maxime de răspuns detaliat.

@@ -23,8 +23,8 @@
   weight = 10
 
 [[footer]]
-  name = "Politică editorială"
-  pageRef = "/politica-editoriala"
+  name = "Echipa editorială"
+  pageRef = "/echipa-editoriala"
   weight = 20
 
 [[footer]]

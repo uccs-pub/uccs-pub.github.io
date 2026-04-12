@@ -1,0 +1,38 @@
+{{- $d := site.Params.donation -}}
+{{- $title       := .Get "title"       | default $d.title -}}
+{{- $description := .Get "description" | default $d.description -}}
+{{- $btn1Label   := .Get "btn1_label"  | default $d.btn1_label -}}
+{{- $btn1Href    := .Get "btn1_href"   | default $d.btn1_href -}}
+{{- $qrSrc       := .Get "qr_src"      | default $d.qr_src -}}
+{{- $qrNote      := .Get "qr_note"     | default $d.qr_note -}}
+{{- $uid         := printf "cta-qr-%s" (now.Format "150405") -}}
+
+<div class="cta-box">
+  <input type="checkbox" class="cta-box__toggle" id="{{ $uid }}" aria-hidden="true">
+
+  <div class="cta-box__content">
+    <p class="cta-box__title">{{ $title | markdownify }}</p>
+    <p class="cta-box__body">{{ $description }}</p>
+  </div>
+
+  <div class="cta-box__side">
+    <div class="cta-box__buttons">
+      {{ if $btn1Href }}
+      <a href="{{ $btn1Href }}" class="cta-box__action cta-box__action--primary">
+        {{ $btn1Label }}
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      {{ end }}
+    </div>
+
+    {{ if $qrSrc }}
+    <div class="cta-box__qr-view">
+      <img src="{{ $qrSrc }}" alt="QR code donație" width="160" height="160" />
+      {{ if $qrNote }}<p class="cta-box__qr-note">{{ $qrNote }}</p>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>

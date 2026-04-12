@@ -11,22 +11,22 @@ tags:
 ---
 
 ```
-Mă uit în ochii îmbătrăniți
+Mă uit în ochii îmbătrâniți
 O privire și îngheț
 
 Mâna rece nu-mi ivește
-Sufletul bate a ieșii
+Sufletul bate a ieși
 
-Baba chicotește îngeresc
+Baba chicotește îngerește
 Baba răget învârtit
 
 Cerul înnegrit avarițios
 Avarie a rațiunii alpine
 
-Alungită baba înmână
-Innebunită învarte întregul univers
+Alungită, baba înmânează
+Înnebunită învârte întregul univers
 
 De pe scaun eu ridic
 Și din autobuz cobor
-Vără să mă uit înnapoi
+Fără să mă uit, înapoi
 ```

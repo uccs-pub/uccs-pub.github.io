@@ -17,3 +17,12 @@
 [toc]
   toc = true
   tocMinWordCount = 300
+
+[donation]
+title       = "Susține jurnalismul independent"
+description = "UCCS este o publicație independentă. Fiecare donație ne ajută să scriem liber, fără presiuni editoriale."
+btn1_label  = "Donează online"
+btn1_href   = "https://revolut.me/petrucrypt/pocket/lISsQbAz5R"
+btn2_label  = "Plătește cu QR"
+qr_src      = "/images/qr-code.svg"
+qr_note     = "Scanează cu telefonul mobil"

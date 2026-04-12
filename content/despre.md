@@ -24,27 +24,15 @@ Textele urmează un proces editorial constant: de la idee și documentare, la sc
 # Ce scriem?
 
 {{< sections-grid >}}
-  {{< section-card label="Polis" title="Politică & Cetate" >}}
-  Instituții, putere, democrație, politici publice explicate fără sloganuri.
+  {{< section-card label="Analyticul" title="Politică publică" >}}
+  Analize și mecanisme despre societatea românească.
   {{< /section-card >}}
 
-  {{< section-card label="Agora" title="Idei & Dezbatere" >}}
-  Eseu, retorică, discurs public, cum se fabrică și se demontează narațiunile.
+  {{< section-card label="Cultural" title="Eseistică, proză și poezie" >}}
+  Lucrari literare contemporane, alegorii ale cuvintelor. 
   {{< /section-card >}}
 
-  {{< section-card label="Educație" title="Școală & Formare" >}}
-  Pedagogie, programe și practici educaționale, pentru profesori și elevi care gândesc critic.
-  {{< /section-card >}}
-
-  {{< section-card label="Tech" title="Tehnologie & Societate" >}}
-  Software liber, infrastructuri digitale și felul în care tehnologia ne schimbă viața publică.
-  {{< /section-card >}}
-
-  {{< section-card label="Litere" title="Literatură & Critică" >}}
-  Proză, poezie, analiză literară – texte care pun literatura în dialog cu prezentul.
-  {{< /section-card >}}
-
-  {{< section-card label="Debate" title="Dezbatere & Retorică" >}}
-  Dialectică, logică clasică, instrumente pentru argumentare onestă și gândire clară.
+  {{< section-card label="Dezbateri" title="Ghiduri și formule" >}}
+  Formulari concrete care sporesc dezbaterea academică.
   {{< /section-card >}}
 {{< /sections-grid >}}

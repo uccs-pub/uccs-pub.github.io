@@ -15,31 +15,31 @@ Bătălie acerbă
 În troleul 96
 
 Sânge menstrual
-fereastra a ascuns
-Sămânțe secrete
-pe la uși gardieni 
-nesupuse
+fereastra a ascuns.
+Semințe secrete
+pe la uși gardieni
+nesupuși.
 
-Boschetarul chestorul
-Croitorul boscheților sectoriale
-autor a mirosurilor
+Boschetarul, chestorul
+Croitorul boscheților sectoriali
+autor al mirosurilor
 autor cu rol salubrizant
 
 Unghii murdare
-Față lungă desfigurată
+Față lungă, desfigurată
 Sifilisului purtător
 Hepatitelor colector
 Colecționarilor ideal
 
 Baba nova
 Damă de pension
-Transformată în luptator
+Transformată în luptător
 de lupte grele
-Izgonește boschetul din troleu
-Înapoi pe străzile ce-l caracterizau
+Izgonește boschetarul din troleu
+Înapoi pe străzile janghinoase
 
-Acum troleul este plin
+Acum troleul este plin,
 bucuros de victorie
 flori aduse babei
-96 de crizanteme
+96 crizanteme
 ```
