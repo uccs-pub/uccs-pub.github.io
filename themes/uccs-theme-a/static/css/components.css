@@ -1238,6 +1238,7 @@ a.article-author:hover {
   border-radius: var(--radius-md);
   image-rendering: crisp-edges;
   image-rendering: pixelated;
+  margin: var(--space-1);
   transition:
     transform var(--transition-fast),
     box-shadow var(--transition-fast),
