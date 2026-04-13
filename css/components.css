@@ -1191,37 +1191,58 @@ a.article-author:hover {
   background: var(--color-gold-hover);
 }
 
-/* QR wrapper: padding-top coboară puțin blocul */
+/* QR wrapper */
 .cta-box__qr-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: var(--space-3);
-  min-height: 180px;
+  padding-top: var(--space-2);
+  min-height: 196px;
 }
 
 .cta-box__qr-view {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-1);           /* fix: de la space-2 la space-1 */
+  gap: var(--space-2);
   opacity: 1;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
+  margin: var(--space-1);
 }
 
-.cta-box__qr-view img {
+/* Optional if QR is wrapped in a link */
+.cta-box__qr-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: calc(var(--radius-md) + 4px);
+  padding: 0;
+}
+
+/* Better-looking QR frame */
+.cta-box__qr-view picture,
+.cta-box__qr-view .cta-box__qr-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box__qr-view img,
+.cta-box__qr-image {
   display: block;
+  width: 176px;
+  height: 176px;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: var(--radius-md);
-  width: 180px;                  /* fix: de la 160px la 180px */
-  height: 180px;
-}
-
-.cta-box__qr-note {
-  font-family: var(--font-ui);
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  text-align: center;
-  margin: 0;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .cta-box__side p {
