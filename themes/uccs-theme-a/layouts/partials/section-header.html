@@ -39,8 +39,13 @@
 {{ end }}
 
 {{/* ── Word count across all pages ── */}}
-{{ $totalWords := 0 }}
-{{ range $pages }}{{ $totalWords = add $totalWords .WordCount }}{{ end }}
+{{ $totalWords := .WordCount }}
+
+{{ range .RegularPagesRecursive }}
+  {{ $totalWords = add $totalWords .WordCount }}
+{{ end }}
+
+{{ $totalWords }}
 
 {{/* ── Taxonomy-index extras ── */}}
 {{ $isTaxonomy       := eq $kind "taxonomy" }}
