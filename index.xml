@@ -1,253 +1,108 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home on Unde Cuvintele Capătă Sens</title>
-    <link>https://uccs.codeberg.page/</link>
-    <description>Recent content on Unde Cuvintele Capătă Sens</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ro-RO</language>
-      <atom:link href="https://uccs.codeberg.page/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Substanță și cunoștințe generale</title>
-      <link>https://uccs.codeberg.page/dezbateri/substan%C8%9B%C4%83-%C8%99i-cuno%C8%99tin%C8%9Be-generale/</link>
-      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/substan%C8%9B%C4%83-%C8%99i-cuno%C8%99tin%C8%9Be-generale/</guid>
-      <description>&lt;p&gt;Există o concepție greșită frecventă despre funcția cunoștințelor generale în dezbater, că servesc pentru a furniza fapte și exemple punctuale. Aceasta este, paradoxal, funcția lor cea mai puțin valoroasă. Funcția reală a cunoștințelor generale este să furnizeze mecanisme, adică înțelegerea modului în care sistemele funcționează: de ce apar anumite fenomene, ce tensiuni structurale generează anumite conflicte, cum se leagă cauzal efectele între ele. Un debater care știe că inegalitatea economică a crescut în ultimele decenii are un fapt. Un debater care înțelege de ce (dezindustrializare, mobilitate a capitalului, declinul puterii sindicale, captură politică) are un mecanism. Mecanismul generează argumente pe zeci de moțiuni diferite; faptul generează un exemplu pe una singură.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Anatomia argumentului</title>
-      <link>https://uccs.codeberg.page/dezbateri/anatomia-argumentului/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/anatomia-argumentului/</guid>
-      <description>&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;
-  &lt;p class=&#34;nerdnote__label&#34;&gt;Ce este un argument?&lt;/p&gt;
-  &lt;div class=&#34;nerdnote__body&#34;&gt;Un argument este o demonstrație logică care susține o afirmație prin rațiune și dovezi. El explică de ce o idee este adevărată sau valabilă, trecând de la o premisă comună la o concluzie justificată. Scopul său nu este doar să afirme, ci să convingă prin coerență, relevanță și exemple care arată funcționarea mecanismului în realitate.&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Unde Cuvintele Capătă Sens</title><link>https://uccs.ro/</link><description>Recent content on Unde Cuvintele Capătă Sens</description><generator>Hugo -- gohugo.io</generator><language>ro-RO</language><atom:link href="https://uccs.ro/index.xml" rel="self" type="application/rss+xml"/><item><title>Substanță și cunoștințe generale</title><link>https://uccs.ro/dezbateri/substan%C8%9B%C4%83-%C8%99i-cuno%C8%99tin%C8%9Be-generale/</link><pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/substan%C8%9B%C4%83-%C8%99i-cuno%C8%99tin%C8%9Be-generale/</guid><description>&lt;p&gt;Există o concepție greșită frecventă despre funcția cunoștințelor generale în dezbater, că servesc pentru a furniza fapte și exemple punctuale. Aceasta este, paradoxal, funcția lor cea mai puțin valoroasă. Funcția reală a cunoștințelor generale este să furnizeze mecanisme, adică înțelegerea modului în care sistemele funcționează: de ce apar anumite fenomene, ce tensiuni structurale generează anumite conflicte, cum se leagă cauzal efectele între ele. Un debater care știe că inegalitatea economică a crescut în ultimele decenii are un fapt. Un debater care înțelege de ce (dezindustrializare, mobilitate a capitalului, declinul puterii sindicale, captură politică) are un mecanism. Mecanismul generează argumente pe zeci de moțiuni diferite; faptul generează un exemplu pe una singură.&lt;/p&gt;</description></item><item><title>Anatomia argumentului</title><link>https://uccs.ro/dezbateri/anatomia-argumentului/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/anatomia-argumentului/</guid><description>&lt;div class="nerdnote nerdnote--info"&gt;
+&lt;p class="nerdnote__label"&gt;Ce este un argument?&lt;/p&gt;
+&lt;div class="nerdnote__body"&gt;Un argument este o demonstrație logică care susține o afirmație prin rațiune și dovezi. El explică de ce o idee este adevărată sau valabilă, trecând de la o premisă comună la o concluzie justificată. Scopul său nu este doar să afirme, ci să convingă prin coerență, relevanță și exemple care arată funcționarea mecanismului în realitate.&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;nerdnote nerdnote--info&#34;&gt;
-  &lt;p class=&#34;nerdnote__label&#34;&gt;Cum arată un argument?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Autobuzul 196</title>
-      <link>https://uccs.codeberg.page/cultural/autobuzul-196/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/cultural/autobuzul-196/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Când mă urc în autobuzul
+&lt;div class="nerdnote nerdnote--info"&gt;
+&lt;p class="nerdnote__label"&gt;Cum arată un argument?&lt;/p&gt;</description></item><item><title>Autobuzul 196</title><link>https://uccs.ro/cultural/autobuzul-196/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/cultural/autobuzul-196/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;Când mă urc în autobuzul
 numarul 196.
 Din centru de unde-l iau,
 mă transportă,
 într-o mahala sălbatică.
-
 Cerul alb se face
 mov învinețit
 Viața înconjor se face,
 în jos,
 intestine pe covor.
-
 Țipete stridente.
 Scaune menstruate.
 Bărbați cu mustăți
 și topoare
 mă însoțesc
-
 Din cladiri pătrate
 în arhitectură de demolate.
 Purici mici
 se fac gigantici
-
 A canal miroase aici,
 verde mâzgă pe podele
 A gunoi miroase aici
 metamorfozat în oi
 și foi-de-coi
-
 1-Babă = 2-Babă
 Mă străpunge atent
 Cu privirea ea atacă
 Timpul opreșt latent
-
 Drujba cap întors se-ntoarce
 Spre a mea ajutorare
 Când circul cu 196
 Mereu norocul mă întoarce
 Spre centrul cavalerisit
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>Bibliografie</title>
-      <link>https://uccs.codeberg.page/dezbateri/bibliografie/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/bibliografie/</guid>
-      <description>&lt;h2 id=&#34;bibliografie-academică-și-instituțională&#34;&gt;Bibliografie Academică și Instituțională&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Bibliografie</title><link>https://uccs.ro/dezbateri/bibliografie/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/bibliografie/</guid><description>&lt;h2 id="bibliografie-academică-și-instituțională"&gt;Bibliografie Academică și Instituțională&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Caietul profesorului pentru disciplina opțională&lt;/em&gt;. ARDOR România, 2016.&lt;/li&gt;
 &lt;li&gt;Asociația Română de Dezbateri, Oratorie și Retorică (ARDOR). &lt;em&gt;Ghid de arbitraj World Schools&lt;/em&gt;. ARDOR, 2022.&lt;/li&gt;
 &lt;li&gt;Cerchez, Genoveva, et al. &lt;em&gt;Manualul elevului pentru disciplina opțională „Dezbatere, Oratorie și Retorică”&lt;/em&gt;. ARDOR România, 2016.&lt;/li&gt;
 &lt;li&gt;Freely, Austin J., and David L. Steinberg. &lt;em&gt;Argumentation and Debate: Critical Thinking for Reasoned Decision Making&lt;/em&gt;. 13th ed., Wadsworth, 2014.&lt;/li&gt;
-&lt;li&gt;Groarke, Leo. &lt;a href=&#34;https://plato.stanford.edu/entries/logic-informal/&#34;&gt;“Informal Logic.”&lt;/a&gt; Stanford Encyclopedia of Philosophy. First published November 25, 1996; substantive revision January 28, 2026. Accessed March 5, 2026.&lt;/li&gt;
+&lt;li&gt;Groarke, Leo. &lt;a href="https://plato.stanford.edu/entries/logic-informal/"&gt;“Informal Logic.”&lt;/a&gt; Stanford Encyclopedia of Philosophy. First published November 25, 1996; substantive revision January 28, 2026. Accessed March 5, 2026.&lt;/li&gt;
 &lt;li&gt;Ministerul Educației. &lt;em&gt;Regulamentul specific de organizare și desfășurare a Olimpiadei Naționale de Argumentare, Dezbatere și Gândire Critică „Tinerii Dezbat” (Nr. 24415/23.01.2025)&lt;/em&gt;. Ministerul Educației, 23 Jan. 2025.&lt;/li&gt;
 &lt;li&gt;Ministerul Educației. &lt;em&gt;Regulamentul specific de organizare și desfășurare a Olimpiadei Naționale de Argumentare, Dezbatere și Gândire Critică „Tinerii Dezbat” (Nr. 26479/13.03.2024)&lt;/em&gt;. Ministerul Educației, 13 Mar. 2024.&lt;/li&gt;
 &lt;li&gt;Ministerul Educației, Cercetării, Tineretului și Sportului. &lt;em&gt;Programa școlară pentru disciplina opțională Dezbatere, Oratorie și Retorică (Nr. 4074/21.04.2011)&lt;/em&gt;. MECTS, 21 Apr. 2011.&lt;/li&gt;
-&lt;li&gt;National Speech &amp;amp; Debate Association. &lt;a href=&#34;www.speechanddebate.org/wp-content/uploads/USWSDI-Manual-2023.pdf&#34;&gt;&lt;em&gt;USA World Schools Debate Invitational Manual: Debate Rules and Procedures&lt;/em&gt;&lt;/a&gt;. 2023,. Accessed 5 Mar. 2026.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;www.ethosdebate.com/the-fallacious-fiat/&#34;&gt;&amp;ldquo;The Fallacious Fiat.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Ethos Debate, LLC&lt;/em&gt;, 9 Sep. 2021,. Accessed 5 Mar. 2026.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;www.nfcfl.org/world-schools-debate.html&#34;&gt;&amp;ldquo;World Schools Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;National Federation of State High School Associations&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;National Speech &amp;amp; Debate Association. &lt;a href="www.speechanddebate.org/wp-content/uploads/USWSDI-Manual-2023.pdf"&gt;&lt;em&gt;USA World Schools Debate Invitational Manual: Debate Rules and Procedures&lt;/em&gt;&lt;/a&gt;. 2023,. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href="www.ethosdebate.com/the-fallacious-fiat/"&gt;&amp;ldquo;The Fallacious Fiat.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Ethos Debate, LLC&lt;/em&gt;, 9 Sep. 2021,. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href="www.nfcfl.org/world-schools-debate.html"&gt;&amp;ldquo;World Schools Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;National Federation of State High School Associations&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;
 &lt;li&gt;Ko, T. M., &amp;amp; Mezuk, B. (2021). Debate participation and academic achievement among high school students in the Houston Independent School District: 2012–2015. Educational Research and Reviews, 16(5), 215–224.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;resurse-web-și-materiale-practice&#34;&gt;Resurse Web și Materiale Practice&lt;/h2&gt;
+&lt;h2 id="resurse-web-și-materiale-practice"&gt;Resurse Web și Materiale Practice&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;www.girlswhodebate.com/post/types-of-motions-in-parliamentary-debate&#34;&gt;&amp;ldquo;Types of Motions in Parliamentary Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Girls Who Debate&lt;/em&gt;, 1 Apr. 2021. Accessed 5 Mar. 2026.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;www.learnspeechanddebate.com/post/fiat-power-policy-case-types&#34;&gt;&amp;ldquo;Fiat Power — Policy Case Types.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Learn Speech and Debate&lt;/em&gt;, 25 Aug. 2022. Accessed 5 Mar. 2026.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;betterdebatemanual.wixsite.com/better/impromptu-debates&#34;&gt;&amp;ldquo;Impromptu Debates.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Better Debate Manual&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;
-&lt;/ol&gt;</description>
-    </item>
-    <item>
-      <title>Discursul constructiv</title>
-      <link>https://uccs.codeberg.page/dezbateri/discursul-constructiv/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/discursul-constructiv/</guid>
-      <description>&lt;p&gt;Rolul primului vorbitor într-o dezbatere nu este acela de a arunca direct cu argumente, ci de a așeza fundația pe care se va construi întreaga discuție. Pentru ca terenul de joc să fie clar și echitabil încă din primele minute, discursul de deschidere trebuie să funcționeze ca o hartă, oferind răspunsuri limpezi la trei întrebări fundamentale:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Discursul sumativ</title>
-      <link>https://uccs.codeberg.page/dezbateri/discursul-sumativ/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/discursul-sumativ/</guid>
-      <description>&lt;p&gt;Discursul sumativ este singurul discurs de patru minute dintr-o rundă și, probabil, cel mai neînțeles rol din întregul format. Mulți debatteri îl tratează ca pe un rezumat plictisitor sau ca pe o simplă repetare a argumentelor deja rostite, fără să realizeze că acest discurs final poate decide câștigătorul în rundele echilibrate. Rolul fundamental al acestui discurs nu este să repete cronologic tot ce s-a întâmplat („el a zis, noi am răspuns, apoi ei au zis&amp;hellip;&amp;quot;), ci să &lt;strong&gt;cristalizeze dezbaterea&lt;/strong&gt;: să o condenseze în jurul celor mai importante ciocniri de idei și să arate arbitrului, printr-o analiză lucidă și ordonată, de ce tabăra ta a câștigat per ansamblu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exemplificarea în argumentare</title>
-      <link>https://uccs.codeberg.page/dezbateri/exemplificarea-%C3%AEn-argumentare/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/exemplificarea-%C3%AEn-argumentare/</guid>
-      <description>&lt;p&gt;Exemplul este un instrument de susținere: poate (a) să ilustreze un mecanism, (b) să sprijine inductiv o generalizare, (c) să funcționeze ca analogie/precedent sau (d) să opereze ca contraexemplu (limitând/invalidând o regulă).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Formatul World Schools</title>
-      <link>https://uccs.codeberg.page/dezbateri/formatul-world-schools/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/formatul-world-schools/</guid>
-      <description>&lt;h2 id=&#34;aspecte-generale-ale-formatului&#34;&gt;Aspecte generale ale formatului&lt;/h2&gt;
+&lt;li&gt;&lt;a href="www.girlswhodebate.com/post/types-of-motions-in-parliamentary-debate"&gt;&amp;ldquo;Types of Motions in Parliamentary Debate.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Girls Who Debate&lt;/em&gt;, 1 Apr. 2021. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href="www.learnspeechanddebate.com/post/fiat-power-policy-case-types"&gt;&amp;ldquo;Fiat Power — Policy Case Types.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Learn Speech and Debate&lt;/em&gt;, 25 Aug. 2022. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href="betterdebatemanual.wixsite.com/better/impromptu-debates"&gt;&amp;ldquo;Impromptu Debates.&amp;rdquo;&lt;/a&gt; &lt;em&gt;Better Debate Manual&lt;/em&gt;. Accessed 5 Mar. 2026.&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Discursul constructiv</title><link>https://uccs.ro/dezbateri/discursul-constructiv/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/discursul-constructiv/</guid><description>&lt;p&gt;Rolul primului vorbitor într-o dezbatere nu este acela de a arunca direct cu argumente, ci de a așeza fundația pe care se va construi întreaga discuție. Pentru ca terenul de joc să fie clar și echitabil încă din primele minute, discursul de deschidere trebuie să funcționeze ca o hartă, oferind răspunsuri limpezi la trei întrebări fundamentale:&lt;/p&gt;</description></item><item><title>Discursul sumativ</title><link>https://uccs.ro/dezbateri/discursul-sumativ/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/discursul-sumativ/</guid><description>&lt;p&gt;Discursul sumativ este singurul discurs de patru minute dintr-o rundă și, probabil, cel mai neînțeles rol din întregul format. Mulți debatteri îl tratează ca pe un rezumat plictisitor sau ca pe o simplă repetare a argumentelor deja rostite, fără să realizeze că acest discurs final poate decide câștigătorul în rundele echilibrate. Rolul fundamental al acestui discurs nu este să repete cronologic tot ce s-a întâmplat („el a zis, noi am răspuns, apoi ei au zis&amp;hellip;&amp;quot;), ci să &lt;strong&gt;cristalizeze dezbaterea&lt;/strong&gt;: să o condenseze în jurul celor mai importante ciocniri de idei și să arate arbitrului, printr-o analiză lucidă și ordonată, de ce tabăra ta a câștigat per ansamblu.&lt;/p&gt;</description></item><item><title>Exemplificarea în argumentare</title><link>https://uccs.ro/dezbateri/exemplificarea-%C3%AEn-argumentare/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/exemplificarea-%C3%AEn-argumentare/</guid><description>&lt;p&gt;Exemplul este un instrument de susținere: poate (a) să ilustreze un mecanism, (b) să sprijine inductiv o generalizare, (c) să funcționeze ca analogie/precedent sau (d) să opereze ca contraexemplu (limitând/invalidând o regulă).&lt;/p&gt;</description></item><item><title>Formatul World Schools</title><link>https://uccs.ro/dezbateri/formatul-world-schools/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/formatul-world-schools/</guid><description>&lt;h2 id="aspecte-generale-ale-formatului"&gt;Aspecte generale ale formatului&lt;/h2&gt;
 &lt;p&gt;Dezbaterea reprezintă o succesiune de discursuri pe o anumită temă, desfășurate conform unui set de reguli bine stabilite.&lt;/p&gt;
-&lt;p&gt;În sistemul World Schools (prescurtat World Schools), alternanța are loc între două echipe formate fiecare din trei membri, numiți vorbitori: echipa guvernului și echipa opoziției.  Dezbaterea este structurată în două etape distincte: etapa constructivă (~54 de minute) și etapa concluzivă (~8 minute).  Un discurs constructiv durează 8 minute, iar cel concluziv 4 minute.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Persuasiunea aristotelică</title>
-      <link>https://uccs.codeberg.page/dezbateri/persuasiunea-aristotelic%C4%83/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/persuasiunea-aristotelic%C4%83/</guid>
-      <description>&lt;h1 id=&#34;arhitectura-persuasiunii-aristotelice&#34;&gt;Arhitectura persuasiunii aristotelice&lt;/h1&gt;
-&lt;p&gt;Cu peste două milenii în urmă, Aristotel a identificat în lucrarea sa &lt;em&gt;Retorică&lt;/em&gt; cele trei moduri fundamentale prin care un vorbitor poate convinge un auditoriu: &lt;strong&gt;logos&lt;/strong&gt; (apelul la rațiune și logică), &lt;strong&gt;ethos&lt;/strong&gt; (apelul la credibilitatea și caracterul vorbitorului) și &lt;strong&gt;pathos&lt;/strong&gt; (apelul la emoțiile și valorile audienței). Aceste concepte reprezintă atât categorii teoretice, cât și o hartă practică a persuasiunii, recunoscând faptul că oamenii nu sunt ființe pur raționale, ci decid pe baza unei combinații complexe de raționament logic, încredere în sursa informației și rezonanță emotională.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sarcina echipelor în funcție de moțiune</title>
-      <link>https://uccs.codeberg.page/dezbateri/sarcina-echipelor-%C3%AEn-func%C8%9Bie-de-mo%C8%9Biune/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/sarcina-echipelor-%C3%AEn-func%C8%9Bie-de-mo%C8%9Biune/</guid>
-      <description>&lt;p&gt;Tipul de moțiune este un indicator direct al structurii de burden. Confundarea tipologiilor duce la burden greșit, care duce la argumente irelevante, indiferent cât de bine sunt construite.&lt;/p&gt;
-&lt;h2 id=&#34;moțiuni-prescriptive&#34;&gt;Moțiuni prescriptive&lt;/h2&gt;
-&lt;p&gt;Moțiunile prescriptive presupun mecanisme de politică publică, implementare sau de actor. Exemple:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tipuri de moțiuni și burdenul</title>
-      <link>https://uccs.codeberg.page/dezbateri/tipuri-de-mo%C8%9Biuni-%C8%99i-burdenul/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/dezbateri/tipuri-de-mo%C8%9Biuni-%C8%99i-burdenul/</guid>
-      <description>&lt;h1 id=&#34;disecarea-moțiunii-și-burden-mapping&#34;&gt;Disecarea moțiunii și burden mapping&lt;/h1&gt;
-&lt;p&gt;Există un reflex comun în pregătire: auzi moțiunea, îți vin imediat în minte argumente, și începi să le dezvolți. Acesta este cel mai scump obicei pe care îl poți avea.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Babă de dame</title>
-      <link>https://uccs.codeberg.page/cultural/bab%C4%83-de-dame/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/cultural/bab%C4%83-de-dame/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Bătălie acerbă
+&lt;p&gt;În sistemul World Schools (prescurtat World Schools), alternanța are loc între două echipe formate fiecare din trei membri, numiți vorbitori: echipa guvernului și echipa opoziției. Dezbaterea este structurată în două etape distincte: etapa constructivă (~54 de minute) și etapa concluzivă (~8 minute). Un discurs constructiv durează 8 minute, iar cel concluziv 4 minute.&lt;/p&gt;</description></item><item><title>Persuasiunea aristotelică</title><link>https://uccs.ro/dezbateri/persuasiunea-aristotelic%C4%83/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/persuasiunea-aristotelic%C4%83/</guid><description>&lt;h1 id="arhitectura-persuasiunii-aristotelice"&gt;Arhitectura persuasiunii aristotelice&lt;/h1&gt;
+&lt;p&gt;Cu peste două milenii în urmă, Aristotel a identificat în lucrarea sa &lt;em&gt;Retorică&lt;/em&gt; cele trei moduri fundamentale prin care un vorbitor poate convinge un auditoriu: &lt;strong&gt;logos&lt;/strong&gt; (apelul la rațiune și logică), &lt;strong&gt;ethos&lt;/strong&gt; (apelul la credibilitatea și caracterul vorbitorului) și &lt;strong&gt;pathos&lt;/strong&gt; (apelul la emoțiile și valorile audienței). Aceste concepte reprezintă atât categorii teoretice, cât și o hartă practică a persuasiunii, recunoscând faptul că oamenii nu sunt ființe pur raționale, ci decid pe baza unei combinații complexe de raționament logic, încredere în sursa informației și rezonanță emotională.&lt;/p&gt;</description></item><item><title>Sarcina echipelor în funcție de moțiune</title><link>https://uccs.ro/dezbateri/sarcina-echipelor-%C3%AEn-func%C8%9Bie-de-mo%C8%9Biune/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/sarcina-echipelor-%C3%AEn-func%C8%9Bie-de-mo%C8%9Biune/</guid><description>&lt;p&gt;Tipul de moțiune este un indicator direct al structurii de burden. Confundarea tipologiilor duce la burden greșit, care duce la argumente irelevante, indiferent cât de bine sunt construite.&lt;/p&gt;
+&lt;h2 id="moțiuni-prescriptive"&gt;Moțiuni prescriptive&lt;/h2&gt;
+&lt;p&gt;Moțiunile prescriptive presupun mecanisme de politică publică, implementare sau de actor. Exemple:&lt;/p&gt;</description></item><item><title>Tipuri de moțiuni și burdenul</title><link>https://uccs.ro/dezbateri/tipuri-de-mo%C8%9Biuni-%C8%99i-burdenul/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/dezbateri/tipuri-de-mo%C8%9Biuni-%C8%99i-burdenul/</guid><description>&lt;h1 id="disecarea-moțiunii-și-burden-mapping"&gt;Disecarea moțiunii și burden mapping&lt;/h1&gt;
+&lt;p&gt;Există un reflex comun în pregătire: auzi moțiunea, îți vin imediat în minte argumente, și începi să le dezvolți. Acesta este cel mai scump obicei pe care îl poți avea.&lt;/p&gt;</description></item><item><title>Babă de dame</title><link>https://uccs.ro/cultural/bab%C4%83-de-dame/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://uccs.ro/cultural/bab%C4%83-de-dame/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;Bătălie acerbă
 În troleul 96
-
 Sânge menstrual
 fereastra a ascuns.
 Semințe secrete
 pe la uși gardieni
 nesupuși.
-
 Boschetarul, chestorul
 Croitorul boscheților sectoriali
 autor al mirosurilor
 autor cu rol salubrizant
-
 Unghii murdare
 Față lungă, desfigurată
 Sifilisului purtător
 Hepatitelor colector
 Colecționarilor ideal
-
 Baba nova
 Damă de pension
 Transformată în luptător
 de lupte grele
 Izgonește boschetarul din troleu
 Înapoi pe străzile janghinoase
-
 Acum troleul este plin,
 bucuros de victorie
 flori aduse babei
 96 crizanteme
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>Descentralizarea învățământului liceal</title>
-      <link>https://uccs.codeberg.page/analyticus/descentralizarea-%C3%AEnv%C4%83%C8%9B%C4%83m%C3%A2ntului-liceal/</link>
-      <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/analyticus/descentralizarea-%C3%AEnv%C4%83%C8%9B%C4%83m%C3%A2ntului-liceal/</guid>
-      <description>&lt;h2 id=&#34;introducere&#34;&gt;Introducere&lt;/h2&gt;
-&lt;p&gt;Pe data de 5 noiembrie 2025, Ministerul Educației a publicat Ordinul 4444/2025 privind înființarea „Programului Național pentru pilotarea sistemică de planuri-cadru în învățământul liceal de stat, particular și confesional”. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Acest program presupune descentralizarea învățământului preuniversitar superior, mutând deciziile despre curriculum, planuri-cadru și metodologie la nivelul unităților de învățământ. Chiar dacă în prezent este doar un program-pilot, miza este uriașă, deoarece succesul acestuia poate duce la o schimbare fundamentală a educației la nivel național, afectând generații întregi. Chiar ministrul Daniel David are o viziune optimistă, spunând:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dubla metodă de predare a istoriei</title>
-      <link>https://uccs.codeberg.page/analyticus/dubla-metod%C4%83-de-predare-a-istoriei/</link>
-      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/analyticus/dubla-metod%C4%83-de-predare-a-istoriei/</guid>
-      <description>&lt;h2 id=&#34;introducere&#34;&gt;Introducere&lt;/h2&gt;
-&lt;p&gt;La data de 16 decembrie 2024, Ministrul Educației anunță aprobarea primei programe școlare pentru disciplina obligatorie „Istoria comunismului din România” pentru toți elevii din clasa a XII-a, începând cu anul școlar 2025-2026&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Același lucru s-a întâmplat cu doi ani înainte, când a fost introdusă „Istoria evreilor. Holocaustul” pentru elevii de clasa a XI-a.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ochii îmbătrăniți</title>
-      <link>https://uccs.codeberg.page/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</link>
-      <pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Mă uit în ochii îmbătrâniți
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Descentralizarea învățământului liceal</title><link>https://uccs.ro/analyticus/descentralizarea-%C3%AEnv%C4%83%C8%9B%C4%83m%C3%A2ntului-liceal/</link><pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate><guid>https://uccs.ro/analyticus/descentralizarea-%C3%AEnv%C4%83%C8%9B%C4%83m%C3%A2ntului-liceal/</guid><description>&lt;h2 id="introducere"&gt;Introducere&lt;/h2&gt;
+&lt;p&gt;Pe data de 5 noiembrie 2025, Ministerul Educației a publicat Ordinul 4444/2025 privind înființarea „Programului Național pentru pilotarea sistemică de planuri-cadru în învățământul liceal de stat, particular și confesional”. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; Acest program presupune descentralizarea învățământului preuniversitar superior, mutând deciziile despre curriculum, planuri-cadru și metodologie la nivelul unităților de învățământ. Chiar dacă în prezent este doar un program-pilot, miza este uriașă, deoarece succesul acestuia poate duce la o schimbare fundamentală a educației la nivel național, afectând generații întregi. Chiar ministrul Daniel David are o viziune optimistă, spunând:&lt;/p&gt;</description></item><item><title>Dubla metodă de predare a istoriei</title><link>https://uccs.ro/analyticus/dubla-metod%C4%83-de-predare-a-istoriei/</link><pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate><guid>https://uccs.ro/analyticus/dubla-metod%C4%83-de-predare-a-istoriei/</guid><description>&lt;h2 id="introducere"&gt;Introducere&lt;/h2&gt;
+&lt;p&gt;La data de 16 decembrie 2024, Ministrul Educației anunță aprobarea primei programe școlare pentru disciplina obligatorie „Istoria comunismului din România” pentru toți elevii din clasa a XII-a, începând cu anul școlar 2025-2026&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;. Același lucru s-a întâmplat cu doi ani înainte, când a fost introdusă „Istoria evreilor. Holocaustul” pentru elevii de clasa a XI-a.&lt;/p&gt;</description></item><item><title>Ochii îmbătrăniți</title><link>https://uccs.ro/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</link><pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate><guid>https://uccs.ro/cultural/ochii-%C3%AEmb%C4%83tr%C4%83ni%C8%9Bi/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;Mă uit în ochii îmbătrâniți
 O privire și îngheț
-
 Mâna rece nu-mi ivește
 Sufletul bate a ieși
-
 Baba chicotește îngerește
 Baba răget învârtit
-
 Cerul înnegrit avarițios
 Avarie a rațiunii alpine
-
 Alungită, baba înmânează
 Înnebunită învârte întregul univers
-
 De pe scaun eu ridic
 Și din autobuz cobor
 Fără să mă uit, înapoi
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>Dincolo de Umbre</title>
-      <link>https://uccs.codeberg.page/cultural/dincolo-de-umbre/</link>
-      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/cultural/dincolo-de-umbre/</guid>
-      <description>&lt;h2 id=&#34;miezul-nopții&#34;&gt;Miezul nopții&lt;/h2&gt;
-&lt;p&gt;În adâncul unei caverne umede, ai cărei pereți absorbeau sunetul și reflectau doar umbre chinuite, trăiau oameni care nu cunoscuseră niciodată lumina. Nici ziua, nici noaptea, nici răsăritul, nici apusul – doar o întunecime constantă, în care realitatea era formată din siluete ce se perindau pe zidul din fața lor. Aceștia erau înlănțuiți de lanțuri groase de oțel, dar și de propria lor realitate, de umbrele unor obiecte ce se mișcau, proiectate undeva în spatele lor, la o distanță pe care mintea lor n-o putea măsura și care, poate, nici nu exista cu adevărat.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Programa de Istorie</title>
-      <link>https://uccs.codeberg.page/analyticus/programa-de-istorie/</link>
-      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://uccs.codeberg.page/analyticus/programa-de-istorie/</guid>
-      <description>&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
-&lt;p&gt;Educația din România continuă să sufere de probleme majore, reflectate atât în statistici alarmante privind abandonul școlar și analfabetismul funcțional, cât și în analfabetismul istoric. Fondurile sunt insuficiente, instituțiile sunt slab dotate pentru a asigura mai mult decât șase ore de studiu pe zi (în sensul existenței unei cantine, a unor săli libere, de lectură etc.), iar programele și manualele rămân neactualizate de decenii.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Dincolo de Umbre</title><link>https://uccs.ro/cultural/dincolo-de-umbre/</link><pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate><guid>https://uccs.ro/cultural/dincolo-de-umbre/</guid><description>&lt;h2 id="miezul-nopții"&gt;Miezul nopții&lt;/h2&gt;
+&lt;p&gt;În adâncul unei caverne umede, ai cărei pereți absorbeau sunetul și reflectau doar umbre chinuite, trăiau oameni care nu cunoscuseră niciodată lumina. Nici ziua, nici noaptea, nici răsăritul, nici apusul – doar o întunecime constantă, în care realitatea era formată din siluete ce se perindau pe zidul din fața lor. Aceștia erau înlănțuiți de lanțuri groase de oțel, dar și de propria lor realitate, de umbrele unor obiecte ce se mișcau, proiectate undeva în spatele lor, la o distanță pe care mintea lor n-o putea măsura și care, poate, nici nu exista cu adevărat.&lt;/p&gt;</description></item><item><title>Programa de Istorie</title><link>https://uccs.ro/analyticus/programa-de-istorie/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://uccs.ro/analyticus/programa-de-istorie/</guid><description>&lt;h2 id="context"&gt;Context&lt;/h2&gt;
+&lt;p&gt;Educația din România continuă să sufere de probleme majore, reflectate atât în statistici alarmante privind abandonul școlar și analfabetismul funcțional, cât și în analfabetismul istoric. Fondurile sunt insuficiente, instituțiile sunt slab dotate pentru a asigura mai mult decât șase ore de studiu pe zi (în sensul existenței unei cantine, a unor săli libere, de lectură etc.), iar programele și manualele rămân neactualizate de decenii.&lt;/p&gt;</description></item></channel></rss>
