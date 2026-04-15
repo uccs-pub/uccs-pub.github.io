@@ -1,4 +1,4 @@
-baseURL = "https://uccs.codeberg.page/"
+baseURL = "https://uccs.ro/"
 
 [services]
     [services.rss]
