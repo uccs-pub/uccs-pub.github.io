@@ -45,8 +45,6 @@
   {{ $totalWords = add $totalWords .WordCount }}
 {{ end }}
 
-{{ $totalWords }}
-
 {{/* ── Taxonomy-index extras ── */}}
 {{ $isTaxonomy       := eq $kind "taxonomy" }}
 {{ $terms            := slice }}
